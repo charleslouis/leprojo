@@ -1,0 +1,150 @@
+.banner{
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 2em 0;
+	background: $banner-background-color;
+	font-family: $sansFontFamilyLight;
+	*{
+		color: $banner-font-color;
+	}
+}
+.banner.banner-tools{
+	background-color: $grayLight;
+	padding-top: 0;
+}
+.banner .row{
+	position: relative;
+}
+
+.banner-content{
+	width: 100%;
+	position: relative;
+	text-align: center;
+	@extend .clearfix;
+}	
+
+/*==========  creation-diapo  (home page)  ==========*/
+
+.banner-title,
+.banner-sub-title,
+.banner-li,
+.banner-li li{
+	position: relative;
+	margin-bottom: 0;
+	font-size: 1.7em;
+	font-weight: normal;
+	font-family: inherit;
+	text-transform: uppercase;
+	.moustache{
+		display: none;
+	}
+}
+
+.banner-sub-title {
+	font-size: 1.5em;
+	line-height: 1.33em;
+}
+
+.banner-title-tools{
+	width: 100%;
+	padding: 2em 0;
+	text-align: center;
+}
+
+.banner-li{
+	&:after{
+		display: block;
+		font-size: 2em;
+		margin-top: -0.5em;
+		content:'...';
+	}
+	li{
+		width : 100%;
+		display: block;
+		@extend h3;
+		font-size: 1em;
+	}
+}
+
+
+@media #{$small}{
+	.banner{
+		padding: 4em 0;
+	}
+	.banner-stache-title{
+		display: block;
+		float: left;
+		width: 50%;
+		padding-right: 1.125em;
+		text-align: right;
+		span{
+			line-height: 1.5em;
+		}
+	.banner-title,
+	.banner-sub-title,
+	.banner-li{
+		font-size: 1.7em;
+		margin: 0;
+		padding: 0;
+	}
+	.moustache{
+		position: absolute;
+		top: -0.05em;
+		right: 0;
+		display: block;
+		font-size: 3em;
+		line-height: 1em;
+	}
+	}
+
+	.banner-li{
+		width: 50%;
+		float: right;
+		text-align: left;
+		&:after{
+			display: none; //hide the "..."
+		}
+		li{
+			line-height: 3em;
+			&:not(:nth-child(1)){
+				// display: none;
+			}
+		}
+		.hidden-diapo-list{
+			display: none;
+		}
+		.visible-diapo-list{
+			display: block;
+		}
+	}	
+	.banner-sub-title span{
+		text-align: left;
+	}
+
+	.banner-content{
+		padding: 1em 0;
+		font-size: 1.25em;
+	}
+	.banner-sub-title{
+		display: block;
+		float: right;
+		width: 50%;
+		text-align: left;
+		padding: 1.075em 0 0 0.5em;
+	}
+}
+@media #{$medium}{
+	.banner-content{
+		font-size: 1.75em;
+	}
+}
+@media #{$large}{
+	.banner{
+		padding: 4em 0;
+	}
+	.banner-content{
+		font-size: 1.9em;
+	}
+}
+

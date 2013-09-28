@@ -1,0 +1,59 @@
+/*==========  Oldie  ==========*/
+
+.oldie {
+	.work-w-us-prose{
+		padding-right: 4em;
+	}
+	.work-w-us-contact{
+		min-width: 350px;
+	}
+}
+
+/*==========  MQ  ==========*/
+@media (screen and min-width: 500px){
+	.contact-us-list li{
+		border: none;
+	}
+}
+
+@media #{$small}{
+	.work-w-us-prose,
+	.work-w-us-contact{
+		@include grid-column(6);
+		padding-left: 0;
+	}
+	.work-w-us-prose{
+		p{
+			margin-bottom: 0;
+		}
+	}
+	.work-w-us-contact{
+		padding-top: 0;
+	}
+	.work-w-us-container{
+		padding: 3em 2em;
+	}
+}
+
+@media #{$topbar-media-query}{
+	.work-w-us-prose{
+		@include grid-column(7);
+		padding-left: 0;
+	}
+
+	.work-w-us-contact{
+		@include grid-column(5);
+	}
+
+}
+
+@media #{$medium}{
+	.work-w-us-prose{
+		@include grid-column(8);
+		padding-left: 0;
+	}
+
+	.work-w-us-contact{
+		@include grid-column(4);
+	}
+}

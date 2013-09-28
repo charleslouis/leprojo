@@ -1,0 +1,12 @@
+RewriteEngine on
+# On ne redirige pas la page maintenance sur elle même pour éviter les boucles
+#RewriteCond %{HTTP_HOST}   ^localhost.leprojo$
+RewriteCond %{REQUEST_URI} !/maintenance/
+RewriteCond %{REQUEST_URI} !/maintenance/index.html
+# On ne redirige pas les feuilles de style (répertoire css) et les images (répertoire img)
+RewriteCond %{REQUEST_FILENAME} !(css|img).+$
+# On n'effectue pas la redirection pour l'adresse IP de la personne procédant à la maintenance
+#CL
+#RewriteCond %{REMOTE_ADDR} !^85\.169\.94\.168$
+# On redirige le reste sur la page de maintenance
+RewriteRule (.*) /maintenance/ [R,L]

@@ -1,0 +1,70 @@
+/*==========  m-work-w-us-container  ==========*/
+
+.work-w-us-container{
+	background-color: $grayDarker;
+	color: $grayLighter;
+	padding: 3em 0.9375em;
+	h2{
+		color: $grayLighter;
+		text-transform: uppercase;
+		margin-top: 0;
+	}
+	a{
+		color: $grayLight;
+		&:hover{
+			color: $white;
+		}
+	}
+}
+
+.work-w-us-prose,
+.work-w-us-contact{
+	@extend .left;
+	padding: 0 0.9375em 0 0;
+}
+
+.work-w-us-prose-invite{
+	display: block;
+}
+
+.work-w-us-contact{
+	padding-top: 0.4em;
+}
+.contact-us-list{
+	line-height: 2em;
+	margin-bottom: 0;
+	li {
+		border-bottom: 1px solid $gray;
+	}
+}
+
+.contact-list-footer [class*="icon-"]:before {
+		margin-right: 0.5em;		
+		display: inline-block;
+		text-align: center;
+		width: 1em;
+}
+
+.no-touch .phone-link{
+	cursor: text;
+	border-bottom: none;
+	color: inherit;
+	&:hover{
+		color: inherit;
+	}
+}
+
+/*==========  site colophon with copy/credits and legal  ==========*/
+
+.site-footer{
+	background-color: $black;
+	color: $grayLight;
+	padding: 2em 0;
+	line-height: 1.25em;
+	a{
+		color: $grayLight;
+	}
+}
+
+.svg .credits [data-icon]:before {
+}

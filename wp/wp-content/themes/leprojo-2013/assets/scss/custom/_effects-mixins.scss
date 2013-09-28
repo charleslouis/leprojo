@@ -1,0 +1,215 @@
+/*=====================================
+=            hover effects            =
+=====================================*/
+
+@mixin frameBorderHover($borderWidth, $position, $borderColor, $distanceY, $distanceX ){
+	position: relative;
+	&::before,
+	&::after{
+		position: absolute;
+		top: $position;
+		left: $position;
+		right: $position;
+		bottom: $position;
+		border: $borderWidth solid transparent;
+		content: '';
+		transition: all 0.2s ease-in-out;
+	}
+	&::after{
+		border-color: $borderColor;
+		@include prefixer(transform, translateY($distanceY) translateX($distanceX), webkit moz ms o spec);
+		opacity: 0;
+	}
+
+	&:hover,
+	&:focus{
+		&::before,
+		&::after{
+			opacity: 1;
+			@include prefixer(transform, translateY(0) translateX(0), webkit moz ms o spec);
+		}
+	}
+}
+
+
+@mixin topBottomBorderHover($linkColor, $linkActiveColor, $borderWidth, $borderColor, $timing, $distance ){
+	position: relative;
+	a{
+		color: $linkColor;
+		&:before,
+		&:after{
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: $borderWidth;
+			background: $borderColor;
+			content: '';
+			opacity: 0;
+			@include transition(all $timing);
+		}
+		&:before{
+			top: 0;
+			@include transform(translateY(-$distance));
+		}
+		&:after{
+			bottom: 0;
+			@include transform(translateY($distance));
+		}
+	}
+	a:hover,
+	a:focus,
+	&.active a{
+		background-color: transparent;
+		color: $linkActiveColor;
+		&:before,
+		&:after{
+			opacity: 1;
+			@include transform(translateY(0));
+		}
+	}
+	&.active a{
+		color: $linkActiveColor;
+		&:hover,
+		&:focus{
+			background-color: transparent;
+			color: $linkActiveColor;
+		}
+	}
+}
+
+@mixin borderOnHover(
+$touch: false,
+$top: 50%, 
+$right: auto,
+$bottom: auto,
+$left: 50%,
+$radius: 50%,
+$beforeTiming: 0.3s,
+$afterTiming: $beforeTiming,
+$zIndex: 200,
+
+$displayBefore: true,
+$displayAfter: true,
+
+$opacityStart: 0,
+$opacityEnd: 1,
+
+$beforeWidth: 200px, 
+$beforeHeight: $beforeWidth, 
+
+$afterWidth: $beforeWidth, 
+$afterHeight: $beforeWidth, 
+
+$beforeBdWidth: 1px,
+$beforeBdStyle: solid, 
+$beforeBdColor: $gray,
+$beforeBdOpacity: 1,
+$beforeBgColor: $white,
+$beforeBgOpacity: 0.3,
+$beforeScale: 0.2,
+
+$afterBdWidth: 1px,
+$afterBdStyle: solid,
+$afterBdColor: $gray,
+$afterBdOpacity: 1,
+$afterBgColor: $white,
+$afterBgOpacity: 0.6,
+$afterScale: 0.5,
+
+$afterBgImage: none,
+$afterBgRepeat: no-repeat,
+$afterBgPosition: center center,
+$afterBgSize: cover ){
+
+	position: relative;	
+	&::before,
+	&::after {
+		position: absolute;
+		z-index: $zIndex;
+		top: $top;
+ 
+		left: $left;
+		width: $beforeWidth;
+		height: $beforeHeight;
+		border: $beforeBdWidth $beforeBdStyle rgba($beforeBdColor, $beforeBdOpacity);
+		background-color: rgba($grayLighter, $beforeBgOpacity);
+		border-radius: $radius;
+		content: '';
+	}
+
+	&::after {
+		width: $afterWidth;
+		height: $afterHeight;
+		background-image: $afterBgImage;
+		background-size: $afterBgSize;
+		background-position: $afterBgPosition;
+		background-repeat: $afterBgRepeat;
+		background-color: rgba($afterBgColor, $afterBgOpacity);
+		border: $afterBdWidth $afterBdStyle rgba($afterBdColor, $afterBdOpacity);
+	}
+
+
+	@if $touch == false {
+		&::before,
+		&::after {
+			opacity: 0;
+			-webkit-transition: -webkit-transform $beforeTiming, opacity $beforeTiming;
+			-moz-transition: -moz-transform $beforeTiming, opacity $beforeTiming;
+			transition: transform $beforeTiming, opacity $beforeTiming;
+			-webkit-transform: translateX(-50%) translateY(-50%) scale($beforeScale);
+			-moz-transform: translateX(-50%) translateY(-50%) scale($beforeScale);
+			transform: translateX(-50%) translateY(-50%) scale($beforeScale);
+		}
+		&::after {
+			-webkit-transition: -webkit-transform $afterTiming, opacity $afterTiming;
+			-moz-transition: -moz-transform $afterTiming, opacity $afterTiming;
+			transition: transform $afterTiming, opacity $afterTiming;
+			-webkit-transform: translateX(-50%) translateY(-50%) scale($afterScale);
+			-moz-transform: translateX(-50%) translateY(-50%) scale($afterScale);
+			transform: translateX(-50%) translateY(-50%) scale($afterScale);			
+		}
+
+		&:hover,
+		&:focus {
+			&::before,
+			&::after {
+				opacity: 1;
+				-webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+				-moz-transform: translateX(-50%) translateY(-50%) scale(1);
+				transform: translateX(-50%) translateY(-50%) scale(1);
+			}
+		}
+
+	} @else {
+		&::before,
+		&::after {
+			opacity: 1;
+			-webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+			-moz-transform: translateX(-50%) translateY(-50%) scale(1);		
+		}
+	}
+
+	@if $displayAfter == false{
+		&::after{
+			display: none;
+		}
+	} @else {
+		&::after{
+			display: block;
+		}
+	}
+	@if $displayBefore == false{
+		&::before{
+			display: none;
+		}
+	} @else {
+		&::before{
+			display: block;
+		}
+	}
+
+}
+/*-----  End of hover effects  ------*/
+
+
+

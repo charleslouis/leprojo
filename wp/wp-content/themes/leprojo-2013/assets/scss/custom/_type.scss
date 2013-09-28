@@ -1,0 +1,124 @@
+// paragraphs
+.leader{
+  font-size: em-calc(18);
+}
+
+@media #{$small} {  
+  p {
+    font-size: 1.25em;
+  }
+  .leader{ 
+    font-size: $h3-font-size;
+  }
+}
+.oldie .leader{
+  max-width: 900px;
+}
+
+
+// links
+a{
+  @include transition(all 0.3s ease-in-out);
+}
+
+.navlist a{
+  text-decoration: none;
+}
+
+p {
+  a{
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    &:hover{
+      border-bottom-width: 0.2em;
+      border-color: $anchor-font-color-hover;
+    }
+  }
+}
+
+.contact-us-list a,
+.archive-link {
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.touch {
+  p a,
+  li a{
+    line-height: 2em; //enlarge link height to enable big finger targeting
+  }
+}
+
+.no-touch .tel{
+  cursor: default;
+}
+
+.banner,
+.banner-title{
+  color: $banner-font-color ;
+}
+
+
+
+// lists
+.contact-us-list,
+.navlist,
+.navlist ul,
+.creation-diapo-list{
+	list-style-type: none;
+}
+
+.contact-us-list {
+  a,
+  span{
+    display: inline-block;
+  }
+}
+
+.li-block ul{
+}
+
+.li-title{
+  border-bottom: 0.075em solid $highlightColor;
+}
+
+.li-el-title{
+  padding-top: 1em;
+  border-bottom: 1px solid $grayLight;
+}
+
+
+// microformats
+.vcard {
+  width: 100%;
+  color: $microformat-font-color;
+  // border: none;
+}
+.contact_title{
+  margin-bottom: 0.5em;
+}
+
+// icons
+i{
+  font-style: normal;
+}
+
+
+// figcaption
+// realisation infos
+.caption-t,
+.caption-subt,
+.caption-meta{
+  margin: 0;
+}
+.caption-meta{
+  font-family: $sansFontFamily;
+  font-size: 1em;
+}
+
+h1{
+  color: $orange;
+}

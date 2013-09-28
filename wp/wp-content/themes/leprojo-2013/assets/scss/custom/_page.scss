@@ -1,0 +1,33 @@
+.page-intro{
+	@extend .columns;
+}
+
+.page-intro-header h1{
+	margin-bottom: 0;
+}
+
+.page-intro-prose{
+	margin-top: 1em;
+	@extend .large-9;
+}
+.main-home .page-intro-prose{
+	@extend .large-12;
+}
+
+.entry-content{
+	@extend .clearfix;
+}
+
+@media #{$small} {
+	.page-intro{
+		padding-top: 1.5em;
+		padding-bottom: 1.5em;
+	}
+}
+
+@media #{$medium} {
+	.page-intro{
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
+	}
+}

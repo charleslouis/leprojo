@@ -1,0 +1,86 @@
+
+/*==========  fonts  ==========*/
+// fonts imported via @font-face from fonts.com
+// refer to lib/enqueue-sass.php for source
+
+// font-family:'Recta W01 Light';
+// font-family:'Recta W01 Bold';
+// font-family:'ITC Century W01 Book';
+
+$sansFontFamily:        "Recta W01 Bold", Helvetica Neue, Helvetica, Arial, sans-serif !default;
+$sansFontFamilyLight:   "Recta W01 Light", Helvetica Neue, Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       "ITC Century W01 Book", Georgia, "Times New Roman", Times, serif !default;
+$monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
+
+/**
+*
+* color variables from bootstrap
+*
+**/
+
+// Grays
+// -------------------------
+$black:                 #2D2D2D !default;
+$grayDarker:            #323232 !default;
+$grayDark:            	#4d4d4d !default;
+$gray:                  #A0A0A0 !default;
+$grayLight:             lighten($gray, 10%) !default;
+$grayLighter:           #F1F1F1 !default;
+$white:                 #fff !default;
+
+
+// Accent colors
+// -------------------------
+$blue:                  #0B60B3 !default;
+$blueDark:              #115699 !default;
+$green:                 lighten(#c7d352, 10%) !default;
+$red: 									#c91616;
+$orange:                #ca4f3b  !default;
+$yellow:                #ffc40d !default;
+$pink:                  #C80050 !default;
+$purple:                #39398D !default;
+
+// Scaffolding
+// -------------------------
+$bodyBackground:        $white !default;
+$textColor:             $grayDark !default;
+
+/*==========  components  ==========*/
+
+$highlightColor: $orange;
+
+// banner
+$banner-background-color: $highlightColor;
+$banner-font-color: $grayLighter;
+
+// microformats
+$microformat-font-color: $gray;
+
+
+/*==========  IMAGES  ==========*/
+
+@import "svg"; //dedicated file used for svg like logo and avatar
+
+$image_folder: "../img/";
+
+$logo-fallback: url($image_folder + "branding/logo-lsp.png");
+$logo: $logo-svg;
+
+
+$avatar: $avatar-svg;
+$avatar-fallback: url($image_folder + "branding/souris-face-lsp.png");
+$avatar-fallback-no-backgroundSize: url($image_folder + "branding/souris-face-transparent-no-background-size.png");
+
+$map: url($image_folder + "map/map.png");
+$bootstrap: url($image_folder + "tools/bootstrap-icon.svg");
+
+$loader: url($image_folder + "map/loader.gif");
+
+// $plusCross is used to show that additional content is available
+$plusCross: $plusCross-svg;
+$plusCross-fallback: url($image_folder + "components/plus-cross.png");
+
+/*==========  layout  ==========*/
+$topbar-height: 60px !default;
+$medium-topbar-height: 90px !default;
+$large-topbar-height: 120px !default;
