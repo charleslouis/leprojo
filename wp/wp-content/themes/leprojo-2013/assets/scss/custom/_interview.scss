@@ -10,6 +10,12 @@
 	position: absolute;
 }
 
+.entry-content{
+	@extend .columns;
+	@extend .small-12;
+	@extend .large-12;
+}
+
 .prev-next-link {
 	@extend a;
 	@extend .button;

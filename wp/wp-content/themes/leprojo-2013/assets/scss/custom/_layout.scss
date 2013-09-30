@@ -15,6 +15,18 @@
 	padding-top: 2em;
 }
 
+.main-content-wrapper{
+	width: 100%;
+	max-width: $large-screen;
+	margin: 0 auto;
+	padding: 0 0.5em;
+	// background-color: rgba($yellow, 0.2);
+}
+
+.main-content{
+	@extend .row;
+}
+
 aside.side-info {
 	padding-top: 2em;
 }	

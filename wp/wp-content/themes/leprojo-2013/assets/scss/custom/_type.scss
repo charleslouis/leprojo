@@ -3,8 +3,23 @@
   font-size: em-calc(18);
 }
 
+.question{  
+  font-style: italic;
+  font-weight: bold;
+}
+
+.date{
+  @extend small;
+  font-style: italic;
+  color: $gray;  
+}
+
 .entry-title{
   font-family: $sansFontFamilyLight;
+}
+
+.itw-title{
+  text-transform: uppercase;
 }
 
 @media #{$small} {  
