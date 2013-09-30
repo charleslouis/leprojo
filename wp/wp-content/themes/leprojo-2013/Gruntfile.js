@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       dev: {                            // Target
         options: {                       // Target options        
           style: 'expanded',
-          sourcemap: true,
+          // sourcemap: true,
           debugInfo: true
         },
         files: {                         // Dictionary of files
@@ -102,9 +102,10 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: [
-          'assets/scss/custom/*.scss'
+          'assets/scss/custom/*.scss',
+          'assets/scss/*.scss',
         ],
-        tasks: ['sass:dev'],
+        tasks: ['sass:dist'],
         options: {
           // Start a live reload server on the default port 35729
           livereload: true,
