@@ -14,7 +14,7 @@
 
       </article>
 
-      <div id="nav-entry">
+      <div id="nav-entry" class="nav-entry">
         <a href="/untel" class="button older">Machin Truc</a>
         <a href="/untelOh" class="button newer">Bidule muche</a>
-      </div>  
+      </div>

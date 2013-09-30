@@ -1,0 +1,25 @@
+
+.nav-entry{
+
+}
+.entry-title{
+	position: absolute;
+	font-size: 10em;
+	text-transform: uppercase;
+	bottom: 10%;
+	width: 100%;
+}
+
+@media screen and (min-width: 600px){
+	.nav-entry{
+		position: fixed;
+		top: 45%;
+		width: 100%;
+		a{
+			position: absolute;
+			&:nth-child(2){
+				right: 0;
+			}		
+		}
+	}
+}

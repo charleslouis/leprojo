@@ -84,3 +84,14 @@ $plusCross-fallback: url($image_folder + "components/plus-cross.png");
 $topbar-height: 40px !default;
 $medium-topbar-height: 80px !default;
 $large-topbar-height: 100px !default;
+
+/*==========  logo sizes  ==========*/
+$logo-topbar-height: 30px !default;
+$logo-medium-topbar-height: 70px !default;
+$logo-large-topbar-height: 90px !default;
+
+$ratio: 0.35;
+
+$logo-topbar-width: $logo-topbar-height / $ratio !default;
+$logo-medium-topbar-width: $logo-medium-topbar-height / $ratio !default;
+$logo-large-topbar-width: $logo-large-topbar-height / $ratio !default;

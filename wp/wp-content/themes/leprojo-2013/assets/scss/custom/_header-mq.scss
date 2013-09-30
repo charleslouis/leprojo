@@ -25,8 +25,8 @@
 		height: $medium-topbar-height;
 	}
 	.brand{
-    width: $medium-topbar-height/ 0.35;
-	  height: $medium-topbar-height - 5px;
+	  height: $logo-medium-topbar-height;
+    width: $logo-medium-topbar-width;
 	  background-image: $logo;
 	  background-repeat: no-repeat;
 	  background-size: 100%;
@@ -48,7 +48,7 @@
 		height: $large-topbar-height;
 	}
   .brand{
-    width: $large-topbar-height / 0.35;
-    height: $large-topbar-height - 5px;
+	  height: $logo-large-topbar-height;
+    width: $logo-large-topbar-width;
   }
 }

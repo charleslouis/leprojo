@@ -42,6 +42,17 @@ aside.side-info {
 			clear: left;
 		}
 	}
+	.nav-entry{
+		position: fixed;
+		top: 45%;
+		width: 100%;
+		a{
+			position: absolute;
+			&:nth-child(2){
+				right: 0;
+			}		
+		}
+	}
 }
 
 @media #{$small} {
