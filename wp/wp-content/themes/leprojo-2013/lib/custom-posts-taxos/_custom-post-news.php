@@ -1,21 +1,21 @@
 <?php 
-function c_post_news(){
+function c_post_interview(){
 
-//POST TYPE ACTUALITES//  
+//POST TYPE INTERVIEWS//  
   $labels = array(
-    'name' => 'Actualités',
-    'singular_name' => 'Actualité',
-    'add_new' => 'Nouvelle actualité',
-    'add_new_item' => 'Nouvelle actualité',
-    'edit_item' => 'Editer l\'actualité',
-    'new_item' => 'Nouvelle actualité',
-    'all_items' => 'Toutes les actualités',
-    'view_item' => 'Voir l\'actualité',
-    'search_items' => 'Chercher parmis les actualités',
-    'not_found' =>  'Aucune actualité trouvée',
-    'not_found_in_trash' => 'Aucune actualité dans la corbeille', 
+    'name' => 'interviews',
+    'singular_name' => 'interview',
+    'add_new' => 'Nouvelle interview',
+    'add_new_item' => 'Nouvelle interview',
+    'edit_item' => 'Editer l\'interview',
+    'new_item' => 'Nouvelle interview',
+    'all_items' => 'Toutes les interviews',
+    'view_item' => 'Voir l\'interview',
+    'search_items' => 'Chercher parmis les interviews',
+    'not_found' =>  'Aucune interview trouvée',
+    'not_found_in_trash' => 'Aucune interview dans la corbeille', 
     'parent_item_colon' => '',
-    'menu_name' => 'Actualités',
+    'menu_name' => 'interviews',
   );
 
   // $description = 'Le post qui ecrit des innovations de folie';
@@ -27,16 +27,16 @@ function c_post_news(){
     'show_ui' => true, 
     'show_in_menu' => true, 
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'actualites/%domaine_intervention%', 'with_front'=>false),
+    'rewrite' => array( 'slug' => 'interviews', 'with_front'=>false),
     'publicly_queryable' => true,
     'capability_type' => 'post',
-    'has_archive' => 'actualites', 
+    'has_archive' => 'interviews', 
     'hierarchical' => false,
     'menu_position' => 5,
     'taxonomies' => array('domaine_intervention'),
     'supports' => array( 'title', 'editor', 'author' )
   ); 
-  //#!POST TYPE ACTUALITES//  
+  //#!POST TYPE INTERVIEWS//  
 
-  return register_post_type( 'actualites', $args );
+  return register_post_type( 'interviews', $args );
 }
