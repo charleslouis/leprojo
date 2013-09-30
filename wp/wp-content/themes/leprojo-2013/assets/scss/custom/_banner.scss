@@ -4,12 +4,6 @@
 	position: relative;
 	display: block;
 	background: $banner-background-color;
-	.entry-title{
-  	font-family: $sansFontFamilyLight;
-		color: $banner-font-color;
-		position: absolute;
-		z-index: 1200;
-	}
 }
 
 .main .banner{
@@ -32,6 +26,7 @@
 }	
 
 @media #{$small}{
+	
 }
 @media #{$topbar-media-query} {
 	.main .banner{

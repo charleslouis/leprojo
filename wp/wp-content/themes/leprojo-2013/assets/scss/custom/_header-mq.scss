@@ -20,16 +20,15 @@
 @media #{$topbar-media-query} {
 	.contain-to-grid {
 	  border-bottom: none;
-	 }
+	}
 	.top-bar{
 		height: $medium-topbar-height;
 	}
 	.brand{
-	  height: $logo-medium-topbar-height;
-    width: $logo-medium-topbar-width;
-	  background-image: $logo;
+	  height: $logo-medium-height;
+    width: $logo-medium-width;
 	  background-repeat: no-repeat;
-	  background-size: 100%;
+	  background-size: 90%;
 	}
 	.no-svg .brand{
 		top: -10px;
@@ -48,7 +47,7 @@
 		height: $large-topbar-height;
 	}
   .brand{
-	  height: $logo-large-topbar-height;
-    width: $logo-large-topbar-width;
+	  height: $logo-large-height;
+    width: $logo-large-width;
   }
 }

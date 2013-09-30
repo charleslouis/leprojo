@@ -66,7 +66,7 @@ $font-smoothing: antialiased;
 
 // Colors
 
-$primary-color: $gray;
+$primary-color: $black;
 $secondary-color: $grayDark;
 $alert-color: #c60f13;
 $success-color: #5da423;
@@ -365,7 +365,7 @@ $button-font-family: $sansFontFamily;
 // $button-font-tny: emCalc(11);
 // $button-font-sml: emCalc(13);
 // $button-font-lrg: emCalc(20);
-// $button-font-weight: bold;
+$button-font-weight: normal;
 // $button-font-align: center;
 
 // We use these to control various hover effects.
@@ -374,7 +374,7 @@ $button-font-family: $sansFontFamily;
 
 // We use these to control button border styles.
 
-// $button-border-width: 1px;
+$button-border-width: 0;
 // $button-border-style: solid;
 
 // We use this to set the default radius used throughout the core.
@@ -384,7 +384,7 @@ $button-font-family: $sansFontFamily;
 
 // We use this to set default opacity for disabled buttons.
 
-// $button-disabled-opacity: 0.6;
+$button-disabled-opacity: 0.8;
 
 //
 // Button Groups
@@ -1236,7 +1236,7 @@ $button-font-family: $sansFontFamily;
 
 // Background color for the top bar
 
-$topbar-bg: rgba($black, 0.2);
+$topbar-bg: rgba($black, 0.1);
 
 // Height and margin
 

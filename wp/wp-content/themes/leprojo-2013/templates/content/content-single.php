@@ -15,6 +15,6 @@
       </article>
 
       <div id="nav-entry" class="nav-entry">
-        <a href="/untel" class="button older">Machin Truc</a>
-        <a href="/untelOh" class="button newer">Bidule muche</a>
+        <a href="/untel" class="prev-next-link older">Machin Truc</a>
+        <a href="/untelOh" class="prev-next-link newer">Bidule muche</a>
       </div>

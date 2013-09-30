@@ -25,7 +25,7 @@ $grayDarker:            #323232 !default;
 $grayDark:            	#4d4d4d !default;
 $gray:                  #A0A0A0 !default;
 $grayLight:             lighten($gray, 10%) !default;
-$grayLighter:           #F1F1F1 !default;
+$grayLighter:           rgb(215, 215, 215) !default;
 $white:                 #fff !default;
 
 
@@ -51,7 +51,7 @@ $highlightColor: $blue;
 
 // banner
 $banner-background-color: none;
-$banner-font-color: $grayLighter;
+$banner-font-color: $white;
 
 // microformats
 $microformat-font-color: $gray;
@@ -67,12 +67,12 @@ $logo-fallback: url($image_folder + "branding/logo-lsp.png");
 $logo: $logo-svg;
 
 
-$avatar: $avatar-svg;
-$avatar-fallback: url($image_folder + "branding/souris-face-lsp.png");
-$avatar-fallback-no-backgroundSize: url($image_folder + "branding/souris-face-transparent-no-background-size.png");
+$avatar: none;
+$avatar-fallback: none;
+$avatar-fallback-no-backgroundSize: none;
 
-$map: url($image_folder + "map/map.png");
-$bootstrap: url($image_folder + "tools/bootstrap-icon.svg");
+$map: none;
+$bootstrap: none;
 
 $loader: url($image_folder + "map/loader.gif");
 
@@ -85,13 +85,19 @@ $topbar-height: 40px !default;
 $medium-topbar-height: 80px !default;
 $large-topbar-height: 100px !default;
 
+
 /*==========  logo sizes  ==========*/
 $logo-topbar-height: 30px !default;
-$logo-medium-topbar-height: 70px !default;
-$logo-large-topbar-height: 90px !default;
+$logo-medium-height: 45px !default;
+$logo-large-height: 55px !default;
 
-$ratio: 0.35;
+/*==========  logo padding  ==========*/
+$logo-topbar-padding: ($topbar-height - $logo-topbar-height)/1.75; 
+$logo-medium-padding: ($medium-topbar-height - $logo-medium-height)/1.75; 
+$logo-large-padding:  ($large-topbar-height - $logo-large-height)/1.75; 
+
+$ratio: 0.26715;
 
 $logo-topbar-width: $logo-topbar-height / $ratio !default;
-$logo-medium-topbar-width: $logo-medium-topbar-height / $ratio !default;
-$logo-large-topbar-width: $logo-large-topbar-height / $ratio !default;
+$logo-medium-width: $logo-medium-height / $ratio !default;
+$logo-large-width: $logo-large-height / $ratio !default;

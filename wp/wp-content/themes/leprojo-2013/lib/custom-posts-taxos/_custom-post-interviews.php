@@ -27,13 +27,13 @@ function c_post_interview(){
     'show_ui' => true, 
     'show_in_menu' => true, 
     'query_var' => true,
-    'rewrite' => array( 'slug' => 'interviews/%domaine_intervention%', 'with_front'=>false),
+    'rewrite' => array( 'slug' => 'interviews/', 'with_front'=>false),
     'publicly_queryable' => true,
     'capability_type' => 'post',
     'has_archive' => 'interviews', 
     'hierarchical' => false,
     'menu_position' => 5,
-    'taxonomies' => array('domaine_intervention'),
+    'taxonomies' => array('interviews'),
     'supports' => array( 'title', 'editor', 'author' )
   ); 
   //#!POST TYPE INTERVIEW//  
