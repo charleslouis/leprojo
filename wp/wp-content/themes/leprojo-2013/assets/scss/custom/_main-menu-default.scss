@@ -56,7 +56,6 @@
 	&.active a{
 		color: $highlightColor;
 		border-left-color: $highlightColor;
-		cusor: text;
 		&:hover,
 		&:focus{
 			background-color: rgba($highlightColor, 0.3);

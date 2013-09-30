@@ -77,6 +77,64 @@
 	}
 }
 
+
+
+/* Effect 13: three circles */
+@mixin threePointSonHover($linkColor: $blueDark, $backgroundColor: transparent, $backgroundColorHover: transparent, $backgroundColorActive: transparent, $linkActiveColor: #fff, $textShadow: 10px, $timing: 0.3s, $top: 50%){
+
+	a {
+		-webkit-transition: color $timing;
+		-moz-transition: color $timing;
+		transition: color $timing;
+		color: $linkColor;
+		background-color: $backgroundColor;
+	}
+
+
+	&.active a::before,
+	a::before {
+		position: absolute;
+		top: $top;
+		left: 50%;
+		color: transparent;
+		content: '•';
+		text-shadow: 0 0 transparent;
+		font-size: 1.2em;
+		-webkit-transition: text-shadow $timing, color $timing;
+		-moz-transition: text-shadow $timing, color $timing;
+		transition: text-shadow $timing, color $timing;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		transform: translateX(-50%);
+		pointer-events: none;
+	}
+
+	&.active a{
+		color: $linkActiveColor;
+		background-color: $backgroundColorActive;
+		&::before{
+			color: $linkActiveColor;			
+			text-shadow: ($textShadow) 0 $linkActiveColor, -($textShadow) 0 $linkActiveColor;
+		}
+	}
+	
+	a:hover::before,
+	a:focus::before,
+	&.active a:hover::before,
+	&.active a:focus::before {
+		color: $linkActiveColor;
+		text-shadow: ($textShadow) 0 $linkActiveColor, -($textShadow) 0 $linkActiveColor;
+	}
+
+	a:hover,
+	a:focus,
+	&.active a:hover,
+	&.active a:focus {
+		background-color: $backgroundColorHover;
+		color: $linkActiveColor;
+	}
+}
+
 @mixin borderOnHover(
 $touch: false,
 $top: 50%, 
@@ -207,9 +265,10 @@ $afterBgSize: cover ){
 			display: block;
 		}
 	}
-
 }
-/*-----  End of hover effects  ------*/
 
+
+
+	/*-----  End of hover effects  ------*/
 
 

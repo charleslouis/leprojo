@@ -3,6 +3,10 @@
   font-size: em-calc(18);
 }
 
+.entry-title{
+  font-family: $sansFontFamilyLight;
+}
+
 @media #{$small} {  
   p {
     font-size: 1.25em;

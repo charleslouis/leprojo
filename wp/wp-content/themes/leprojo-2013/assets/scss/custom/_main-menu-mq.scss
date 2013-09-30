@@ -43,7 +43,8 @@
 			font-size: (($medium-topbar-height/3)/2);
 			font-weight: normal;
 		}
-		@include topBottomBorderHover($grayLight, $white, 1px, $white, 0.3s, 10px );
+		// @include topBottomBorderHover($grayLight, $white, 1px, $white, 0.3s, 10px );
+		@include threePointSonHover();
 	}
 }
 
@@ -80,7 +81,7 @@
 
 @media #{$large} {
 	.main-menu{		
-		top: ($large-topbar-height/3);
+		top: ($large-topbar-height/3.5);
 	}
 	.menu-item-main-menu {
 		a{

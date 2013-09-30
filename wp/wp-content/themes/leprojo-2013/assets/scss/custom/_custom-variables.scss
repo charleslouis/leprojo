@@ -31,8 +31,8 @@ $white:                 #fff !default;
 
 // Accent colors
 // -------------------------
-$blue:                  #0B60B3 !default;
-$blueDark:              #115699 !default;
+$blue:                  #2980B9 !default;
+$blueDark:              #34495E !default;
 $green:                 lighten(#c7d352, 10%) !default;
 $red: 									#c91616;
 $orange:                #ca4f3b  !default;
@@ -47,7 +47,7 @@ $textColor:             $grayDark !default;
 
 /*==========  components  ==========*/
 
-$highlightColor: $orange;
+$highlightColor: $blue;
 
 // banner
 $banner-background-color: none;

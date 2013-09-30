@@ -1,22 +1,10 @@
 .container {
 	padding-top: $topbar-height; //we need a padding to account for the fixed header
 }
-.row .row, .main .row, .row .main, .main .main{
-	margin: 0;
-}
 
 .main{
 	padding: 0;
 	@extend .row;
-}
-
-.portrait{
-	width: 100%;
-	margin: 0;
-	margin-top: -($topbar-height);
-	img{
-		width: 100%;
-	}
 }
 
 .main-home{
@@ -80,10 +68,8 @@ aside.side-info {
 		&:nth-child(odd){
 			clear: none;
 		}
-		&:nth-child(3){
-			// clear: left;
-		}
 	}
+
 	.portrait{
 		margin-top: -($medium-topbar-height);
 	}
