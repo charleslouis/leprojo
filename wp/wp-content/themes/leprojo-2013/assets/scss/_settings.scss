@@ -139,7 +139,7 @@ $success-color: #5da423;
 // Grid Variables
 //
 
-$row-width: emCalc(1400);
+$row-width: 100%;
 // $column-gutter: emCalc(30);
 // $total-columns: 12;
 
@@ -1236,7 +1236,7 @@ $button-font-family: $sansFontFamily;
 
 // Background color for the top bar
 
-$topbar-bg: $black;
+$topbar-bg: rgba($black, 0.2);
 
 // Height and margin
 

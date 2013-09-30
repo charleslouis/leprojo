@@ -1,15 +1,23 @@
 .container {
 	padding-top: $topbar-height; //we need a padding to account for the fixed header
 }
+.row .row, .main .row, .row .main, .main .main{
+	margin: 0;
+}
 
 .main{
-	padding: 2em 0;
+	padding: 0;
 	@extend .row;
 }
 
-.main-home{
-	padding: 4em 0;
-}	
+.portrait{
+	width: 100%;
+	margin: 0;
+	margin-top: -($topbar-height);
+	img{
+		width: 100%;
+	}
+}
 
 .main-home{
 	// padding: 0;
@@ -66,12 +74,6 @@ aside.side-info {
 	.sidebar{
 		padding-top: $medium-topbar-height/3;
 	}
-	.main{
-		padding: 2em 0;
-	}
-	.main-home{
-		padding: 6em 0;
-	}
 	._1-4-columns{
 		width: 33.333%;
 		float: left;
@@ -80,7 +82,10 @@ aside.side-info {
 		}
 		&:nth-child(3){
 			// clear: left;
-		}		
+		}
+	}
+	.portrait{
+		margin-top: -($medium-topbar-height);
 	}
 }
 
@@ -96,10 +101,7 @@ aside.side-info {
 	.sidebar{
 		padding-top: $large-topbar-height/3;
 	}
-	.main{
-		padding: 4em 0 4em;
-	}
-	.main-home{
-		padding: 8em 0;
-	}
+	.portrait{
+		margin-top: -($large-topbar-height);
+	}	
 }

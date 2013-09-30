@@ -13,18 +13,14 @@ get_header(); ?>
 			'exclude'          => '',
 			'meta_key'         => '',
 			'meta_value'       => '',
-			'post_type'        => 'interview',
+			'post_type'        => 'interviews',
 			'post_mime_type'   => '',
 			'post_parent'      => '',
 			'post_status'      => 'publish',
 			'suppress_filters' => true ); ?>
-
-		<?php /* Start loop */ ?>
-		<?php while (have_posts()) : the_post(); ?>
-    <?php include(locate_template('templates/banners/banner-home.php')); ?>
-    <!--  Row for main content area -->
-    <div class="main main-home" role="main">
-        <?php include(locate_template('templates/intro/intro-page.php')); ?>
-	<?php endwhile; // End the loop ?>
+		<?php $myposts = get_posts( $args ); ?>
+		<?php  foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
+        <?php include(locate_template('templates/content/content-single.php')); ?>
+		<?php endforeach; ?>
 		
 <?php get_footer(); ?>

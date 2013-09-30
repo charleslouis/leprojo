@@ -50,7 +50,7 @@ $textColor:             $grayDark !default;
 $highlightColor: $orange;
 
 // banner
-$banner-background-color: $highlightColor;
+$banner-background-color: none;
 $banner-font-color: $grayLighter;
 
 // microformats
@@ -81,6 +81,6 @@ $plusCross: $plusCross-svg;
 $plusCross-fallback: url($image_folder + "components/plus-cross.png");
 
 /*==========  layout  ==========*/
-$topbar-height: 60px !default;
-$medium-topbar-height: 90px !default;
-$large-topbar-height: 120px !default;
+$topbar-height: 40px !default;
+$medium-topbar-height: 80px !default;
+$large-topbar-height: 100px !default;
