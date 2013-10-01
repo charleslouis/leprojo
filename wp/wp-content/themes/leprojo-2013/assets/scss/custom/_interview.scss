@@ -28,6 +28,8 @@
 }
 
 .img-itw{
+	@extend .column;
+	@extend .small-12;
 	img{
 		width: 100%;
 	}

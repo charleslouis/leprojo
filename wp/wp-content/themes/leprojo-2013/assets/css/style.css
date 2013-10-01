@@ -582,7 +582,7 @@ select {
   clear: both;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003131}}
-.row.collapse .column, .collapse.main .column, .collapse.main-content .column, .collapse.banner .column,
+.row.collapse .column, .collapse.main .column, .collapse.main-content .column, .collapse.banner .column, .row.collapse .img-itw, .collapse.main .img-itw, .collapse.main-content .img-itw, .collapse.banner .img-itw,
 .row.collapse .columns,
 .collapse.main .columns,
 .collapse.main-content .columns,
@@ -671,7 +671,7 @@ select {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003140}}
-.column,
+.column, .img-itw,
 .columns,
 ._1-4-columns,
 .page-intro,
@@ -748,7 +748,7 @@ select {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003146}}
-  .small-12, .location-info-wrapper, .entry-content {
+  .small-12, .location-info-wrapper, .entry-content, .img-itw {
     width: 100%;
   }
 
@@ -818,7 +818,7 @@ select {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003156}}
-  .column.small-centered,
+  .column.small-centered, .small-centered.img-itw,
   .columns.small-centered,
   .small-centered._1-4-columns,
   .small-centered.page-intro,
@@ -1090,7 +1090,7 @@ select {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003175}}
-  .column.medium-centered,
+  .column.medium-centered, .medium-centered.img-itw,
   .columns.medium-centered,
   .medium-centered._1-4-columns,
   .medium-centered.page-intro,
@@ -1109,7 +1109,7 @@ select {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003178}}
-  .column.medium-uncentered,
+  .column.medium-uncentered, .medium-uncentered.img-itw,
   .columns.medium-uncentered,
   .medium-uncentered._1-4-columns,
   .medium-uncentered.page-intro,
@@ -1381,7 +1381,7 @@ select {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003202}}
-  .column.large-centered,
+  .column.large-centered, .large-centered.img-itw,
   .columns.large-centered,
   .large-centered._1-4-columns,
   .large-centered.page-intro,
@@ -1400,7 +1400,7 @@ select {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003205}}
-  .column.large-uncentered,
+  .column.large-uncentered, .large-uncentered.img-itw,
   .columns.large-uncentered,
   .large-uncentered._1-4-columns,
   .large-uncentered.page-intro,
@@ -2985,7 +2985,7 @@ form .row .row, form .main .row, form .main-content .row, form .banner .row, for
   margin: 0 -0.5em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_forms\.scss}line{font-family:\0000369}}
-form .row .row .column, form .main .row .column, form .main-content .row .column, form .banner .row .column, form .row .main .column, form .main .main .column, form .main-content .main .column, form .banner .main .column, form .row .main-content .column, form .main .main-content .column, form .main-content .main-content .column, form .banner .main-content .column, form .row .banner .column, form .main .banner .column, form .main-content .banner .column, form .banner .banner .column,
+form .row .row .column, form .main .row .column, form .main-content .row .column, form .banner .row .column, form .row .main .column, form .main .main .column, form .main-content .main .column, form .banner .main .column, form .row .main-content .column, form .main .main-content .column, form .main-content .main-content .column, form .banner .main-content .column, form .row .banner .column, form .main .banner .column, form .main-content .banner .column, form .banner .banner .column, form .row .row .img-itw, form .main .row .img-itw, form .main-content .row .img-itw, form .banner .row .img-itw, form .row .main .img-itw, form .main .main .img-itw, form .main-content .main .img-itw, form .banner .main .img-itw, form .row .main-content .img-itw, form .main .main-content .img-itw, form .main-content .main-content .img-itw, form .banner .main-content .img-itw, form .row .banner .img-itw, form .main .banner .img-itw, form .main-content .banner .img-itw, form .banner .banner .img-itw,
 form .row .row .columns,
 form .main .row .columns,
 form .main-content .row .columns,
@@ -3185,7 +3185,7 @@ form .row .row.collapse, form .main .row.collapse, form .main-content .row.colla
   margin: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_forms\.scss}line{font-family:\0000375}}
-form .row .row.collapse .column, form .main .row.collapse .column, form .main-content .row.collapse .column, form .banner .row.collapse .column, form .row .collapse.main .column, form .main .collapse.main .column, form .main-content .collapse.main .column, form .banner .collapse.main .column, form .row .collapse.main-content .column, form .main .collapse.main-content .column, form .main-content .collapse.main-content .column, form .banner .collapse.main-content .column, form .row .collapse.banner .column, form .main .collapse.banner .column, form .main-content .collapse.banner .column, form .banner .collapse.banner .column,
+form .row .row.collapse .column, form .main .row.collapse .column, form .main-content .row.collapse .column, form .banner .row.collapse .column, form .row .collapse.main .column, form .main .collapse.main .column, form .main-content .collapse.main .column, form .banner .collapse.main .column, form .row .collapse.main-content .column, form .main .collapse.main-content .column, form .main-content .collapse.main-content .column, form .banner .collapse.main-content .column, form .row .collapse.banner .column, form .main .collapse.banner .column, form .main-content .collapse.banner .column, form .banner .collapse.banner .column, form .row .row.collapse .img-itw, form .main .row.collapse .img-itw, form .main-content .row.collapse .img-itw, form .banner .row.collapse .img-itw, form .row .collapse.main .img-itw, form .main .collapse.main .img-itw, form .main-content .collapse.main .img-itw, form .banner .collapse.main .img-itw, form .row .collapse.main-content .img-itw, form .main .collapse.main-content .img-itw, form .main-content .collapse.main-content .img-itw, form .banner .collapse.main-content .img-itw, form .row .collapse.banner .img-itw, form .main .collapse.banner .img-itw, form .main-content .collapse.banner .img-itw, form .banner .collapse.banner .img-itw,
 form .row .row.collapse .columns,
 form .main .row.collapse .columns,
 form .main-content .row.collapse .columns,
@@ -3381,7 +3381,7 @@ form .banner .collapse.banner .img-itw {
   padding: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_forms\.scss}line{font-family:\0000380}}
-form .row input.column, form .main input.column, form .main-content input.column, form .banner input.column,
+form .row input.column, form .main input.column, form .main-content input.column, form .banner input.column, form .row input.img-itw, form .main input.img-itw, form .main-content input.img-itw, form .banner input.img-itw,
 form .row input.columns,
 form .main input.columns,
 form .main-content input.columns,
@@ -3434,6 +3434,10 @@ form .row textarea.column,
 form .main textarea.column,
 form .main-content textarea.column,
 form .banner textarea.column,
+form .row textarea.img-itw,
+form .main textarea.img-itw,
+form .main-content textarea.img-itw,
+form .banner textarea.img-itw,
 form .row textarea.columns,
 form .main textarea.columns,
 form .main-content textarea.columns,
@@ -7597,11 +7601,11 @@ but it's slower:
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000333}}
 .img-itw img {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000336}}
 .img-itw figcaption {
   font-family: "Recta W01 Light", Helvetica Neue, Helvetica, Arial, sans-serif;
   text-align: center;
@@ -7615,59 +7619,59 @@ but it's slower:
 /*========================================
 =            INTERVIEW LAYOUT            =
 ========================================*/
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000375}}
 .block-itw-last {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000386}}
 .img-itw {
   margin: 2em 0;
 }
 
 /*-----  End of INTERVIEW LAYOUT  ------*/
 @media screen and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000397}}
   .nav-entry {
     position: fixed;
     top: 45%;
     width: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003101}}
   .nav-entry a {
     position: absolute;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003103}}
   .nav-entry a:nth-child(2) {
     right: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003108}}
   .entry-title {
     font-size: 3em;
     bottom: 5%;
   }
 }
 @media only screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003116}}
   .entry-title {
     font-size: 4em;
   }
 }
 @media only screen and (min-width: 58.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003121}}
   .entry-title {
     font-size: 6em;
   }
 }
 @media only screen and (min-width: 1280px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003126}}
   .entry-title {
     font-size: 8em;
   }
 }
 @media only screen and (min-width: 1440px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003131}}
   .entry-title {
     font-size: 10em;
   }
