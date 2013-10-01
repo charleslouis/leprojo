@@ -19,6 +19,7 @@
 // links
 a{
   @include transition(all 0.3s ease-in-out);
+  word-wrap: break-word;
 }
 
 .navlist a{
@@ -66,6 +67,9 @@ p,
 
 
 // lists
+ul{
+  word-wrap: break-word;
+}
 .contact-us-list,
 .navlist,
 .navlist ul,
@@ -150,14 +154,6 @@ i{
       color: $anchor-font-color-hover;
     }
   }
-
-  a{
-    // text-decoration: none;
-    // border-bottom: dotted 1px $anchor-font-color-hover;
-    // @include transition(all 0.3s ease-in-out);
-    // &:hover{
-    // }
-  }
 }
 
 .question{  
@@ -168,7 +164,8 @@ i{
 .date{
   @extend small;
   font-style: italic;
-  color: $gray;  
+  text-transform: capitalize; 
+  color: $gray;
 }
 
 
