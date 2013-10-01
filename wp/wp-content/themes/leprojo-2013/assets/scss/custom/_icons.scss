@@ -89,9 +89,11 @@ but it's slower:
 }
 .icon-twitter:before {
 	content: "\e00b";
+	margin-right: 0.4em;
 }
 .icon-facebook:before {
 	content: "\e00c";
+	margin-right: 0.3em;
 }
 .icon-soundcloud:before {
 	content: "\e00d";

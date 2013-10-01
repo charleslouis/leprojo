@@ -1,25 +1,7 @@
 <!-- get_ID_by_slug($page_slug) -->
 
 </div><!-- Container End -->
-<aside class="work-w-us-container">
-	<div class="row">
-		<div class="columns">
-		  <h2 class="work-w-us-title">Travaillons ensemble!</h2>
-		  <section class="work-w-us-prose">
-		    <p><span>Vous avez une petite idée, un grand projet ou un problème que nous pouvons vous aider à résoudre ? </span><span class="work-w-us-prose-invite"><a href="#">Contactez-nous</a>, nous serions ravis d'en discuter avec vous.</span></p>
-		  </section>
-		  
-		  <section class="contact-us work-w-us-contact">
-		    <ul class="contact-us-list contact-list-footer">
-		      <li class="contact-us-info phone icon-phone" aria-hidden="true">Appelez Charles-Louis au <a class="phone-link"href="tel:+33610265638">+33 (0)6 10 26 56 38</a></li>
-		      <li class="contact-us-info icon-mail" aria-hidden="true">Ecrivez-nous à <a href="mailto:info@lasourisetlepiano.com" class="email">info@lasourisetlepiano.com</a></li>
-		      <li class="contact-us-info icon-twitter" aria-hidden="true">Tweetez-nous <a rel="me" href="http://twitter.com/lasourisetlepiano">@lasourisetlepiano</a></li>
-		      <li class="contact-us-info icon-map" aria-hidden="true">Ou <a href="">rendez-nous visite</a></li>
-		    </ul>
-		  </section>
-		</div>
-	</div>
-</aside>
+
 
 <nav id="menu" class="main-menu" role="navigation">
 	<div class="row">
@@ -46,12 +28,20 @@
 <footer class="site-footer" role="contentinfo">
 	<div class="row">
 	  <div class="column">
-	    <small class="copy_and_credits">      
-	      <span class="credits">Réalisé avec <span class="icon-alone"><i aria-hidden="true" data-icon="&#xe003;"></i><span aria-hidden="true" data-icon="&#xe003;" class="screen-reader-text">amour</span></span> par <span class="organisation"><strong>La souris et le piano</strong></span> à <a href="/contactez-nous/"><span class="adress"><span class="ville">Paris</span>, <span class="pays">France</span></span></a>.</span>
-	      <span class="copy">&copy;<?php echo date("Y"); ?><span class="organisation"><strong>La souris et le piano</strong></span> et nos clients. Tous droits réservés.</span>
-	      <span class="legal"><a href="http://localhost/lasourisetlepiano/mentions-legales/">Mentions légales</a></span>
-	    </small>
+	    <p class="copy_and_credits">      
+	      <span class="credits">Réalisé avec <span class="icon-alone"><i aria-hidden="true" class="icon-heart-fill"></i><span aria-hidden="true" class="screen-reader-text">amour</span></span> par <span class="organisation"><strong>
+	      <a href="http://lasourisetlepino.com" target="_blank">La souris et le piano</a></strong></span></span></a>.</span>
+	      <span class="copy">&copy;<?php echo date("Y"); ?><span class="organisation"><strong> Le Projo - Arthur Allizard </strong></span>Tous droits réservés.</span>
+	      <span class="legal"><a href="<?php echo home_url(); ?>/mentions-legales/">Mentions légales</a></span>
+	    </p>
 	  </div>
+	  <section class="contact-us work-w-us-contact">
+	    <ul class="contact-us-list contact-list-footer">
+	      <li class="contact-us-info icon-mail" aria-hidden="true"><a href="mailto:info@leprojo.com" class="email">contact@leprojo.com</a></li>
+	      <li class="contact-us-contact icon-twitter" aria-hidden="true"><a rel="me" href="http://twitter.com/leprojo">@leprojo</a></li>
+	      <li class="contact-us-info icon-facebook" aria-hidden="true"><a rel="me" href="http://facebook.com/leprojo">@leprojo</a></li>
+	    </ul>
+	  </section>	  
 	</div>
 </footer>
 

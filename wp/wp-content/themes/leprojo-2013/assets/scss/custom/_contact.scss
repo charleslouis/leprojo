@@ -6,35 +6,6 @@
 	@extend .small-12;
 }
 
-.images-cloud-wrapper {
-	@extend .columns;
-	width: 100%;
-	float: left;
-	.row .columns{
-		padding: 0;
-	}
-	.row .grand-pic img{
-		margin-bottom: 0;
-	}
-	img{
-		min-width: 100%;
-		height: auto;
-		display: block;
-	}	
-}
-
-.full-pic{
-	width: 100%;
-	overflow: hidden;
-	img{
-		min-width: 100%;
-	}
-}
-
-.images-cloud{
-	@extend .clearfix;
-}
-
 @media screen and (min-width: 400px){
 	.location-info-wrapper{
 		width: auto;

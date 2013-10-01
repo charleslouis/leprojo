@@ -1,5 +1,6 @@
-/*==========  m-work-w-us-container  ==========*/
 
+
+/*==========  m-work-w-us-container  ==========*/
 .work-w-us-container{
 	background-color: $grayDarker;
 	color: $grayLighter;
@@ -31,19 +32,33 @@
 	padding-top: 0.4em;
 }
 .contact-us-list{
+	@extend .clearfix;
 	line-height: 2em;
-	margin-bottom: 0;
+	
 	li {
-		border-bottom: 1px solid $gray;
+		float: left;
+		margin-left: 1em;
+	
+		&:first-child{
+			margin-left: 0;
+		}
 	}
 }
 
-.contact-list-footer [class*="icon-"]:before {
+.contact-list-footer {
+	[class*="icon-"]:before {
 		margin-right: 0.5em;		
 		display: inline-block;
 		text-align: center;
 		width: 1em;
-}
+	}
+	.icon-twitter:before {
+		margin-right: 0.4em;
+	}
+	.icon-facebook:before {
+		margin-right: 0.1em;
+	}
+}	
 
 .no-touch .phone-link{
 	cursor: text;
@@ -61,9 +76,15 @@
 	color: $grayLight;
 	padding: 2em 0;
 	line-height: 1.25em;
+	font-size: 0.8em;
 	a{
 		color: $grayLight;
 	}
+}
+
+.copy_and_credits{
+	font-family: $sansFontFamilyLight;
+	// text-transform: uppercase;
 }
 
 .svg .credits [data-icon]:before {
