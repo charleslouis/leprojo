@@ -46,16 +46,28 @@
 /*========================================
 =            INTERVIEW LAYOUT            =
 ========================================*/
+.about-itw{
+	@extend .columns;
+	@extend .medium-4;
+	@extend .large-3;
+}
+
+.intro-itw{
+	@extend .columns;
+	@extend .medium-8;
+	@extend .large-9;
+}
+
 .block-itw-first{
 	@extend .columns;
+	@extend .medium-8;
 	@extend .large-6;
-	// @extend .medium-9;
-	// @extend .small-8;
 }
+
 .block-itw{
 	@extend .block-itw-first;
+	@extend .medium-offset-4;
 	@extend .large-offset-3;
-	// @extend .small-offset-0;
 }
 
 .block-itw-last{
@@ -65,8 +77,8 @@
 
 .cite-itw{
 	@extend .columns;
+	@extend .medium-8;
 	@extend .large-3;
-	// @extend .small-4;
 }
 
 .img-itw{
