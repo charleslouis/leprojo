@@ -17,8 +17,8 @@
 }
 
 .prev-next-link {
-	@extend a;
 	@extend .button;
+	@include transition(all 0.3s ease-in-out);
 	border: none;
 	font-family: $sansFontFamilyLight;
 	opacity: 0.5;

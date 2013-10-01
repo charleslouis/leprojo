@@ -6,10 +6,7 @@
         <div class="main-content-wrapper">
           <section class="main-content">
             <div class="entry-content">
-              <?php the_content(); ?>
-              <?php include(locate_template('templates/content/faux-content.php')); ?>
-              <?php include(locate_template('templates/content/faux-content.php')); ?>
-
+              <?php include(locate_template('templates/content/content-interview.php')); ?>
             </div>
             <footer>
               <!-- meta/credits/ -->

@@ -3,25 +3,6 @@
   font-size: em-calc(18);
 }
 
-.question{  
-  font-style: italic;
-  font-weight: bold;
-}
-
-.date{
-  @extend small;
-  font-style: italic;
-  color: $gray;  
-}
-
-.entry-title{
-  font-family: $sansFontFamilyLight;
-}
-
-.itw-title{
-  text-transform: uppercase;
-}
-
 @media #{$small} {  
   p {
     font-size: 1.25em;
@@ -44,15 +25,13 @@ a{
   text-decoration: none;
 }
 
-p {
-  a{
-    text-decoration: none;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    &:hover{
-      border-bottom-width: 0.2em;
-      border-color: $anchor-font-color-hover;
-    }
+a{
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  &:hover{
+    border-bottom-width: 0.2em;
+    border-color: $anchor-font-color-hover;
   }
 }
 
@@ -66,7 +45,8 @@ p {
 
 .touch {
   p a,
-  li a{
+  li a,
+  .about-links-ul {
     line-height: 2em; //enlarge link height to enable big finger targeting
   }
 }
@@ -138,6 +118,56 @@ i{
   font-size: 1em;
 }
 
-h1{
-  color: $orange;
+/*=======================================
+=            Interview Types            =
+=======================================*/
+
+.entry-title,
+.about-t {
+  font-family: $sansFontFamilyLight;
 }
+
+.about-t,
+.itw-t {
+  text-transform: uppercase;
+}
+
+.about-p{
+  font-size: 1em;
+}
+
+.about-links-ul{
+  list-style-position: inside;
+  list-style-type: square;
+  li {
+    color: $anchor-font-color;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover{
+      color: $anchor-font-color-hover;
+    }
+  }
+
+  a{
+    // text-decoration: none;
+    // border-bottom: dotted 1px $anchor-font-color-hover;
+    // @include transition(all 0.3s ease-in-out);
+    // &:hover{
+    // }
+  }
+}
+
+.question{  
+  font-style: italic;
+  font-weight: bold;
+}
+
+.date{
+  @extend small;
+  font-style: italic;
+  color: $gray;  
+}
+
+
+
+/*-----  End of Interview Types  ------*/

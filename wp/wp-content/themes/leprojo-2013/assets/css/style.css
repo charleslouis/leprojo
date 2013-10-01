@@ -94,7 +94,7 @@ body {
  * Remove the gray background color from active links in IE 10.
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/_normalize\.scss}line{font-family:\0000392}}
-a, .prev-next-link {
+a {
   background: transparent;
 }
 
@@ -102,7 +102,7 @@ a, .prev-next-link {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/_normalize\.scss}line{font-family:\00003100}}
-a:focus, .prev-next-link:focus {
+a:focus {
   outline: thin dotted;
 }
 
@@ -110,9 +110,8 @@ a:focus, .prev-next-link:focus {
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/_normalize\.scss}line{font-family:\00003108}}
-a:active, .prev-next-link:active,
-a:hover,
-.prev-next-link:hover {
+a:active,
+a:hover {
   outline: 0;
 }
 
@@ -466,12 +465,12 @@ body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003291}}
-a:hover, .prev-next-link:hover {
+a:hover {
   cursor: pointer;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003294}}
-a:focus, .prev-next-link:focus {
+a:focus {
   outline: none;
 }
 
@@ -2086,16 +2085,16 @@ td {
 
 /* Default Link Styles */
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003152}}
-a, .prev-next-link {
-  color: #2d2d2d;
+a {
+  color: #8e8ed1;
   line-height: inherit;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003157}}
-a:hover, .prev-next-link:hover, a:focus, .prev-next-link:focus {
-  color: #141414;
+a:hover, a:focus {
+  color: #39398d;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003160}}
-a img, .prev-next-link img {
+a img {
   border: none;
 }
 
@@ -2306,9 +2305,8 @@ blockquote cite:before {
   content: "\2014 \0020";
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003325}}
-blockquote cite a, blockquote cite .prev-next-link,
-blockquote cite a:visited,
-blockquote cite .prev-next-link:visited {
+blockquote cite a,
+blockquote cite a:visited {
   color: grey;
 }
 
@@ -2399,14 +2397,13 @@ blockquote p {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003392}}
-  a, .prev-next-link,
-  a:visited,
-  .prev-next-link:visited {
+  a,
+  a:visited {
     text-decoration: underline;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003394}}
-  a[href]:after, [href].prev-next-link:after {
+  a[href]:after {
     content: " (" attr(href) ")";
   }
 
@@ -2416,11 +2413,9 @@ blockquote p {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003399}}
-  .ir a:after, .ir .prev-next-link:after,
+  .ir a:after,
   a[href^="javascript:"]:after,
-  [href^="javascript:"].prev-next-link:after,
-  a[href^="#"]:after,
-  [href^="#"].prev-next-link:after {
+  a[href^="#"]:after {
     content: "";
   }
 
@@ -3451,7 +3446,7 @@ label.error {
   margin-left: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_button-groups\.scss}line{font-family:\0000350}}
-.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > .prev-next-link, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > .prev-next-link {
+.button-group.radius > *:first-child, .button-group.radius > *:first-child > a, .button-group.radius > *:first-child > button, .button-group.radius > *:first-child > .button, .button-group.radius > *:first-child > .prev-next-link {
   -moz-border-radius-bottomleft: 3px;
   -moz-border-radius-topleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -3460,7 +3455,7 @@ label.error {
   border-top-left-radius: 3px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_button-groups\.scss}line{font-family:\0000354}}
-.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > .prev-next-link, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > .prev-next-link {
+.button-group.radius > *:last-child, .button-group.radius > *:last-child > a, .button-group.radius > *:last-child > button, .button-group.radius > *:last-child > .button, .button-group.radius > *:last-child > .prev-next-link {
   -moz-border-radius-topright: 3px;
   -moz-border-radius-bottomright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -3469,7 +3464,7 @@ label.error {
   border-bottom-right-radius: 3px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_button-groups\.scss}line{font-family:\0000350}}
-.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > .prev-next-link, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > .prev-next-link {
+.button-group.round > *:first-child, .button-group.round > *:first-child > a, .button-group.round > *:first-child > button, .button-group.round > *:first-child > .button, .button-group.round > *:first-child > .prev-next-link {
   -moz-border-radius-bottomleft: 1000px;
   -moz-border-radius-topleft: 1000px;
   -webkit-border-bottom-left-radius: 1000px;
@@ -3478,7 +3473,7 @@ label.error {
   border-top-left-radius: 1000px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_button-groups\.scss}line{font-family:\0000354}}
-.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > .prev-next-link, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > .prev-next-link {
+.button-group.round > *:last-child, .button-group.round > *:last-child > a, .button-group.round > *:last-child > button, .button-group.round > *:last-child > .button, .button-group.round > *:last-child > .prev-next-link {
   -moz-border-radius-topright: 1000px;
   -moz-border-radius-bottomright: 1000px;
   -webkit-border-top-right-radius: 1000px;
@@ -3886,55 +3881,31 @@ label.error {
   margin-bottom: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003104}}
-[data-section=''] > section > [data-section-title] a, [data-section=''] > section > [data-section-title] .prev-next-link, [data-section=''] > section > .title a, [data-section=''] > section > .title .prev-next-link, [data-section=''] > .section > [data-section-title] a, [data-section=''] > .section > [data-section-title] .prev-next-link, [data-section=''] > .section > .title a, [data-section=''] > .section > .title .prev-next-link, [data-section=''] > [data-section-region] > [data-section-title] a, [data-section=''] > [data-section-region] > [data-section-title] .prev-next-link, [data-section=''] > [data-section-region] > .title a, [data-section=''] > [data-section-region] > .title .prev-next-link, [data-section='auto'] > section > [data-section-title] a, [data-section='auto'] > section > [data-section-title] .prev-next-link, [data-section='auto'] > section > .title a, [data-section='auto'] > section > .title .prev-next-link, [data-section='auto'] > .section > [data-section-title] a, [data-section='auto'] > .section > [data-section-title] .prev-next-link, [data-section='auto'] > .section > .title a, [data-section='auto'] > .section > .title .prev-next-link, [data-section='auto'] > [data-section-region] > [data-section-title] a, [data-section='auto'] > [data-section-region] > [data-section-title] .prev-next-link, [data-section='auto'] > [data-section-region] > .title a, [data-section='auto'] > [data-section-region] > .title .prev-next-link, .section-container.auto > section > [data-section-title] a, .section-container.auto > section > [data-section-title] .prev-next-link, .section-container.auto > section > .title a, .section-container.auto > section > .title .prev-next-link, .section-container.auto > .section > [data-section-title] a, .section-container.auto > .section > [data-section-title] .prev-next-link, .section-container.auto > .section > .title a, .section-container.auto > .section > .title .prev-next-link, .section-container.auto > [data-section-region] > [data-section-title] a, .section-container.auto > [data-section-region] > [data-section-title] .prev-next-link, .section-container.auto > [data-section-region] > .title a, .section-container.auto > [data-section-region] > .title .prev-next-link,
+[data-section=''] > section > [data-section-title] a, [data-section=''] > section > .title a, [data-section=''] > .section > [data-section-title] a, [data-section=''] > .section > .title a, [data-section=''] > [data-section-region] > [data-section-title] a, [data-section=''] > [data-section-region] > .title a, [data-section='auto'] > section > [data-section-title] a, [data-section='auto'] > section > .title a, [data-section='auto'] > .section > [data-section-title] a, [data-section='auto'] > .section > .title a, [data-section='auto'] > [data-section-region] > [data-section-title] a, [data-section='auto'] > [data-section-region] > .title a, .section-container.auto > section > [data-section-title] a, .section-container.auto > section > .title a, .section-container.auto > .section > [data-section-title] a, .section-container.auto > .section > .title a, .section-container.auto > [data-section-region] > [data-section-title] a, .section-container.auto > [data-section-region] > .title a,
 [data-section='vertical-tabs'] > section > [data-section-title] a,
-[data-section='vertical-tabs'] > section > [data-section-title] .prev-next-link,
 [data-section='vertical-tabs'] > section > .title a,
-[data-section='vertical-tabs'] > section > .title .prev-next-link,
 [data-section='vertical-tabs'] > .section > [data-section-title] a,
-[data-section='vertical-tabs'] > .section > [data-section-title] .prev-next-link,
 [data-section='vertical-tabs'] > .section > .title a,
-[data-section='vertical-tabs'] > .section > .title .prev-next-link,
 [data-section='vertical-tabs'] > [data-section-region] > [data-section-title] a,
-[data-section='vertical-tabs'] > [data-section-region] > [data-section-title] .prev-next-link,
-[data-section='vertical-tabs'] > [data-section-region] > .title a,
-[data-section='vertical-tabs'] > [data-section-region] > .title .prev-next-link, .section-container.vertical-tabs > section > [data-section-title] a, .section-container.vertical-tabs > section > [data-section-title] .prev-next-link, .section-container.vertical-tabs > section > .title a, .section-container.vertical-tabs > section > .title .prev-next-link, .section-container.vertical-tabs > .section > [data-section-title] a, .section-container.vertical-tabs > .section > [data-section-title] .prev-next-link, .section-container.vertical-tabs > .section > .title a, .section-container.vertical-tabs > .section > .title .prev-next-link, .section-container.vertical-tabs > [data-section-region] > [data-section-title] a, .section-container.vertical-tabs > [data-section-region] > [data-section-title] .prev-next-link, .section-container.vertical-tabs > [data-section-region] > .title a, .section-container.vertical-tabs > [data-section-region] > .title .prev-next-link,
+[data-section='vertical-tabs'] > [data-section-region] > .title a, .section-container.vertical-tabs > section > [data-section-title] a, .section-container.vertical-tabs > section > .title a, .section-container.vertical-tabs > .section > [data-section-title] a, .section-container.vertical-tabs > .section > .title a, .section-container.vertical-tabs > [data-section-region] > [data-section-title] a, .section-container.vertical-tabs > [data-section-region] > .title a,
 [data-section='vertical-nav'] > section > [data-section-title] a,
-[data-section='vertical-nav'] > section > [data-section-title] .prev-next-link,
 [data-section='vertical-nav'] > section > .title a,
-[data-section='vertical-nav'] > section > .title .prev-next-link,
 [data-section='vertical-nav'] > .section > [data-section-title] a,
-[data-section='vertical-nav'] > .section > [data-section-title] .prev-next-link,
 [data-section='vertical-nav'] > .section > .title a,
-[data-section='vertical-nav'] > .section > .title .prev-next-link,
 [data-section='vertical-nav'] > [data-section-region] > [data-section-title] a,
-[data-section='vertical-nav'] > [data-section-region] > [data-section-title] .prev-next-link,
-[data-section='vertical-nav'] > [data-section-region] > .title a,
-[data-section='vertical-nav'] > [data-section-region] > .title .prev-next-link, .section-container.vertical-nav > section > [data-section-title] a, .section-container.vertical-nav > section > [data-section-title] .prev-next-link, .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > section > .title .prev-next-link, .section-container.vertical-nav > .section > [data-section-title] a, .section-container.vertical-nav > .section > [data-section-title] .prev-next-link, .section-container.vertical-nav > .section > .title a, .section-container.vertical-nav > .section > .title .prev-next-link, .section-container.vertical-nav > [data-section-region] > [data-section-title] a, .section-container.vertical-nav > [data-section-region] > [data-section-title] .prev-next-link, .section-container.vertical-nav > [data-section-region] > .title a, .section-container.vertical-nav > [data-section-region] > .title .prev-next-link,
+[data-section='vertical-nav'] > [data-section-region] > .title a, .section-container.vertical-nav > section > [data-section-title] a, .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > .section > [data-section-title] a, .section-container.vertical-nav > .section > .title a, .section-container.vertical-nav > [data-section-region] > [data-section-title] a, .section-container.vertical-nav > [data-section-region] > .title a,
 [data-section='horizontal-nav'] > section > [data-section-title] a,
-[data-section='horizontal-nav'] > section > [data-section-title] .prev-next-link,
 [data-section='horizontal-nav'] > section > .title a,
-[data-section='horizontal-nav'] > section > .title .prev-next-link,
 [data-section='horizontal-nav'] > .section > [data-section-title] a,
-[data-section='horizontal-nav'] > .section > [data-section-title] .prev-next-link,
 [data-section='horizontal-nav'] > .section > .title a,
-[data-section='horizontal-nav'] > .section > .title .prev-next-link,
 [data-section='horizontal-nav'] > [data-section-region] > [data-section-title] a,
-[data-section='horizontal-nav'] > [data-section-region] > [data-section-title] .prev-next-link,
-[data-section='horizontal-nav'] > [data-section-region] > .title a,
-[data-section='horizontal-nav'] > [data-section-region] > .title .prev-next-link, .section-container.horizontal-nav > section > [data-section-title] a, .section-container.horizontal-nav > section > [data-section-title] .prev-next-link, .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > section > .title .prev-next-link, .section-container.horizontal-nav > .section > [data-section-title] a, .section-container.horizontal-nav > .section > [data-section-title] .prev-next-link, .section-container.horizontal-nav > .section > .title a, .section-container.horizontal-nav > .section > .title .prev-next-link, .section-container.horizontal-nav > [data-section-region] > [data-section-title] a, .section-container.horizontal-nav > [data-section-region] > [data-section-title] .prev-next-link, .section-container.horizontal-nav > [data-section-region] > .title a, .section-container.horizontal-nav > [data-section-region] > .title .prev-next-link,
+[data-section='horizontal-nav'] > [data-section-region] > .title a, .section-container.horizontal-nav > section > [data-section-title] a, .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > .section > [data-section-title] a, .section-container.horizontal-nav > .section > .title a, .section-container.horizontal-nav > [data-section-region] > [data-section-title] a, .section-container.horizontal-nav > [data-section-region] > .title a,
 [data-section='accordion'] > section > [data-section-title] a,
-[data-section='accordion'] > section > [data-section-title] .prev-next-link,
 [data-section='accordion'] > section > .title a,
-[data-section='accordion'] > section > .title .prev-next-link,
 [data-section='accordion'] > .section > [data-section-title] a,
-[data-section='accordion'] > .section > [data-section-title] .prev-next-link,
 [data-section='accordion'] > .section > .title a,
-[data-section='accordion'] > .section > .title .prev-next-link,
 [data-section='accordion'] > [data-section-region] > [data-section-title] a,
-[data-section='accordion'] > [data-section-region] > [data-section-title] .prev-next-link,
-[data-section='accordion'] > [data-section-region] > .title a,
-[data-section='accordion'] > [data-section-region] > .title .prev-next-link, .section-container.accordion > section > [data-section-title] a, .section-container.accordion > section > [data-section-title] .prev-next-link, .section-container.accordion > section > .title a, .section-container.accordion > section > .title .prev-next-link, .section-container.accordion > .section > [data-section-title] a, .section-container.accordion > .section > [data-section-title] .prev-next-link, .section-container.accordion > .section > .title a, .section-container.accordion > .section > .title .prev-next-link, .section-container.accordion > [data-section-region] > [data-section-title] a, .section-container.accordion > [data-section-region] > [data-section-title] .prev-next-link, .section-container.accordion > [data-section-region] > .title a, .section-container.accordion > [data-section-region] > .title .prev-next-link {
+[data-section='accordion'] > [data-section-region] > .title a, .section-container.accordion > section > [data-section-title] a, .section-container.accordion > section > .title a, .section-container.accordion > .section > [data-section-title] a, .section-container.accordion > .section > .title a, .section-container.accordion > [data-section-region] > [data-section-title] a, .section-container.accordion > [data-section-region] > .title a {
   width: 100%;
   display: inline-block;
   white-space: nowrap;
@@ -4063,23 +4034,15 @@ label.error {
   border: solid 1px #cccccc;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003211}}
-.section-container.auto > section > .title a, .section-container.auto > section > .title .prev-next-link, .section-container.auto > .section > .title a, .section-container.auto > .section > .title .prev-next-link,
+.section-container.auto > section > .title a, .section-container.auto > .section > .title a,
 .section-container.vertical-tabs > section > .title a,
-.section-container.vertical-tabs > section > .title .prev-next-link,
 .section-container.vertical-tabs > .section > .title a,
-.section-container.vertical-tabs > .section > .title .prev-next-link,
 .section-container.vertical-nav > section > .title a,
-.section-container.vertical-nav > section > .title .prev-next-link,
 .section-container.vertical-nav > .section > .title a,
-.section-container.vertical-nav > .section > .title .prev-next-link,
 .section-container.horizontal-nav > section > .title a,
-.section-container.horizontal-nav > section > .title .prev-next-link,
 .section-container.horizontal-nav > .section > .title a,
-.section-container.horizontal-nav > .section > .title .prev-next-link,
 .section-container.accordion > section > .title a,
-.section-container.accordion > section > .title .prev-next-link,
-.section-container.accordion > .section > .title a,
-.section-container.accordion > .section > .title .prev-next-link {
+.section-container.accordion > .section > .title a {
   padding: 0.9375em;
   color: #333333;
   font-size: 0.875em;
@@ -4160,23 +4123,15 @@ label.error {
   background: #d5d5d5;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003233}}
-.section-container.auto > section.active > .title a, .section-container.auto > section.active > .title .prev-next-link, .section-container.auto > .section.active > .title a, .section-container.auto > .section.active > .title .prev-next-link,
+.section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a,
 .section-container.vertical-tabs > section.active > .title a,
-.section-container.vertical-tabs > section.active > .title .prev-next-link,
 .section-container.vertical-tabs > .section.active > .title a,
-.section-container.vertical-tabs > .section.active > .title .prev-next-link,
 .section-container.vertical-nav > section.active > .title a,
-.section-container.vertical-nav > section.active > .title .prev-next-link,
 .section-container.vertical-nav > .section.active > .title a,
-.section-container.vertical-nav > .section.active > .title .prev-next-link,
 .section-container.horizontal-nav > section.active > .title a,
-.section-container.horizontal-nav > section.active > .title .prev-next-link,
 .section-container.horizontal-nav > .section.active > .title a,
-.section-container.horizontal-nav > .section.active > .title .prev-next-link,
 .section-container.accordion > section.active > .title a,
-.section-container.accordion > section.active > .title .prev-next-link,
-.section-container.accordion > .section.active > .title a,
-.section-container.accordion > .section.active > .title .prev-next-link {
+.section-container.accordion > .section.active > .title a {
   color: #333333;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003237}}
@@ -4220,7 +4175,7 @@ label.error {
   margin-bottom: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003104}}
-[data-section='tabs'] > section > [data-section-title] a, [data-section='tabs'] > section > [data-section-title] .prev-next-link, [data-section='tabs'] > section > .title a, [data-section='tabs'] > section > .title .prev-next-link, [data-section='tabs'] > .section > [data-section-title] a, [data-section='tabs'] > .section > [data-section-title] .prev-next-link, [data-section='tabs'] > .section > .title a, [data-section='tabs'] > .section > .title .prev-next-link, [data-section='tabs'] > [data-section-region] > [data-section-title] a, [data-section='tabs'] > [data-section-region] > [data-section-title] .prev-next-link, [data-section='tabs'] > [data-section-region] > .title a, [data-section='tabs'] > [data-section-region] > .title .prev-next-link, .section-container.tabs > section > [data-section-title] a, .section-container.tabs > section > [data-section-title] .prev-next-link, .section-container.tabs > section > .title a, .section-container.tabs > section > .title .prev-next-link, .section-container.tabs > .section > [data-section-title] a, .section-container.tabs > .section > [data-section-title] .prev-next-link, .section-container.tabs > .section > .title a, .section-container.tabs > .section > .title .prev-next-link, .section-container.tabs > [data-section-region] > [data-section-title] a, .section-container.tabs > [data-section-region] > [data-section-title] .prev-next-link, .section-container.tabs > [data-section-region] > .title a, .section-container.tabs > [data-section-region] > .title .prev-next-link {
+[data-section='tabs'] > section > [data-section-title] a, [data-section='tabs'] > section > .title a, [data-section='tabs'] > .section > [data-section-title] a, [data-section='tabs'] > .section > .title a, [data-section='tabs'] > [data-section-region] > [data-section-title] a, [data-section='tabs'] > [data-section-region] > .title a, .section-container.tabs > section > [data-section-title] a, .section-container.tabs > section > .title a, .section-container.tabs > .section > [data-section-title] a, .section-container.tabs > .section > .title a, .section-container.tabs > [data-section-region] > [data-section-title] a, .section-container.tabs > [data-section-region] > .title a {
   width: 100%;
   display: inline-block;
   white-space: nowrap;
@@ -4256,7 +4211,7 @@ label.error {
   border: solid 1px #cccccc;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003211}}
-.section-container.tabs > section > .title a, .section-container.tabs > section > .title .prev-next-link, .section-container.tabs > .section > .title a, .section-container.tabs > .section > .title .prev-next-link {
+.section-container.tabs > section > .title a, .section-container.tabs > .section > .title a {
   padding: 0.9375em;
   color: #333333;
   font-size: 0.875em;
@@ -4289,7 +4244,7 @@ label.error {
   background: white;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003233}}
-.section-container.tabs > section.active > .title a, .section-container.tabs > section.active > .title .prev-next-link, .section-container.tabs > .section.active > .title a, .section-container.tabs > .section.active > .title .prev-next-link {
+.section-container.tabs > section.active > .title a, .section-container.tabs > .section.active > .title a {
   color: #333333;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003237}}
@@ -4318,7 +4273,7 @@ label.error {
     margin-bottom: 0;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003104}}
-  [data-section=''] > section > [data-section-title] a, [data-section=''] > section > [data-section-title] .prev-next-link, [data-section=''] > section > .title a, [data-section=''] > section > .title .prev-next-link, [data-section=''] > .section > [data-section-title] a, [data-section=''] > .section > [data-section-title] .prev-next-link, [data-section=''] > .section > .title a, [data-section=''] > .section > .title .prev-next-link, [data-section=''] > [data-section-region] > [data-section-title] a, [data-section=''] > [data-section-region] > [data-section-title] .prev-next-link, [data-section=''] > [data-section-region] > .title a, [data-section=''] > [data-section-region] > .title .prev-next-link, [data-section='auto'] > section > [data-section-title] a, [data-section='auto'] > section > [data-section-title] .prev-next-link, [data-section='auto'] > section > .title a, [data-section='auto'] > section > .title .prev-next-link, [data-section='auto'] > .section > [data-section-title] a, [data-section='auto'] > .section > [data-section-title] .prev-next-link, [data-section='auto'] > .section > .title a, [data-section='auto'] > .section > .title .prev-next-link, [data-section='auto'] > [data-section-region] > [data-section-title] a, [data-section='auto'] > [data-section-region] > [data-section-title] .prev-next-link, [data-section='auto'] > [data-section-region] > .title a, [data-section='auto'] > [data-section-region] > .title .prev-next-link, .section-container.auto > section > [data-section-title] a, .section-container.auto > section > [data-section-title] .prev-next-link, .section-container.auto > section > .title a, .section-container.auto > section > .title .prev-next-link, .section-container.auto > .section > [data-section-title] a, .section-container.auto > .section > [data-section-title] .prev-next-link, .section-container.auto > .section > .title a, .section-container.auto > .section > .title .prev-next-link, .section-container.auto > [data-section-region] > [data-section-title] a, .section-container.auto > [data-section-region] > [data-section-title] .prev-next-link, .section-container.auto > [data-section-region] > .title a, .section-container.auto > [data-section-region] > .title .prev-next-link {
+  [data-section=''] > section > [data-section-title] a, [data-section=''] > section > .title a, [data-section=''] > .section > [data-section-title] a, [data-section=''] > .section > .title a, [data-section=''] > [data-section-region] > [data-section-title] a, [data-section=''] > [data-section-region] > .title a, [data-section='auto'] > section > [data-section-title] a, [data-section='auto'] > section > .title a, [data-section='auto'] > .section > [data-section-title] a, [data-section='auto'] > .section > .title a, [data-section='auto'] > [data-section-region] > [data-section-title] a, [data-section='auto'] > [data-section-region] > .title a, .section-container.auto > section > [data-section-title] a, .section-container.auto > section > .title a, .section-container.auto > .section > [data-section-title] a, .section-container.auto > .section > .title a, .section-container.auto > [data-section-region] > [data-section-title] a, .section-container.auto > [data-section-region] > .title a {
     width: 100%;
     display: inline-block;
     white-space: nowrap;
@@ -4354,7 +4309,7 @@ label.error {
     border: solid 1px #cccccc;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003211}}
-  .section-container.auto > section > .title a, .section-container.auto > section > .title .prev-next-link, .section-container.auto > .section > .title a, .section-container.auto > .section > .title .prev-next-link {
+  .section-container.auto > section > .title a, .section-container.auto > .section > .title a {
     padding: 0.9375em;
     color: #333333;
     font-size: 0.875em;
@@ -4387,7 +4342,7 @@ label.error {
     background: white;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003233}}
-  .section-container.auto > section.active > .title a, .section-container.auto > section.active > .title .prev-next-link, .section-container.auto > .section.active > .title a, .section-container.auto > .section.active > .title .prev-next-link {
+  .section-container.auto > section.active > .title a, .section-container.auto > .section.active > .title a {
     color: #333333;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003237}}
@@ -4428,7 +4383,7 @@ label.error {
     margin-bottom: 0;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003104}}
-  [data-section='vertical-tabs'] > section > [data-section-title] a, [data-section='vertical-tabs'] > section > [data-section-title] .prev-next-link, [data-section='vertical-tabs'] > section > .title a, [data-section='vertical-tabs'] > section > .title .prev-next-link, [data-section='vertical-tabs'] > .section > [data-section-title] a, [data-section='vertical-tabs'] > .section > [data-section-title] .prev-next-link, [data-section='vertical-tabs'] > .section > .title a, [data-section='vertical-tabs'] > .section > .title .prev-next-link, [data-section='vertical-tabs'] > [data-section-region] > [data-section-title] a, [data-section='vertical-tabs'] > [data-section-region] > [data-section-title] .prev-next-link, [data-section='vertical-tabs'] > [data-section-region] > .title a, [data-section='vertical-tabs'] > [data-section-region] > .title .prev-next-link, .section-container.vertical-tabs > section > [data-section-title] a, .section-container.vertical-tabs > section > [data-section-title] .prev-next-link, .section-container.vertical-tabs > section > .title a, .section-container.vertical-tabs > section > .title .prev-next-link, .section-container.vertical-tabs > .section > [data-section-title] a, .section-container.vertical-tabs > .section > [data-section-title] .prev-next-link, .section-container.vertical-tabs > .section > .title a, .section-container.vertical-tabs > .section > .title .prev-next-link, .section-container.vertical-tabs > [data-section-region] > [data-section-title] a, .section-container.vertical-tabs > [data-section-region] > [data-section-title] .prev-next-link, .section-container.vertical-tabs > [data-section-region] > .title a, .section-container.vertical-tabs > [data-section-region] > .title .prev-next-link {
+  [data-section='vertical-tabs'] > section > [data-section-title] a, [data-section='vertical-tabs'] > section > .title a, [data-section='vertical-tabs'] > .section > [data-section-title] a, [data-section='vertical-tabs'] > .section > .title a, [data-section='vertical-tabs'] > [data-section-region] > [data-section-title] a, [data-section='vertical-tabs'] > [data-section-region] > .title a, .section-container.vertical-tabs > section > [data-section-title] a, .section-container.vertical-tabs > section > .title a, .section-container.vertical-tabs > .section > [data-section-title] a, .section-container.vertical-tabs > .section > .title a, .section-container.vertical-tabs > [data-section-region] > [data-section-title] a, .section-container.vertical-tabs > [data-section-region] > .title a {
     width: 100%;
     display: inline-block;
     white-space: nowrap;
@@ -4472,7 +4427,7 @@ label.error {
     border: solid 1px #cccccc;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003211}}
-  .section-container.vertical-tabs > section > .title a, .section-container.vertical-tabs > section > .title .prev-next-link, .section-container.vertical-tabs > .section > .title a, .section-container.vertical-tabs > .section > .title .prev-next-link {
+  .section-container.vertical-tabs > section > .title a, .section-container.vertical-tabs > .section > .title a {
     padding: 0.9375em;
     color: #333333;
     font-size: 0.875em;
@@ -4505,7 +4460,7 @@ label.error {
     background: #d5d5d5;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003233}}
-  .section-container.vertical-tabs > section.active > .title a, .section-container.vertical-tabs > section.active > .title .prev-next-link, .section-container.vertical-tabs > .section.active > .title a, .section-container.vertical-tabs > .section.active > .title .prev-next-link {
+  .section-container.vertical-tabs > section.active > .title a, .section-container.vertical-tabs > .section.active > .title a {
     color: #333333;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003237}}
@@ -4555,7 +4510,7 @@ label.error {
     margin-bottom: 0;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003104}}
-  [data-section='vertical-nav'] > section > [data-section-title] a, [data-section='vertical-nav'] > section > [data-section-title] .prev-next-link, [data-section='vertical-nav'] > section > .title a, [data-section='vertical-nav'] > section > .title .prev-next-link, [data-section='vertical-nav'] > .section > [data-section-title] a, [data-section='vertical-nav'] > .section > [data-section-title] .prev-next-link, [data-section='vertical-nav'] > .section > .title a, [data-section='vertical-nav'] > .section > .title .prev-next-link, [data-section='vertical-nav'] > [data-section-region] > [data-section-title] a, [data-section='vertical-nav'] > [data-section-region] > [data-section-title] .prev-next-link, [data-section='vertical-nav'] > [data-section-region] > .title a, [data-section='vertical-nav'] > [data-section-region] > .title .prev-next-link, .section-container.vertical-nav > section > [data-section-title] a, .section-container.vertical-nav > section > [data-section-title] .prev-next-link, .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > section > .title .prev-next-link, .section-container.vertical-nav > .section > [data-section-title] a, .section-container.vertical-nav > .section > [data-section-title] .prev-next-link, .section-container.vertical-nav > .section > .title a, .section-container.vertical-nav > .section > .title .prev-next-link, .section-container.vertical-nav > [data-section-region] > [data-section-title] a, .section-container.vertical-nav > [data-section-region] > [data-section-title] .prev-next-link, .section-container.vertical-nav > [data-section-region] > .title a, .section-container.vertical-nav > [data-section-region] > .title .prev-next-link {
+  [data-section='vertical-nav'] > section > [data-section-title] a, [data-section='vertical-nav'] > section > .title a, [data-section='vertical-nav'] > .section > [data-section-title] a, [data-section='vertical-nav'] > .section > .title a, [data-section='vertical-nav'] > [data-section-region] > [data-section-title] a, [data-section='vertical-nav'] > [data-section-region] > .title a, .section-container.vertical-nav > section > [data-section-title] a, .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > .section > [data-section-title] a, .section-container.vertical-nav > .section > .title a, .section-container.vertical-nav > [data-section-region] > [data-section-title] a, .section-container.vertical-nav > [data-section-region] > .title a {
     width: 100%;
     display: inline-block;
     white-space: nowrap;
@@ -4578,7 +4533,7 @@ label.error {
     width: auto;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003168}}
-  [data-section='vertical-nav'] > section > [data-section-title] a, [data-section='vertical-nav'] > section > [data-section-title] .prev-next-link, [data-section='vertical-nav'] > section > .title a, [data-section='vertical-nav'] > section > .title .prev-next-link, [data-section='vertical-nav'] > .section > [data-section-title] a, [data-section='vertical-nav'] > .section > [data-section-title] .prev-next-link, [data-section='vertical-nav'] > .section > .title a, [data-section='vertical-nav'] > .section > .title .prev-next-link, [data-section='vertical-nav'] > [data-section-region] > [data-section-title] a, [data-section='vertical-nav'] > [data-section-region] > [data-section-title] .prev-next-link, [data-section='vertical-nav'] > [data-section-region] > .title a, [data-section='vertical-nav'] > [data-section-region] > .title .prev-next-link, .section-container.vertical-nav > section > [data-section-title] a, .section-container.vertical-nav > section > [data-section-title] .prev-next-link, .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > section > .title .prev-next-link, .section-container.vertical-nav > .section > [data-section-title] a, .section-container.vertical-nav > .section > [data-section-title] .prev-next-link, .section-container.vertical-nav > .section > .title a, .section-container.vertical-nav > .section > .title .prev-next-link, .section-container.vertical-nav > [data-section-region] > [data-section-title] a, .section-container.vertical-nav > [data-section-region] > [data-section-title] .prev-next-link, .section-container.vertical-nav > [data-section-region] > .title a, .section-container.vertical-nav > [data-section-region] > .title .prev-next-link {
+  [data-section='vertical-nav'] > section > [data-section-title] a, [data-section='vertical-nav'] > section > .title a, [data-section='vertical-nav'] > .section > [data-section-title] a, [data-section='vertical-nav'] > .section > .title a, [data-section='vertical-nav'] > [data-section-region] > [data-section-title] a, [data-section='vertical-nav'] > [data-section-region] > .title a, .section-container.vertical-nav > section > [data-section-title] a, .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > .section > [data-section-title] a, .section-container.vertical-nav > .section > .title a, .section-container.vertical-nav > [data-section-region] > [data-section-title] a, .section-container.vertical-nav > [data-section-region] > .title a {
     display: block;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003171}}
@@ -4601,7 +4556,7 @@ label.error {
     border: solid 1px #cccccc;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003211}}
-  .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > section > .title .prev-next-link, .section-container.vertical-nav > .section > .title a, .section-container.vertical-nav > .section > .title .prev-next-link {
+  .section-container.vertical-nav > section > .title a, .section-container.vertical-nav > .section > .title a {
     padding: 0.9375em;
     color: #333333;
     font-size: 0.875em;
@@ -4634,7 +4589,7 @@ label.error {
     background: #d5d5d5;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003233}}
-  .section-container.vertical-nav > section.active > .title a, .section-container.vertical-nav > section.active > .title .prev-next-link, .section-container.vertical-nav > .section.active > .title a, .section-container.vertical-nav > .section.active > .title .prev-next-link {
+  .section-container.vertical-nav > section.active > .title a, .section-container.vertical-nav > .section.active > .title a {
     color: #333333;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003237}}
@@ -4676,7 +4631,7 @@ label.error {
     margin-bottom: 0;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003104}}
-  [data-section='horizontal-nav'] > section > [data-section-title] a, [data-section='horizontal-nav'] > section > [data-section-title] .prev-next-link, [data-section='horizontal-nav'] > section > .title a, [data-section='horizontal-nav'] > section > .title .prev-next-link, [data-section='horizontal-nav'] > .section > [data-section-title] a, [data-section='horizontal-nav'] > .section > [data-section-title] .prev-next-link, [data-section='horizontal-nav'] > .section > .title a, [data-section='horizontal-nav'] > .section > .title .prev-next-link, [data-section='horizontal-nav'] > [data-section-region] > [data-section-title] a, [data-section='horizontal-nav'] > [data-section-region] > [data-section-title] .prev-next-link, [data-section='horizontal-nav'] > [data-section-region] > .title a, [data-section='horizontal-nav'] > [data-section-region] > .title .prev-next-link, .section-container.horizontal-nav > section > [data-section-title] a, .section-container.horizontal-nav > section > [data-section-title] .prev-next-link, .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > section > .title .prev-next-link, .section-container.horizontal-nav > .section > [data-section-title] a, .section-container.horizontal-nav > .section > [data-section-title] .prev-next-link, .section-container.horizontal-nav > .section > .title a, .section-container.horizontal-nav > .section > .title .prev-next-link, .section-container.horizontal-nav > [data-section-region] > [data-section-title] a, .section-container.horizontal-nav > [data-section-region] > [data-section-title] .prev-next-link, .section-container.horizontal-nav > [data-section-region] > .title a, .section-container.horizontal-nav > [data-section-region] > .title .prev-next-link {
+  [data-section='horizontal-nav'] > section > [data-section-title] a, [data-section='horizontal-nav'] > section > .title a, [data-section='horizontal-nav'] > .section > [data-section-title] a, [data-section='horizontal-nav'] > .section > .title a, [data-section='horizontal-nav'] > [data-section-region] > [data-section-title] a, [data-section='horizontal-nav'] > [data-section-region] > .title a, .section-container.horizontal-nav > section > [data-section-title] a, .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > .section > [data-section-title] a, .section-container.horizontal-nav > .section > .title a, .section-container.horizontal-nav > [data-section-region] > [data-section-title] a, .section-container.horizontal-nav > [data-section-region] > .title a {
     width: 100%;
     display: inline-block;
     white-space: nowrap;
@@ -4699,7 +4654,7 @@ label.error {
     width: auto;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003189}}
-  [data-section='horizontal-nav'] > section > [data-section-title] a, [data-section='horizontal-nav'] > section > [data-section-title] .prev-next-link, [data-section='horizontal-nav'] > section > .title a, [data-section='horizontal-nav'] > section > .title .prev-next-link, [data-section='horizontal-nav'] > .section > [data-section-title] a, [data-section='horizontal-nav'] > .section > [data-section-title] .prev-next-link, [data-section='horizontal-nav'] > .section > .title a, [data-section='horizontal-nav'] > .section > .title .prev-next-link, [data-section='horizontal-nav'] > [data-section-region] > [data-section-title] a, [data-section='horizontal-nav'] > [data-section-region] > [data-section-title] .prev-next-link, [data-section='horizontal-nav'] > [data-section-region] > .title a, [data-section='horizontal-nav'] > [data-section-region] > .title .prev-next-link, .section-container.horizontal-nav > section > [data-section-title] a, .section-container.horizontal-nav > section > [data-section-title] .prev-next-link, .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > section > .title .prev-next-link, .section-container.horizontal-nav > .section > [data-section-title] a, .section-container.horizontal-nav > .section > [data-section-title] .prev-next-link, .section-container.horizontal-nav > .section > .title a, .section-container.horizontal-nav > .section > .title .prev-next-link, .section-container.horizontal-nav > [data-section-region] > [data-section-title] a, .section-container.horizontal-nav > [data-section-region] > [data-section-title] .prev-next-link, .section-container.horizontal-nav > [data-section-region] > .title a, .section-container.horizontal-nav > [data-section-region] > .title .prev-next-link {
+  [data-section='horizontal-nav'] > section > [data-section-title] a, [data-section='horizontal-nav'] > section > .title a, [data-section='horizontal-nav'] > .section > [data-section-title] a, [data-section='horizontal-nav'] > .section > .title a, [data-section='horizontal-nav'] > [data-section-region] > [data-section-title] a, [data-section='horizontal-nav'] > [data-section-region] > .title a, .section-container.horizontal-nav > section > [data-section-title] a, .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > .section > [data-section-title] a, .section-container.horizontal-nav > .section > .title a, .section-container.horizontal-nav > [data-section-region] > [data-section-title] a, .section-container.horizontal-nav > [data-section-region] > .title a {
     display: block;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003192}}
@@ -4724,7 +4679,7 @@ label.error {
     border: solid 1px #cccccc;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003211}}
-  .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > section > .title .prev-next-link, .section-container.horizontal-nav > .section > .title a, .section-container.horizontal-nav > .section > .title .prev-next-link {
+  .section-container.horizontal-nav > section > .title a, .section-container.horizontal-nav > .section > .title a {
     padding: 0.9375em;
     color: #333333;
     font-size: 0.875em;
@@ -4757,7 +4712,7 @@ label.error {
     background: #d5d5d5;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003233}}
-  .section-container.horizontal-nav > section.active > .title a, .section-container.horizontal-nav > section.active > .title .prev-next-link, .section-container.horizontal-nav > .section.active > .title a, .section-container.horizontal-nav > .section.active > .title .prev-next-link {
+  .section-container.horizontal-nav > section.active > .title a, .section-container.horizontal-nav > .section.active > .title a {
     color: #333333;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003237}}
@@ -4794,7 +4749,7 @@ label.error {
   margin-bottom: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003104}}
-.no-js [data-section] > section > [data-section-title] a, .no-js [data-section] > section > [data-section-title] .prev-next-link, .no-js [data-section] > section > .title a, .no-js [data-section] > section > .title .prev-next-link, .no-js [data-section] > .section > [data-section-title] a, .no-js [data-section] > .section > [data-section-title] .prev-next-link, .no-js [data-section] > .section > .title a, .no-js [data-section] > .section > .title .prev-next-link, .no-js [data-section] > [data-section-region] > [data-section-title] a, .no-js [data-section] > [data-section-region] > [data-section-title] .prev-next-link, .no-js [data-section] > [data-section-region] > .title a, .no-js [data-section] > [data-section-region] > .title .prev-next-link, .no-js .section-container > section > [data-section-title] a, .no-js .section-container > section > [data-section-title] .prev-next-link, .no-js .section-container > section > .title a, .no-js .section-container > section > .title .prev-next-link, .no-js .section-container > .section > [data-section-title] a, .no-js .section-container > .section > [data-section-title] .prev-next-link, .no-js .section-container > .section > .title a, .no-js .section-container > .section > .title .prev-next-link, .no-js .section-container > [data-section-region] > [data-section-title] a, .no-js .section-container > [data-section-region] > [data-section-title] .prev-next-link, .no-js .section-container > [data-section-region] > .title a, .no-js .section-container > [data-section-region] > .title .prev-next-link {
+.no-js [data-section] > section > [data-section-title] a, .no-js [data-section] > section > .title a, .no-js [data-section] > .section > [data-section-title] a, .no-js [data-section] > .section > .title a, .no-js [data-section] > [data-section-region] > [data-section-title] a, .no-js [data-section] > [data-section-region] > .title a, .no-js .section-container > section > [data-section-title] a, .no-js .section-container > section > .title a, .no-js .section-container > .section > [data-section-title] a, .no-js .section-container > .section > .title a, .no-js .section-container > [data-section-region] > [data-section-title] a, .no-js .section-container > [data-section-region] > .title a {
   width: 100%;
   display: inline-block;
   white-space: nowrap;
@@ -4826,7 +4781,7 @@ label.error {
   border: solid 1px #cccccc;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003211}}
-.no-js .section-container > section > .title a, .no-js .section-container > section > .title .prev-next-link, .no-js .section-container > .section > .title a, .no-js .section-container > .section > .title .prev-next-link {
+.no-js .section-container > section > .title a, .no-js .section-container > .section > .title a {
   padding: 0.9375em;
   color: #333333;
   font-size: 0.875em;
@@ -4859,7 +4814,7 @@ label.error {
   background: #d5d5d5;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003233}}
-.no-js .section-container > section.active > .title a, .no-js .section-container > section.active > .title .prev-next-link, .no-js .section-container > .section.active > .title a, .no-js .section-container > .section.active > .title .prev-next-link {
+.no-js .section-container > section.active > .title a, .no-js .section-container > .section.active > .title a {
   color: #333333;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_section\.scss}line{font-family:\00003237}}
@@ -4945,7 +4900,7 @@ label.error {
   top: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003137}}
-.top-bar .toggle-topbar a, .top-bar .menu-access a, .top-bar .toggle-topbar .prev-next-link, .top-bar .menu-access .prev-next-link {
+.top-bar .toggle-topbar a, .top-bar .menu-access a {
   color: white;
   text-transform: uppercase;
   font-size: 0.8125em;
@@ -4964,7 +4919,7 @@ label.error {
   padding-left: 40px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003156}}
-.top-bar .toggle-topbar.menu-icon a, .top-bar .menu-icon.menu-access a, .top-bar .toggle-topbar.menu-icon .prev-next-link, .top-bar .menu-icon.menu-access .prev-next-link {
+.top-bar .toggle-topbar.menu-icon a, .top-bar .menu-icon.menu-access a {
   text-indent: -55px;
   width: 34px;
   height: 34px;
@@ -4974,7 +4929,7 @@ label.error {
   font-family: "Recta W01 Bold", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003165}}
-.top-bar .toggle-topbar.menu-icon a span, .top-bar .menu-icon.menu-access a span, .top-bar .toggle-topbar.menu-icon .prev-next-link span, .top-bar .menu-icon.menu-access .prev-next-link span {
+.top-bar .toggle-topbar.menu-icon a span, .top-bar .menu-icon.menu-access a span {
   position: absolute;
   right: 0;
   display: block;
@@ -4993,11 +4948,11 @@ label.error {
   background: rgba(45, 45, 45, 0.1);
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003193}}
-.top-bar.expanded .toggle-topbar a, .top-bar.expanded .menu-access a, .top-bar.expanded .toggle-topbar .prev-next-link, .top-bar.expanded .menu-access .prev-next-link {
+.top-bar.expanded .toggle-topbar a, .top-bar.expanded .menu-access a {
   color: #888888;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003194}}
-.top-bar.expanded .toggle-topbar a span, .top-bar.expanded .menu-access a span, .top-bar.expanded .toggle-topbar .prev-next-link span, .top-bar.expanded .menu-access .prev-next-link span {
+.top-bar.expanded .toggle-topbar a span, .top-bar.expanded .menu-access a span {
   -webkit-box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
   box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
 }
@@ -5030,7 +4985,7 @@ label.error {
   width: 100%;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003237}}
-.top-bar-section ul li > a, .top-bar-section ul li > .prev-next-link {
+.top-bar-section ul li > a {
   display: block;
   width: 100%;
   color: white;
@@ -5041,45 +4996,45 @@ label.error {
   background: #222222;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003247}}
-.top-bar-section ul li > a.button, .top-bar-section ul li > .prev-next-link {
+.top-bar-section ul li > a.button, .top-bar-section ul li > a.prev-next-link {
   background: #2d2d2d;
   font-size: 0.8125em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003250}}
-.top-bar-section ul li > a.button:hover, .top-bar-section ul li > .prev-next-link:hover {
+.top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.prev-next-link:hover {
   background: #141414;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003254}}
-.top-bar-section ul li > a.button.secondary, .top-bar-section ul li > .secondary.prev-next-link {
+.top-bar-section ul li > a.button.secondary, .top-bar-section ul li > a.secondary.prev-next-link {
   background: #4d4d4d;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003256}}
-.top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > .secondary.prev-next-link:hover {
+.top-bar-section ul li > a.button.secondary:hover, .top-bar-section ul li > a.secondary.prev-next-link:hover {
   background: #343434;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003260}}
-.top-bar-section ul li > a.button.success, .top-bar-section ul li > .success.prev-next-link {
+.top-bar-section ul li > a.button.success, .top-bar-section ul li > a.success.prev-next-link {
   background: #5da423;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003262}}
-.top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > .success.prev-next-link:hover {
+.top-bar-section ul li > a.button.success:hover, .top-bar-section ul li > a.success.prev-next-link:hover {
   background: #457a1a;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003266}}
-.top-bar-section ul li > a.button.alert, .top-bar-section ul li > .alert.prev-next-link {
+.top-bar-section ul li > a.button.alert, .top-bar-section ul li > a.alert.prev-next-link {
   background: #c60f13;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003268}}
-.top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > .alert.prev-next-link:hover {
+.top-bar-section ul li > a.button.alert:hover, .top-bar-section ul li > a.alert.prev-next-link:hover {
   background: #970b0e;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003276}}
-.top-bar-section ul li:hover > a, .top-bar-section ul li:hover > .prev-next-link {
+.top-bar-section ul li:hover > a {
   background: rgba(37, 37, 37, 0.1);
   color: white;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003282}}
-.top-bar-section ul li.active > a, .top-bar-section ul li.active > .prev-next-link {
+.top-bar-section ul li.active > a {
   background: rgba(37, 37, 37, 0.1);
   color: white;
 }
@@ -5092,7 +5047,7 @@ label.error {
   position: relative;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003296}}
-.top-bar-section .has-dropdown > a:after, .top-bar-section .has-dropdown > .prev-next-link:after {
+.top-bar-section .has-dropdown > a:after {
   content: "";
   display: block;
   width: 0;
@@ -5128,12 +5083,12 @@ label.error {
   height: auto;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003325}}
-.top-bar-section .dropdown li a, .top-bar-section .dropdown li .prev-next-link {
+.top-bar-section .dropdown li a {
   font-weight: normal;
   padding: 8px 13.33333px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003328}}
-.top-bar-section .dropdown li a.parent-link, .top-bar-section .dropdown li .parent-link.prev-next-link {
+.top-bar-section .dropdown li a.parent-link {
   font-weight: bold;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003333}}
@@ -5141,7 +5096,7 @@ label.error {
   margin-bottom: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003334}}
-.top-bar-section .dropdown li.title h5 a, .top-bar-section .dropdown li.title h5 .prev-next-link {
+.top-bar-section .dropdown li.title h5 a {
   color: white;
   line-height: 20px;
   display: block;
@@ -5236,21 +5191,21 @@ label.error {
     display: none;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003408}}
-  .top-bar-section li a:not(.button), .top-bar-section li .prev-next-link:not(.button) {
+  .top-bar-section li a:not(.button) {
     padding: 0 13.33333px;
     line-height: 40px;
     background: rgba(45, 45, 45, 0.1);
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003412}}
-  .top-bar-section li a:not(.button).hover, .top-bar-section li .prev-next-link:not(.button).hover, .top-bar-section li a:not(.button):hover, .top-bar-section li .prev-next-link:not(.button):hover {
+  .top-bar-section li a:not(.button).hover, .top-bar-section li a:not(.button):hover {
     background: black;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003417}}
-  .top-bar-section .has-dropdown > a, .top-bar-section .has-dropdown > .prev-next-link {
+  .top-bar-section .has-dropdown > a {
     padding-right: 33.33333px !important;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003420}}
-  .top-bar-section .has-dropdown > a:after, .top-bar-section .has-dropdown > .prev-next-link:after {
+  .top-bar-section .has-dropdown > a:after {
     content: "";
     display: block;
     width: 0;
@@ -5274,7 +5229,7 @@ label.error {
     visibility: visible;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003439}}
-  .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after, .top-bar-section .has-dropdown .dropdown li.has-dropdown > .prev-next-link:after {
+  .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
     border: none;
     content: "\00bb";
     margin-top: -16px;
@@ -5288,7 +5243,7 @@ label.error {
     min-width: 100%;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003457}}
-  .top-bar-section .dropdown li a, .top-bar-section .dropdown li .prev-next-link {
+  .top-bar-section .dropdown li a {
     color: white;
     line-height: 1;
     white-space: nowrap;
@@ -5332,12 +5287,12 @@ label.error {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003511}}
-  .no-js .top-bar-section ul li:hover > a, .no-js .top-bar-section ul li:hover > .prev-next-link {
+  .no-js .top-bar-section ul li:hover > a {
     background: rgba(37, 37, 37, 0.1);
     color: white;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_top-bar\.scss}line{font-family:\00003517}}
-  .no-js .top-bar-section ul li:active > a, .no-js .top-bar-section ul li:active > .prev-next-link {
+  .no-js .top-bar-section ul li:active > a {
     background: rgba(37, 37, 37, 0.1);
     color: white;
   }
@@ -5369,11 +5324,11 @@ label.error {
   text-transform: uppercase;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_breadcrumbs\.scss}line{font-family:\0000360}}
-.breadcrumbs > *:hover a, .breadcrumbs > *:hover .prev-next-link, .breadcrumbs > *:focus a, .breadcrumbs > *:focus .prev-next-link {
+.breadcrumbs > *:hover a, .breadcrumbs > *:focus a {
   text-decoration: underline;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_breadcrumbs\.scss}line{font-family:\0000362}}
-.breadcrumbs > * a, .breadcrumbs > * .prev-next-link,
+.breadcrumbs > * a,
 .breadcrumbs > * span {
   text-transform: uppercase;
   color: #2d2d2d;
@@ -5384,12 +5339,12 @@ label.error {
   color: #333333;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_breadcrumbs\.scss}line{font-family:\0000372}}
-.breadcrumbs > *.current a, .breadcrumbs > *.current .prev-next-link {
+.breadcrumbs > *.current a {
   cursor: default;
   color: #333333;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_breadcrumbs\.scss}line{font-family:\0000377}}
-.breadcrumbs > *.current:hover, .breadcrumbs > *.current:hover a, .breadcrumbs > *.current:hover .prev-next-link, .breadcrumbs > *.current:focus, .breadcrumbs > *.current:focus a, .breadcrumbs > *.current:focus .prev-next-link {
+.breadcrumbs > *.current:hover, .breadcrumbs > *.current:hover a, .breadcrumbs > *.current:focus, .breadcrumbs > *.current:focus a {
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_breadcrumbs\.scss}line{font-family:\0000382}}
@@ -5397,13 +5352,12 @@ label.error {
   color: #999999;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_breadcrumbs\.scss}line{font-family:\0000384}}
-.breadcrumbs > *.unavailable a, .breadcrumbs > *.unavailable .prev-next-link {
+.breadcrumbs > *.unavailable a {
   color: #999999;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_breadcrumbs\.scss}line{font-family:\0000386}}
-.breadcrumbs > *.unavailable:hover, .breadcrumbs > *.unavailable:hover a, .breadcrumbs > *.unavailable:hover .prev-next-link, .breadcrumbs > *.unavailable:focus,
-.breadcrumbs > *.unavailable a:focus,
-.breadcrumbs > *.unavailable .prev-next-link:focus {
+.breadcrumbs > *.unavailable:hover, .breadcrumbs > *.unavailable:hover a, .breadcrumbs > *.unavailable:focus,
+.breadcrumbs > *.unavailable a:focus {
   text-decoration: none;
   color: #999999;
   cursor: default;
@@ -5478,35 +5432,34 @@ ul.pagination li {
   margin-left: 0.3125em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_pagination\.scss}line{font-family:\0000393}}
-ul.pagination li a, ul.pagination li .prev-next-link {
+ul.pagination li a {
   display: block;
   padding: 0.0625em 0.4375em 0.0625em;
   color: #999999;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_pagination\.scss}line{font-family:\0000399}}
-ul.pagination li:hover a, ul.pagination li:hover .prev-next-link,
-ul.pagination li a:focus,
-ul.pagination li .prev-next-link:focus {
+ul.pagination li:hover a,
+ul.pagination li a:focus {
   background: #e6e6e6;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_pagination\.scss}line{font-family:\0000345}}
-ul.pagination li.unavailable a, ul.pagination li.unavailable .prev-next-link {
+ul.pagination li.unavailable a {
   cursor: default;
   color: #999999;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_pagination\.scss}line{font-family:\0000349}}
-ul.pagination li.unavailable:hover a, ul.pagination li.unavailable:hover .prev-next-link, ul.pagination li.unavailable a:focus, ul.pagination li.unavailable .prev-next-link:focus {
+ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
   background: transparent;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_pagination\.scss}line{font-family:\0000357}}
-ul.pagination li.current a, ul.pagination li.current .prev-next-link {
+ul.pagination li.current a {
   background: #2d2d2d;
   color: white;
   font-weight: bold;
   cursor: default;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_pagination\.scss}line{font-family:\0000363}}
-ul.pagination li.current a:hover, ul.pagination li.current .prev-next-link:hover, ul.pagination li.current a:focus, ul.pagination li.current .prev-next-link:focus {
+ul.pagination li.current a:hover, ul.pagination li.current a:focus {
   background: #2d2d2d;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_pagination\.scss}line{font-family:\00003110}}
@@ -5692,7 +5645,7 @@ ul.pagination li {
 .image-block-hover-and-touch {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003183}}
 .image-block-hover-and-touch::before, .image-block-hover-and-touch::after {
   position: absolute;
   z-index: 200;
@@ -5705,7 +5658,7 @@ ul.pagination li {
   border-radius: 0;
   content: '';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003197}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003198}}
 .image-block-hover-and-touch::after {
   width: 15%;
   height: 15%;
@@ -5716,17 +5669,17 @@ ul.pagination li {
   background-color: white;
   border: 1px solid #a0a0a0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003242}}
 .image-block-hover-and-touch::before, .image-block-hover-and-touch::after {
   opacity: 1;
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
   -moz-transform: translateX(-50%) translateY(-50%) scale(1);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003255}}
 .image-block-hover-and-touch::after {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003260}}
 .image-block-hover-and-touch::before {
   display: none;
 }
@@ -5735,7 +5688,7 @@ ul.pagination li {
 .no-touch .image-block-hover-and-touch {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003183}}
 .no-touch .image-block-hover-and-touch::before, .no-touch .image-block-hover-and-touch::after {
   position: absolute;
   z-index: 200;
@@ -5748,7 +5701,7 @@ ul.pagination li {
   border-radius: 0;
   content: '';
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003197}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003198}}
 .no-touch .image-block-hover-and-touch::after {
   width: 100%;
   height: 100%;
@@ -5759,7 +5712,7 @@ ul.pagination li {
   background-color: rgba(255, 255, 255, 0.6);
   border: 0 solid #a0a0a0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003210}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003211}}
 .no-touch .image-block-hover-and-touch::before, .no-touch .image-block-hover-and-touch::after {
   opacity: 0;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -5769,7 +5722,7 @@ ul.pagination li {
   -moz-transform: translateX(-50%) translateY(-50%) scale(0.2);
   transform: translateX(-50%) translateY(-50%) scale(0.2);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003221}}
 .no-touch .image-block-hover-and-touch::after {
   -webkit-transition: -webkit-transform 1s, opacity 1s;
   -moz-transition: -moz-transform 1s, opacity 1s;
@@ -5778,18 +5731,18 @@ ul.pagination li {
   -moz-transform: translateX(-50%) translateY(-50%) scale(0.5);
   transform: translateX(-50%) translateY(-50%) scale(0.5);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003232}}
 .no-touch .image-block-hover-and-touch:hover::before, .no-touch .image-block-hover-and-touch:hover::after, .no-touch .image-block-hover-and-touch:focus::before, .no-touch .image-block-hover-and-touch:focus::after {
   opacity: 1;
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
   -moz-transform: translateX(-50%) translateY(-50%) scale(1);
   transform: translateX(-50%) translateY(-50%) scale(1);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003255}}
 .no-touch .image-block-hover-and-touch::after {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003264}}
 .no-touch .image-block-hover-and-touch::before {
   display: block;
 }
@@ -5856,11 +5809,11 @@ aside.side-info {
     width: 100%;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_layout\.scss}line{font-family:\0000361}}
-  .nav-entry a, .nav-entry .prev-next-link {
+  .nav-entry a {
     position: absolute;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_layout\.scss}line{font-family:\0000363}}
-  .nav-entry a:nth-child(2), .nav-entry .prev-next-link:nth-child(2) {
+  .nav-entry a:nth-child(2) {
     right: 0;
   }
 }
@@ -5928,98 +5881,76 @@ aside.side-info {
   font-size: 1.125em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\000036}}
-.question {
-  font-style: italic;
-  font-weight: bold;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000311}}
-.date {
-  font-style: italic;
-  color: #a0a0a0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000317}}
-.entry-title {
-  font-family: "Recta W01 Light", Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000321}}
-.itw-title {
-  text-transform: uppercase;
-}
-
 @media only screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\000037}}
   p {
     font-size: 1.25em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000310}}
   .leader {
     font-size: 1.6875em;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000314}}
 .oldie .leader {
   max-width: 900px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000339}}
-a, .prev-next-link {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000320}}
+a {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000343}}
-.navlist a, .navlist .prev-next-link {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000324}}
+.navlist a {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000348}}
-p a, p .prev-next-link {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000328}}
+a {
   text-decoration: none;
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000352}}
-p a:hover, p .prev-next-link:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000332}}
+a:hover {
   border-bottom-width: 0.2em;
-  border-color: #141414;
+  border-color: #39398d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000359}}
-.contact-us-list a, .contact-us-list .prev-next-link,
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000338}}
+.contact-us-list a,
 .archive-link {
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000362}}
-.contact-us-list a:hover, .contact-us-list .prev-next-link:hover,
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000341}}
+.contact-us-list a:hover,
 .archive-link:hover {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000368}}
-.touch p a, .touch p .prev-next-link,
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000347}}
+.touch p a,
 .touch li a,
-.touch li .prev-next-link {
+.touch .about-links-ul {
   line-height: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000354}}
 .no-touch .tel {
   cursor: default;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000358}}
 .banner,
 .banner-title {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000366}}
 .contact-us-list,
 .navlist,
 .navlist ul,
@@ -6027,57 +5958,102 @@ p a:hover, p .prev-next-link:hover {
   list-style-type: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000394}}
-.contact-us-list a, .contact-us-list .prev-next-link,
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000374}}
+.contact-us-list a,
 .contact-us-list span {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000383}}
 .li-title {
   border-bottom: 0.075em solid #2980b9;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000387}}
 .li-el-title {
   padding-top: 1em;
   border-bottom: 1px solid #bababa;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000394}}
 .vcard {
   width: 100%;
   color: #a0a0a0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\0000399}}
 .contact_title {
   margin-bottom: 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003104}}
 i {
   font-style: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003111}}
 .caption-t,
 .caption-subt,
 .caption-meta {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003116}}
 .caption-meta {
   font-family: "Recta W01 Bold", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003141}}
-h1 {
-  color: #ca4f3b;
+/*=======================================
+=            Interview Types            =
+=======================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003125}}
+.entry-title,
+.about-t {
+  font-family: "Recta W01 Light", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003130}}
+.about-t,
+.itw-t {
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003135}}
+.about-p {
+  font-size: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003139}}
+.about-links-ul {
+  list-style-position: inside;
+  list-style-type: square;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003142}}
+.about-links-ul li {
+  color: #8e8ed1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003146}}
+.about-links-ul li:hover {
+  color: #39398d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003160}}
+.question {
+  font-style: italic;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003165}}
+.date {
+  font-style: italic;
+  color: #a0a0a0;
+}
+
+/*-----  End of Interview Types  ------*/
 @font-face {
   font-family: 'icons';
   src: url("../fonts/icons.eot");
@@ -6341,11 +6317,11 @@ but it's slower:
   margin-top: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_footer-default\.scss}line{font-family:\0000312}}
-.work-w-us-container a, .work-w-us-container .prev-next-link {
+.work-w-us-container a {
   color: #bababa;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_footer-default\.scss}line{font-family:\0000314}}
-.work-w-us-container a:hover, .work-w-us-container .prev-next-link:hover {
+.work-w-us-container a:hover {
   color: white;
 }
 
@@ -6403,7 +6379,7 @@ but it's slower:
   line-height: 1.25em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_footer-default\.scss}line{font-family:\0000364}}
-.site-footer a, .site-footer .prev-next-link {
+.site-footer a {
   color: #bababa;
 }
 
@@ -6515,12 +6491,12 @@ but it's slower:
   border-bottom: solid 1px #bababa;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-default\.scss}line{font-family:\0000321}}
-.menu-item-main-menu:last-child a, .menu-item-main-menu:last-child .prev-next-link {
+.menu-item-main-menu:last-child a {
   margin-bottom: 0;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-default\.scss}line{font-family:\0000327}}
-.menu-item-main-menu a, .menu-item-main-menu .prev-next-link,
+.menu-item-main-menu a,
 .navtoplink {
   display: block;
   padding: 1em 0.8em;
@@ -6540,18 +6516,18 @@ but it's slower:
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-default\.scss}line{font-family:\0000349}}
-.menu-item-main-menu a:hover, .menu-item-main-menu .prev-next-link:hover, .menu-item-main-menu a:focus, .menu-item-main-menu .prev-next-link:focus {
+.menu-item-main-menu a:hover, .menu-item-main-menu a:focus {
   background-color: #2980b9;
   color: white;
   border-left-color: #2980b9;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-default\.scss}line{font-family:\0000356}}
-.menu-item-main-menu.active a, .menu-item-main-menu.active .prev-next-link {
+.menu-item-main-menu.active a {
   color: #2980b9;
   border-left-color: #2980b9;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-default\.scss}line{font-family:\0000359}}
-.menu-item-main-menu.active a:hover, .menu-item-main-menu.active .prev-next-link:hover, .menu-item-main-menu.active a:focus, .menu-item-main-menu.active .prev-next-link:focus {
+.menu-item-main-menu.active a:hover, .menu-item-main-menu.active a:focus {
   background-color: rgba(41, 128, 185, 0.3);
   color: white;
 }
@@ -6659,14 +6635,13 @@ but it's slower:
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-mq\.scss}line{font-family:\0000330}}
   .menu-item-main-menu,
   .menu-item-main-menu:last-child,
-  .menu-item-main-menu a,
-  .menu-item-main-menu .prev-next-link {
+  .menu-item-main-menu a {
     border: none;
     float: left;
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-mq\.scss}line{font-family:\0000338}}
-  .menu-item-main-menu a, .menu-item-main-menu .prev-next-link {
+  .menu-item-main-menu a {
     position: relative;
     display: inline-block;
     padding: 6.66667px 0.5em;
@@ -6675,7 +6650,7 @@ but it's slower:
     font-weight: normal;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\0000385}}
-  .menu-item-main-menu a, .menu-item-main-menu .prev-next-link {
+  .menu-item-main-menu a {
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
     transition: color 0.3s;
@@ -6683,14 +6658,13 @@ but it's slower:
     background-color: transparent;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\0000394}}
-  .menu-item-main-menu.active a::before, .menu-item-main-menu.active .prev-next-link::before,
-  .menu-item-main-menu a::before,
-  .menu-item-main-menu .prev-next-link::before {
+  .menu-item-main-menu.active a::before,
+  .menu-item-main-menu a::before {
     position: absolute;
     top: 50%;
     left: 50%;
     color: transparent;
-    content: '•';
+    content: '\2022';
     text-shadow: 0 0 transparent;
     font-size: 1.2em;
     -webkit-transition: text-shadow 0.3s, color 0.3s;
@@ -6701,27 +6675,25 @@ but it's slower:
     transform: translateX(-50%);
     pointer-events: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003112}}
-  .menu-item-main-menu.active a, .menu-item-main-menu.active .prev-next-link {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003113}}
+  .menu-item-main-menu.active a {
     color: white;
     background-color: transparent;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003115}}
-  .menu-item-main-menu.active a::before, .menu-item-main-menu.active .prev-next-link::before {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003116}}
+  .menu-item-main-menu.active a::before {
     color: white;
     text-shadow: 10px 0 white, -10px 0 white;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003120}}
-  .menu-item-main-menu a:hover::before, .menu-item-main-menu .prev-next-link:hover::before,
-  .menu-item-main-menu a:focus::before,
-  .menu-item-main-menu .prev-next-link:focus::before, .menu-item-main-menu.active a:hover::before, .menu-item-main-menu.active .prev-next-link:hover::before, .menu-item-main-menu.active a:focus::before, .menu-item-main-menu.active .prev-next-link:focus::before {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003121}}
+  .menu-item-main-menu a:hover::before,
+  .menu-item-main-menu a:focus::before, .menu-item-main-menu.active a:hover::before, .menu-item-main-menu.active a:focus::before {
     color: white;
     text-shadow: 10px 0 white, -10px 0 white;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003128}}
-  .menu-item-main-menu a:hover, .menu-item-main-menu .prev-next-link:hover,
-  .menu-item-main-menu a:focus,
-  .menu-item-main-menu .prev-next-link:focus, .menu-item-main-menu.active a:hover, .menu-item-main-menu.active .prev-next-link:hover, .menu-item-main-menu.active a:focus, .menu-item-main-menu.active .prev-next-link:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003129}}
+  .menu-item-main-menu a:hover,
+  .menu-item-main-menu a:focus, .menu-item-main-menu.active a:hover, .menu-item-main-menu.active a:focus {
     background-color: transparent;
     color: white;
   }
@@ -6772,24 +6744,19 @@ but it's slower:
 .oldie .menu-item-main-menu,
 .oldie .menu-item-main-menu:last-child,
 .oldie .menu-item-main-menu a,
-.oldie .menu-item-main-menu .prev-next-link,
 .ie8 .menu-item-main-menu,
 .ie8 .menu-item-main-menu:last-child,
 .ie8 .menu-item-main-menu a,
-.ie8 .menu-item-main-menu .prev-next-link,
 .ie7 .menu-item-main-menu,
 .ie7 .menu-item-main-menu:last-child,
-.ie7 .menu-item-main-menu a,
-.ie7 .menu-item-main-menu .prev-next-link {
+.ie7 .menu-item-main-menu a {
   border: none;
   float: left;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-mq\.scss}line{font-family:\0000338}}
-.oldie .menu-item-main-menu a, .oldie .menu-item-main-menu .prev-next-link,
+.oldie .menu-item-main-menu a,
 .ie8 .menu-item-main-menu a,
-.ie8 .menu-item-main-menu .prev-next-link,
-.ie7 .menu-item-main-menu a,
-.ie7 .menu-item-main-menu .prev-next-link {
+.ie7 .menu-item-main-menu a {
   position: relative;
   display: inline-block;
   padding: 6.66667px 0.5em;
@@ -6798,11 +6765,9 @@ but it's slower:
   font-weight: normal;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\0000385}}
-.oldie .menu-item-main-menu a, .oldie .menu-item-main-menu .prev-next-link,
+.oldie .menu-item-main-menu a,
 .ie8 .menu-item-main-menu a,
-.ie8 .menu-item-main-menu .prev-next-link,
-.ie7 .menu-item-main-menu a,
-.ie7 .menu-item-main-menu .prev-next-link {
+.ie7 .menu-item-main-menu a {
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   transition: color 0.3s;
@@ -6810,22 +6775,17 @@ but it's slower:
   background-color: transparent;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\0000394}}
-.oldie .menu-item-main-menu.active a::before, .oldie .menu-item-main-menu.active .prev-next-link::before,
+.oldie .menu-item-main-menu.active a::before,
 .oldie .menu-item-main-menu a::before,
-.oldie .menu-item-main-menu .prev-next-link::before,
 .ie8 .menu-item-main-menu.active a::before,
-.ie8 .menu-item-main-menu.active .prev-next-link::before,
 .ie8 .menu-item-main-menu a::before,
-.ie8 .menu-item-main-menu .prev-next-link::before,
 .ie7 .menu-item-main-menu.active a::before,
-.ie7 .menu-item-main-menu.active .prev-next-link::before,
-.ie7 .menu-item-main-menu a::before,
-.ie7 .menu-item-main-menu .prev-next-link::before {
+.ie7 .menu-item-main-menu a::before {
   position: absolute;
   top: 50%;
   left: 50%;
   color: transparent;
-  content: '•';
+  content: '\2022';
   text-shadow: 0 0 transparent;
   font-size: 1.2em;
   -webkit-transition: text-shadow 0.3s, color 0.3s;
@@ -6836,67 +6796,45 @@ but it's slower:
   transform: translateX(-50%);
   pointer-events: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003112}}
-.oldie .menu-item-main-menu.active a, .oldie .menu-item-main-menu.active .prev-next-link,
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003113}}
+.oldie .menu-item-main-menu.active a,
 .ie8 .menu-item-main-menu.active a,
-.ie8 .menu-item-main-menu.active .prev-next-link,
-.ie7 .menu-item-main-menu.active a,
-.ie7 .menu-item-main-menu.active .prev-next-link {
+.ie7 .menu-item-main-menu.active a {
   color: white;
   background-color: transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003115}}
-.oldie .menu-item-main-menu.active a::before, .oldie .menu-item-main-menu.active .prev-next-link::before,
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003116}}
+.oldie .menu-item-main-menu.active a::before,
 .ie8 .menu-item-main-menu.active a::before,
-.ie8 .menu-item-main-menu.active .prev-next-link::before,
-.ie7 .menu-item-main-menu.active a::before,
-.ie7 .menu-item-main-menu.active .prev-next-link::before {
+.ie7 .menu-item-main-menu.active a::before {
   color: white;
   text-shadow: 10px 0 white, -10px 0 white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003120}}
-.oldie .menu-item-main-menu a:hover::before, .oldie .menu-item-main-menu .prev-next-link:hover::before,
-.oldie .menu-item-main-menu a:focus::before,
-.oldie .menu-item-main-menu .prev-next-link:focus::before, .oldie .menu-item-main-menu.active a:hover::before, .oldie .menu-item-main-menu.active .prev-next-link:hover::before, .oldie .menu-item-main-menu.active a:focus::before, .oldie .menu-item-main-menu.active .prev-next-link:focus::before,
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003121}}
+.oldie .menu-item-main-menu a:hover::before,
+.oldie .menu-item-main-menu a:focus::before, .oldie .menu-item-main-menu.active a:hover::before, .oldie .menu-item-main-menu.active a:focus::before,
 .ie8 .menu-item-main-menu a:hover::before,
-.ie8 .menu-item-main-menu .prev-next-link:hover::before,
 .ie8 .menu-item-main-menu a:focus::before,
-.ie8 .menu-item-main-menu .prev-next-link:focus::before,
 .ie8 .menu-item-main-menu.active a:hover::before,
-.ie8 .menu-item-main-menu.active .prev-next-link:hover::before,
 .ie8 .menu-item-main-menu.active a:focus::before,
-.ie8 .menu-item-main-menu.active .prev-next-link:focus::before,
 .ie7 .menu-item-main-menu a:hover::before,
-.ie7 .menu-item-main-menu .prev-next-link:hover::before,
 .ie7 .menu-item-main-menu a:focus::before,
-.ie7 .menu-item-main-menu .prev-next-link:focus::before,
 .ie7 .menu-item-main-menu.active a:hover::before,
-.ie7 .menu-item-main-menu.active .prev-next-link:hover::before,
-.ie7 .menu-item-main-menu.active a:focus::before,
-.ie7 .menu-item-main-menu.active .prev-next-link:focus::before {
+.ie7 .menu-item-main-menu.active a:focus::before {
   color: white;
   text-shadow: 10px 0 white, -10px 0 white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003128}}
-.oldie .menu-item-main-menu a:hover, .oldie .menu-item-main-menu .prev-next-link:hover,
-.oldie .menu-item-main-menu a:focus,
-.oldie .menu-item-main-menu .prev-next-link:focus, .oldie .menu-item-main-menu.active a:hover, .oldie .menu-item-main-menu.active .prev-next-link:hover, .oldie .menu-item-main-menu.active a:focus, .oldie .menu-item-main-menu.active .prev-next-link:focus,
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_effects-mixins\.scss}line{font-family:\00003129}}
+.oldie .menu-item-main-menu a:hover,
+.oldie .menu-item-main-menu a:focus, .oldie .menu-item-main-menu.active a:hover, .oldie .menu-item-main-menu.active a:focus,
 .ie8 .menu-item-main-menu a:hover,
-.ie8 .menu-item-main-menu .prev-next-link:hover,
 .ie8 .menu-item-main-menu a:focus,
-.ie8 .menu-item-main-menu .prev-next-link:focus,
 .ie8 .menu-item-main-menu.active a:hover,
-.ie8 .menu-item-main-menu.active .prev-next-link:hover,
 .ie8 .menu-item-main-menu.active a:focus,
-.ie8 .menu-item-main-menu.active .prev-next-link:focus,
 .ie7 .menu-item-main-menu a:hover,
-.ie7 .menu-item-main-menu .prev-next-link:hover,
 .ie7 .menu-item-main-menu a:focus,
-.ie7 .menu-item-main-menu .prev-next-link:focus,
 .ie7 .menu-item-main-menu.active a:hover,
-.ie7 .menu-item-main-menu.active .prev-next-link:hover,
-.ie7 .menu-item-main-menu.active a:focus,
-.ie7 .menu-item-main-menu.active .prev-next-link:focus {
+.ie7 .menu-item-main-menu.active a:focus {
   background-color: transparent;
   color: white;
 }
@@ -6907,31 +6845,21 @@ but it's slower:
   top: -8px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-mq\.scss}line{font-family:\0000369}}
-.oldie .menu-item-main-menu a, .oldie .menu-item-main-menu .prev-next-link,
+.oldie .menu-item-main-menu a,
 .ie8 .menu-item-main-menu a,
-.ie8 .menu-item-main-menu .prev-next-link,
-.ie7 .menu-item-main-menu a,
-.ie7 .menu-item-main-menu .prev-next-link {
+.ie7 .menu-item-main-menu a {
   line-height: 1em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-mq\.scss}line{font-family:\0000372}}
-.oldie .menu-item-main-menu.active a, .oldie .menu-item-main-menu.active .prev-next-link,
+.oldie .menu-item-main-menu.active a,
 .oldie .menu-item-main-menu a:hover,
-.oldie .menu-item-main-menu .prev-next-link:hover,
 .oldie .menu-item-main-menu a:focus,
-.oldie .menu-item-main-menu .prev-next-link:focus,
 .ie8 .menu-item-main-menu.active a,
-.ie8 .menu-item-main-menu.active .prev-next-link,
 .ie8 .menu-item-main-menu a:hover,
-.ie8 .menu-item-main-menu .prev-next-link:hover,
 .ie8 .menu-item-main-menu a:focus,
-.ie8 .menu-item-main-menu .prev-next-link:focus,
 .ie7 .menu-item-main-menu.active a,
-.ie7 .menu-item-main-menu.active .prev-next-link,
 .ie7 .menu-item-main-menu a:hover,
-.ie7 .menu-item-main-menu .prev-next-link:hover,
-.ie7 .menu-item-main-menu a:focus,
-.ie7 .menu-item-main-menu .prev-next-link:focus {
+.ie7 .menu-item-main-menu a:focus {
   border-bottom: solid 1px white;
 }
 
@@ -6943,7 +6871,7 @@ but it's slower:
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_main-menu-mq\.scss}line{font-family:\0000387}}
-  .menu-item-main-menu a, .menu-item-main-menu .prev-next-link {
+  .menu-item-main-menu a {
     font-size: 1.125em;
   }
 }
@@ -7146,6 +7074,9 @@ but it's slower:
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000319}}
 .prev-next-link {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: none;
   font-family: "Recta W01 Light", Helvetica Neue, Helvetica, Arial, sans-serif;
   opacity: 0.5;
@@ -7163,11 +7094,11 @@ but it's slower:
     width: 100%;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000335}}
-  .nav-entry a, .nav-entry .prev-next-link {
+  .nav-entry a {
     position: absolute;
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000337}}
-  .nav-entry a:nth-child(2), .nav-entry .prev-next-link:nth-child(2) {
+  .nav-entry a:nth-child(2) {
     right: 0;
   }
 
