@@ -8,7 +8,7 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 
-	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
+	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width" />
 
