@@ -82,7 +82,11 @@
         <?php if (get_sub_field('image')): ?>
         <?php $image = get_sub_field('image'); ?>
         <figure class="img-itw">
-          <img src="<?php echo $image[sizes]['portrait-small']; ?>" alt="<?php echo $image[alt]; ?>" data-interchange="[<?php echo $image[sizes]['portrait-large']; ?>, (large)]">
+          <img src="<?php echo $image[sizes]['portrait-small']; ?>" alt="<?php echo $image[alt]; ?>" data-interchange="
+          [<?php echo $image[sizes]['portrait-medium']; ?>, (small)], 
+          [<?php echo $image[sizes]['portrait-large']; ?>, (medium)],
+          [<?php echo $image[sizes]['portrait-medium-retina']; ?>, (large)],
+          [<?php echo $image[sizes]['portrait-large-retina']; ?>, (retina)]">
             <figcaption><?php echo $image[caption]; ?></figcaption>
         </figure>
         <?php endif;?>
