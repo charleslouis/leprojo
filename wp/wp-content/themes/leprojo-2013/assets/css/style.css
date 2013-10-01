@@ -6903,27 +6903,28 @@ but it's slower:
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\000031}}
 .banner {
   width: 100%;
+  padding-bottom: 5%;
   position: relative;
   display: block;
   background: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000310}}
 .main .banner {
   margin: -40px 0 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000314}}
 .portrait {
   width: 100%;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000317}}
 .portrait img {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000322}}
 .banner-content {
   width: 100%;
   position: relative;
@@ -6931,14 +6932,14 @@ but it's slower:
 }
 
 @media only screen and (min-width: 58.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000333}}
   .main .banner {
     margin-top: -100px;
     margin-top: -80px;
   }
 }
 @media only screen and (min-width: 1440px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000341}}
   .main .banner {
     margin-top: -100px;
   }

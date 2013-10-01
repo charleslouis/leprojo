@@ -1,6 +1,7 @@
 .banner{
 	@extend .row;
 	width: 100%;
+	padding-bottom: 5%;
 	position: relative;
 	display: block;
 	background: $banner-background-color;
