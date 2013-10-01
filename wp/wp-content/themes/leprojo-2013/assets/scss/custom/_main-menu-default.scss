@@ -48,17 +48,17 @@
 	a {
 		&:hover,
 		&:focus{
-			background-color: $highlightColor;
+			background-color: $menu-highlight-bg-Color;
 			color: $white;
-			border-left-color: $highlightColor;		
+			border-left-color: $menu-highlight-bg-Color;
 		}		
 	}
 	&.active a{
-		color: $highlightColor;
-		border-left-color: $highlightColor;
+		color: $menu-highlight-bg-Color;
+		border-left-color: $menu-highlight-bg-Color;
 		&:hover,
 		&:focus{
-			background-color: rgba($highlightColor, 0.3);
+			background-color: rgba($menu-highlight-bg-Color, 0.3);
 			color: $white;
 		}
 	}
@@ -87,9 +87,9 @@
 		margin-top: emCalc(-4);
 	}
 	&:hover {
-		color: $highlightColor;
+		color: $menu-highlight-bg-Color;
 		span:after {
-			@include css-triangle(emCalc(12), $highlightColor, bottom);
+			@include css-triangle(emCalc(12), $menu-highlight-bg-Color, bottom);
 			@include transition(all 0.3s ease-in-out);
 		}
 	}

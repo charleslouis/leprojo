@@ -80,7 +80,7 @@
 
 
 /* Effect 13: three circles */
-@mixin threePointSonHover($linkColor: $grayLighter, $backgroundColor: transparent, $backgroundColorHover: transparent, $backgroundColorActive: transparent, $linkActiveColor: $white, $textShadow: 10px, $timing: 0.3s, $top: 50%){
+@mixin threePointSonHover($linkColor: $grayLight, $backgroundColor: transparent, $backgroundColorHover: transparent, $backgroundColorActive: transparent, $linkActiveColor: $white, $textShadow: 10px, $timing: 0.3s, $top: 50%){
 
 	a {
 		-webkit-transition: color $timing;

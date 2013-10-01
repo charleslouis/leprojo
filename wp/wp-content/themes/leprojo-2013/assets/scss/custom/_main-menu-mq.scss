@@ -43,7 +43,6 @@
 			font-size: (($medium-topbar-height/3)/2);
 			font-weight: normal;
 		}
-		// @include topBottomBorderHover($grayLight, $white, 1px, $white, 0.3s, 10px );
 		@include threePointSonHover();
 	}
 }
@@ -55,6 +54,11 @@
 	@include push_menu_to_top();
 	.main-menu{
 		padding-right: 2em;
+	}
+	.menu-item-main-menu {
+		a{
+			font-size: 1em;
+		}
 	}
 }
 

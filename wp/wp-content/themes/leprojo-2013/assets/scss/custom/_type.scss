@@ -25,14 +25,17 @@ a{
   text-decoration: none;
 }
 
-a{
-  text-decoration: none;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  &:hover{
-    border-bottom-width: 0.2em;
-    border-color: $anchor-font-color-hover;
-  }
+p,
+.about-links-ul{
+  a{
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    &:hover{
+      border-bottom-width: 0.2em;
+      border-color: $anchor-font-color-hover;
+    }
+  }  
 }
 
 .contact-us-list a,

@@ -14,7 +14,7 @@
   background-image: $logo;
   background-repeat: no-repeat;
   background-size: 100%;
-  opacity: 0.4;
+  opacity: 0.5;
   &:hover{
     opacity: 1;    
   }
@@ -27,4 +27,12 @@
 
 .menu-access{
   @extend .toggle-topbar;
+  opacity:0.7;
+  &:hover{
+    opacity:1;
+  }
+  a,
+  a:hover{
+    border: none;    
+  }
 }
