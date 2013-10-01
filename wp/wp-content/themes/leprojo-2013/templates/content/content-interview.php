@@ -2,7 +2,7 @@
   <section id="content" class="content content-itw">
     <div class="row">
       
-      <section class="about large-3 columns">
+      <section class="about large-3 column">
         <h3 class="about-t">A propos de <br/><?php the_field('titre_about'); ?></h3>
         <p class="about-p"><?php the_field('paragraphe_about'); ?></p>
  
@@ -21,24 +21,29 @@
 
       <!-- introduction -->
       <?php if( get_field('introduction') ): ?>
-        <section class="intro large-9 columns">
+        <section class="intro large-9 column">
           <h3 class="itw-t">Introduction</h3>
           <p><?php the_field('introduction'); ?></p>
         </section>
       <?php endif; ?>
 
       <!-- interview -->
-    <?php if( get_field('block_interview') ): ?>
+      <?php if( get_field('block_interview') ): ?>
       
-        <header class="large-6 large-offset-3 columns">
+        <header class="block-itw-first">
           <h3 class="itw-t">Interview</h3>
-        </header>
-      
-      <?php  while( has_sub_field('block_interview') ) : ?>
+        </header>        
+        <?php $i = 1; ?>
+        <?php  while( has_sub_field('block_interview') ) : ?>
         
         <!-- question/réponse -->
-        <?php if(get_sub_field('la_question')): ?>        
-        <section class="large-6 large-offset-3 columns">
+        <?php if(get_sub_field('la_question')): ?>     
+          
+          <?php if ($i == 1): ?>
+            <section class="block-itw-first">
+          <?php else : ?>
+            <section class="block-itw">
+          <?php endif ?>   
           
           <p class="question">
             <span class="asker">[ <?php the_sub_field('asker'); ?> ]</span>
@@ -59,6 +64,7 @@
           ?>
 
         <?php
+          $i++;
           endwhile;
         endif;
         ?>
@@ -66,7 +72,7 @@
         <!-- fin de la question -->
 
         <?php if (get_sub_field('citation')): ?>
-        <aside class="large-3 columns">
+        <aside class="cite-itw">
           <blockquote>
             <p><?php the_sub_field('citation'); ?></p>
           </blockquote>
@@ -75,7 +81,7 @@
 
         <?php if (get_sub_field('image')): ?>
         <?php $image = get_sub_field('image'); ?>
-        <figure class="image-itw large-12 columns">
+        <figure class="img-itw">
           <img src="<?php echo $image[sizes]['portrait-small']; ?>" alt="<?php echo $image[alt]; ?>" data-interchange="[<?php echo $image[sizes]['portrait-large']; ?>, (large)]">
             <figcaption><?php echo $image[caption]; ?></figcaption>
         </figure>

@@ -27,10 +27,7 @@
 	}
 }
 
-.image-itw{
-	
-	margin-bottom: 2em;
-
+.img-itw{
 	img{
 		width: 100%;
 	}
@@ -44,6 +41,43 @@
 		border-bottom: 1px solid $gray;
 	}
 }
+
+
+/*========================================
+=            INTERVIEW LAYOUT            =
+========================================*/
+.block-itw-first{
+	@extend .columns;
+	@extend .large-6;
+	// @extend .medium-9;
+	// @extend .small-8;
+}
+.block-itw{
+	@extend .block-itw-first;
+	@extend .large-offset-3;
+	// @extend .small-offset-0;
+}
+
+.block-itw-last{
+	@extend .block-itw;
+	float: left;
+}
+
+.cite-itw{
+	@extend .columns;
+	@extend .large-3;
+	// @extend .small-4;
+}
+
+.img-itw{
+	@extend .columns;
+	@extend .large-12;
+	margin: 2em 0;
+}
+
+/*-----  End of INTERVIEW LAYOUT  ------*/
+
+
 
 @media screen and (min-width: 600px){
 	.nav-entry{
