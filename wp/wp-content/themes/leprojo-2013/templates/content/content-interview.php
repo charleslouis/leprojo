@@ -16,10 +16,9 @@
         </ul>
         <?php endif; ?>
 
-
-        <?php setlocale(LC_TIME, ''); ?>
-        <p class="date">Date de l'interview : <?php  echo strftime("%A %#d %B %Y", strtotime(get_field('date_itw'))); ?></p>
+        <p class="date">Date de l'interview : <?php  echo locale_date('date_itw'); ?></p>
       </section>
+      
       <div class="large-6 columns">
        <section class="intro">
         <h3 class="itw-t">Introduction</h3>
