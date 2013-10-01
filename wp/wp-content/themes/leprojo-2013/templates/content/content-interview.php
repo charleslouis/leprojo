@@ -18,82 +18,75 @@
 
         <p class="date">Date de l'interview : <?php  echo locale_date('date_itw'); ?></p>
       </section>
-      
-      <div class="large-6 columns">
-       <section class="intro">
-        <h3 class="itw-t">Introduction</h3>
-         <p>introduction Paragraphe</p>
+
+      <!-- introduction -->
+      <?php if( get_field('introduction') ): ?>
+        <section class="intro large-9 columns">
+          <h3 class="itw-t">Introduction</h3>
+          <p><?php the_field('introduction'); ?></p>
         </section>
+      <?php endif; ?>
 
-        <h3 class="itw-t">Interview</h3>
-
-        <p class="question"><span>[interlocuteur question]</span>Question</p>
-        <p><span>[interlocuteur réponse]</span>Réponse</p>
-        <p>[AUTRE interlocuteur réponse]Réponse</p>
-        <p>[pas d'interlocuteur précisé] Réponse</p>
-
-      </div><!-- /.large-6 large-offset-3 columns -->
-
-      <aside class="large-3 columns">
-        <blockquote class="pull">
-          <p>"citation”</p>
-        </blockquote>
-      </aside>
-
-    </div><!-- /.block -->
-
-    <div class="row">
+      <!-- interview -->
+    <?php if( get_field('block_interview') ): ?>
       
-      <div class="large-6 large-offset-3 columns">
-       
-        <p class="question"><span>[interlocuteur question]</span>Question</p>
-        <p><span>[interlocuteur réponse]</span>Réponse</p>
-        <p>Réponse</p>
-        <p>Réponse</p>
-
-      </div><!-- /.large-6 large-offset-3 columns -->
+        <header class="large-6 offset-3 columns">
+          <h3 class="itw-t">Interview</h3>
+        </header>
       
-      <div class="large-6 large-offset-3 columns">
-       
-        <p class="question"><span>[interlocuteur question]</span>Question</p>
-        <p><span>[interlocuteur réponse]</span>Réponse</p>
-        <p>Réponse</p>
-        <p>Réponse</p>
+      <?php  while( has_sub_field('block_interview') ) : ?>
+        
+        <!-- question/réponse -->
+        <?php if(get_sub_field('la_question')): ?>        
+        <section class="large-6 offset-3 columns">
+          
+        <p class="question">
+          <span class="asker">[ <?php the_sub_field('asker'); ?> ]</span>
+          <?php the_sub_field('la_question'); ?>
+        </p>
+      <?php endif; ?>
+      
+        <?php        
+        if( get_sub_field('reponse_pg') ):
+          while( has_sub_field('reponse_pg') ) :
+            if(get_sub_field('answerer')):
+              $answerer = '<p class="answer"><span>[ ' . get_sub_field('answerer') . ' ] </span>';
+              $answer = str_replace('<p>', $answerer, get_sub_field('texte_paragraphe_reponse') ); 
+            else :
+              $answer = str_replace('<p>', '<p class="answer">', get_sub_field('texte_paragraphe_reponse') ); 
+            endif;            
+              echo $answer;
+        ?>
 
-      </div><!-- /.large-6 large-offset-3 columns -->
+        <?php the_sub_field('image'); ?>
+        
+        <?php
+          endwhile;
+        endif;
+        ?>
+        </section>
+        <!-- fin de la question -->
 
-      <div class="large-6 large-offset-3 columns">
-       
-        <p class="question"><span>[interlocuteur question]</span>Question</p>
-        <p><span>[interlocuteur réponse]</span>Réponse</p>
-        <p>Réponse</p>
-        <p>Réponse</p>
+        <?php if (get_sub_field('citation')): ?>
+        <aside class="large-3 columns">
+          <blockquote class="pull">
+            <p><?php the_sub_field('citation'); ?></p>
+          </blockquote>
+        </aside>        
+        <?php endif;?>
 
-      </div><!-- /.large-6 large-offset-3 columns -->
-
-      <aside class="large-3">
-        <blockquote>
-          <p>"citation relou”</p>
-        </blockquote>
-      </aside>
-
-    </div><!-- /.block -->
-
-
-    <div class="row screenshot">
-      <div class="columns large-12">
-        <figure>
-          <img src="http://lorempixel.com/1400/400" alt="" class="screenshot of new Microsoft.com homepage">
-          <figcaption>légende</figcaption>
+        <?php if (get_sub_field('image')): ?>
+        <?php $image = get_sub_field('image'); ?>
+        <figure class="image-itw large-12 columns">
+          <img src="<?php echo $image[sizes]['portrait-small']; ?>" alt="<?php echo $image[alt]; ?>" data-interchange="[<?php echo $image[sizes][portrait-large]; ?>, (large))]">
+            <figcaption><?php echo $image[alt]; ?></figcaption>
         </figure>
-      </div><!-- /.col12 -->
+        <?php endif;?>
+      <?php endwhile; ?>
+        
 
-      <aside class="columns large-3">
-        <figure>
-          <img src="http://lorempixel.com/400/400" alt="fictitious advertisement for New Adventures Conference newspaper">
-          <figcaption>légende</figcaption>
-        </figure>
-      </aside>
-    </div><!-- /.block -->
+    <?php endif; ?>
+    
+    </div>
   </section>    
 </div>

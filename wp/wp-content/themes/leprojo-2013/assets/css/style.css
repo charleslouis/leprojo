@@ -6056,6 +6056,12 @@ i {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003164}}
+.asker {
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_type\.scss}line{font-family:\00003169}}
 .date {
   font-style: italic;
   text-transform: capitalize;
