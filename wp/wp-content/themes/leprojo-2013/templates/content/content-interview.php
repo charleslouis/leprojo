@@ -21,10 +21,6 @@
         <p class="date">Date de l'interview : <?php  echo strftime("%A %#d %B %Y", strtotime(get_field('date_itw'))); ?></p>
       </section>
       <div class="large-6 columns">
-        <p>
-       <a href="">cool</a>          
-        </p>
-       <a href="">cool</a>
        <section class="intro">
         <h3 class="itw-t">Introduction</h3>
          <p>introduction Paragraphe</p>
