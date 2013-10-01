@@ -5,11 +5,18 @@
       <section class="about large-3 columns">
         <h3 class="about-t">A propos de <br/><?php the_field('titre_about'); ?></h3>
         <p class="about-p"><?php the_field('paragraphe_about'); ?></p>
+ 
+        <?php if( get_field('contacts') ): ?>
         <ul class="about-links-ul">
-          <li class="website"><a href="coolcom">paravelinc.com</a></li>
-          <li class="website"><a href="cool.com">trentwalton.com</a></li>
-          <li class="twitter"><a href="cool/TrentWalton">@TrentWalton</a></li>
+          <?php while( has_sub_field('contacts') ) : ?>
+            <li class="<?php the_sub_field('info_type_contact'); ?>">
+              <a href="<?php the_sub_field('contact_link'); ?>"><?php the_sub_field('texte_lien_de_contact'); ?></a>
+            </li>
+          <?php endwhile; ?>
         </ul>
+        <?php endif; ?>
+
+
         <?php setlocale(LC_TIME, ''); ?>
         <p class="date">Date de l'interview : <?php  echo strftime("%A %#d %B %Y", strtotime(get_field('date_itw'))); ?></p>
       </section>
