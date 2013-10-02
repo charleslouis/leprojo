@@ -2306,6 +2306,7 @@ h3,
 h4,
 h5,
 h6,
+.portrait figcaption,
 pre,
 form,
 p,
@@ -2351,7 +2352,7 @@ p aside {
 
 /* Default header styles */
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003182}}
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .portrait figcaption {
   font-family: "Recta W01 Bold", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -2362,7 +2363,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2125em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003192}}
-h1 small, h1 .date, h2 small, h2 .date, h3 small, h3 .date, h4 small, h4 .date, h5 small, h5 .date, h6 small, h6 .date {
+h1 small, h1 .date, h2 small, h2 .date, h3 small, h3 .date, h4 small, h4 .date, h5 small, h5 .date, h6 small, .portrait figcaption small, h6 .date, .portrait figcaption .date {
   font-size: 90%;
   color: #9a9a9a;
   line-height: 0;
@@ -2394,7 +2395,7 @@ h5 {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003204}}
-h6 {
+h6, .portrait figcaption {
   font-size: 1em;
 }
 
@@ -2585,7 +2586,7 @@ blockquote p {
 
 @media only screen and (min-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_type\.scss}line{font-family:\00003368}}
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, .portrait figcaption {
     line-height: 1.4;
   }
 
@@ -5976,16 +5977,16 @@ ul.pagination li {
   margin-bottom: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000350}}
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel .portrait figcaption, .portrait .panel figcaption, .panel p {
   color: #333333;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000354}}
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel .portrait figcaption, .portrait .panel figcaption {
   line-height: 1;
   margin-bottom: 0.625em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000356}}
-.panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
+.panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader, .panel .portrait figcaption.subheader, .portrait .panel figcaption.subheader {
   line-height: 1.4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000368}}
@@ -6008,16 +6009,16 @@ ul.pagination li {
   margin-bottom: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000351}}
-.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p {
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout .portrait figcaption, .portrait .panel.callout figcaption, .panel.callout p {
   color: white;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000354}}
-.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout .portrait figcaption, .portrait .panel.callout figcaption {
   line-height: 1;
   margin-bottom: 0.625em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000356}}
-.panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
+.panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader, .panel.callout .portrait figcaption.subheader, .portrait .panel.callout figcaption.subheader {
   line-height: 1.4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000373}}
@@ -6045,16 +6046,16 @@ ul.pagination li {
   margin-bottom: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000350}}
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel .portrait figcaption, .portrait .panel figcaption, .panel p {
   color: #333333;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000354}}
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
+.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel .portrait figcaption, .portrait .panel figcaption {
   line-height: 1;
   margin-bottom: 0.625em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000356}}
-.panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
+.panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader, .panel .portrait figcaption.subheader, .portrait .panel figcaption.subheader {
   line-height: 1.4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000368}}
@@ -6077,16 +6078,16 @@ ul.pagination li {
   margin-bottom: 0;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000351}}
-.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p {
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout .portrait figcaption, .portrait .panel.callout figcaption, .panel.callout p {
   color: white;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000354}}
-.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
+.panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout .portrait figcaption, .portrait .panel.callout figcaption {
   line-height: 1;
   margin-bottom: 0.625em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000356}}
-.panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
+.panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader, .panel.callout .portrait figcaption.subheader, .portrait .panel.callout figcaption.subheader {
   line-height: 1.4;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_panels\.scss}line{font-family:\0000373}}
@@ -7524,8 +7525,14 @@ but it's slower:
 .portrait img {
   width: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000320}}
+.portrait figcaption {
+  text-align: right;
+  text-transform: uppercase;
+  padding: 0 0.5em;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000328}}
 .banner-content {
   width: 100%;
   position: relative;
@@ -7533,14 +7540,14 @@ but it's slower:
 }
 
 @media only screen and (min-width: 58.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000339}}
   .main .banner {
     margin-top: -100px;
     margin-top: -80px;
   }
 }
 @media only screen and (min-width: 1440px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_banner\.scss}line{font-family:\0000347}}
   .main .banner {
     margin-top: -100px;
   }

@@ -7,7 +7,8 @@
           [<?php echo $photo[sizes]['portrait-small-retina']; ?>, (small)], 
           [<?php echo $photo[sizes]['portrait-medium']; ?>, (medium)],
           [<?php echo $photo[sizes]['portrait-large']; ?>, (large)],
-          [<?php echo $photo[sizes]['portrait-large-retina']; ?>, (retina)]">          
+          [<?php echo $photo[sizes]['portrait-large-retina']; ?>, (retina)]">
+          <figcaption><?php the_field('credits_photo'); ?></figcaption>      
         </figure>
         <h1 class="entry-title" style="text-align: <?php the_field('alignement_du_titre'); ?>;"><?php the_title(); ?></h1>
     </header><!-- banner -->

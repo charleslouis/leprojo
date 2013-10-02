@@ -17,6 +17,12 @@
 	img{
 		width: 100%;
 	}
+	figcaption{
+		text-align: right;
+		@extend h6;
+		text-transform: uppercase;
+		padding: 0 0.5em;
+	}
 }
 
 .banner-content{
