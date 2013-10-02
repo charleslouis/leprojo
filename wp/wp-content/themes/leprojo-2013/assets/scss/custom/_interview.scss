@@ -92,6 +92,12 @@
 
 /*-----  End of INTERVIEW LAYOUT  ------*/
 
+.socialize{
+	@extend .clearfix;
+	margin-bottom: 0;
+	background-color: $grayLighter;
+	padding: 1.25em;
+}
 
 
 @media screen and (min-width: 600px){
