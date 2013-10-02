@@ -32,6 +32,5 @@
 	  		<?php echo get_the_title($newer_post_id); ?>
 	  	</a>
 		<?php endif ?>
-
 	</div>
 <?php endif; ?>
