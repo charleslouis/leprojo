@@ -80,7 +80,7 @@
 
 
 /* Effect 13: three circles */
-@mixin threePointSonHover($linkColor: $grayLight, $backgroundColor: transparent, $backgroundColorHover: transparent, $backgroundColorActive: transparent, $linkActiveColor: $white, $textShadow: 10px, $timing: 0.3s, $top: 50%){
+@mixin threePointSonHover($linkColor: $grayLight, $backgroundColor: transparent, $backgroundColorHover: transparent, $backgroundColorActive: transparent, $linkActiveColor: $white, $textShadowDistance: 10px, $timing: 0.3s, $top: 50%){
 
 	a {
 		-webkit-transition: color $timing;
@@ -90,14 +90,12 @@
 		background-color: $backgroundColor;
 	}
 
-
 	&.active a::before,
 	a::before {
 		position: absolute;
 		top: $top;
 		left: 50%;
 		color: transparent;
-		// content: '•';
 		content: '\2022';
 		text-shadow: 0 0 transparent;
 		font-size: 1.2em;
@@ -115,23 +113,21 @@
 		background-color: $backgroundColorActive;
 		&::before{
 			color: $linkActiveColor;			
-			text-shadow: ($textShadow) 0 $linkActiveColor, -($textShadow) 0 $linkActiveColor;
+			text-shadow: ($textShadowDistance) 0 $linkActiveColor, -($textShadowDistance) 0 $linkActiveColor;
 		}
 	}
-	a:hover::before,
-	a:focus::before,
-	&.active a:hover::before,
-	&.active a:focus::before {
-		color: $linkActiveColor;
-		text-shadow: ($textShadow) 0 $linkActiveColor, -($textShadow) 0 $linkActiveColor;
-	}
 
-	a:hover,
-	a:focus,
-	&.active a:hover,
-	&.active a:focus {
-		background-color: $backgroundColorHover;
-		color: $linkActiveColor;
+	a,
+	&.active a {
+		&:hover,
+		&:focus{
+			background-color: $backgroundColorHover;
+			color: $linkActiveColor;
+			&::before{
+				color: $linkActiveColor;
+				text-shadow: ($textShadowDistance) 0 $linkActiveColor, -($textShadowDistance) 0 $linkActiveColor;
+			}
+		}
 	}
 }
 
