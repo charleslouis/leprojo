@@ -1,7 +1,5 @@
-<div>
   <section id="content" class="content content-itw">
-    <div class="row">
-      
+
       <section class="about-itw">
         <h3 class="about-t">A propos de <br/><?php the_field('titre_about'); ?></h3>
         <p class="about-p"><?php the_field('paragraphe_about'); ?></p>
@@ -21,20 +19,18 @@
 
       <!-- introduction -->
       <?php if( get_field('introduction') ): ?>
-      <section class="intro-itw">
-        <h3 class="itw-t">Introduction</h3>
-        <p><?php the_field('introduction'); ?></p>
-      </section>
+        <section class="intro-itw">
+          <h3 class="itw-t">Introduction</h3>
+          <p><?php the_field('introduction'); ?></p>
+        </section>
       <?php endif; ?>
 
       <!-- interview -->
       <?php if( get_field('block_interview') ): ?>
-
-      <section class="interview">
+      
         <header class="block-itw-first">
-          <h3 class="itw-t"><?php the_field('interview_title'); ?></h3>
-        </header>
-
+          <h3 class="itw-t">Interview</h3>
+        </header>        
         <?php $i = 1; ?>
         <?php  while( has_sub_field('block_interview') ) : ?>
         
@@ -94,9 +90,7 @@
         <?php endif;?>
       <?php endwhile; ?>
         
-      </section>
+
       <?php endif; ?>
-    
-    </div>
-  </section>    
-</div>
+      
+  </section>
