@@ -34,7 +34,7 @@ $white:                 #fff !default;
 $blue:                  #2980B9 !default;
 $blueDark:              #34495E !default;
 $green:                 lighten(#c7d352, 10%) !default;
-$red: 									#c91616;
+$red: 									#B31D14;
 $orange:                #ca4f3b  !default;
 $yellow:                #ffc40d !default;
 $pink:                  #C80050 !default;
@@ -47,7 +47,7 @@ $textColor:             $grayDark !default;
 
 /*==========  components  ==========*/
 
-$highlightColor: $purple;
+$highlightColor: $red;
 $menu-bg-Color: $white;
 $menu-highlight-bg-Color: $grayDark;
 

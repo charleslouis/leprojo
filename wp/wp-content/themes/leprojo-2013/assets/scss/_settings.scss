@@ -214,7 +214,7 @@ $paragraph-line-height: 1.6;
 // Style anchors
 
 $anchor-text-decoration: dotted;
-$anchor-font-color: lighten($purple, 30%);
+$anchor-font-color: lighten($highlightColor, 30%);
 $anchor-font-color-hover: darken($anchor-font-color, 30%);
 
 // Style the <hr> element

@@ -48,6 +48,9 @@ aside.side-info {
 	margin-bottom: 2em;
 }
 
+.prev-next-link{
+	width:100%;
+}
 
 @media screen and (min-width: 600px){
 	._1-4-columns{
@@ -58,16 +61,11 @@ aside.side-info {
 			clear: left;
 		}
 	}
-	.nav-entry{
-		position: fixed;
-		top: 45%;
-		width: 100%;
-		a{
-			position: absolute;
-			&:nth-child(2){
-				right: 0;
-			}		
-		}
+	.prev-next-link{
+		width: 49.5%;		
+	}
+	.older{
+		float: right;
 	}
 }
 
@@ -96,6 +94,19 @@ aside.side-info {
 			clear: none;
 		}
 	}
+
+	.nav-entry{
+		position: fixed;
+		top: 45%;
+		width: 100%;
+	}
+	.prev-next-link{
+		width: auto;
+		position: absolute;
+	}
+	.older{
+		right: 0;			
+	}	
 
 	.portrait{
 		margin-top: -($medium-topbar-height);
