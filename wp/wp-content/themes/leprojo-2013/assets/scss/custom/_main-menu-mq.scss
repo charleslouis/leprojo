@@ -63,6 +63,7 @@
 }
 
 .oldie,
+.ie9,
 .ie8,
 .ie7{
 	@include push_menu_to_top();
@@ -72,13 +73,16 @@
 	.menu-item-main-menu {
 		a{
 			line-height: 1em;
+			&::before{
+				content: '\2022' !important;				
+			}
 		}
 		&.active a,
 		a:hover,
 		a:focus{
 			border-bottom: solid 1px $white ;
 		}
-	}
+	}	
 }
 
 /*==========  fire large Mq  ==========*/
