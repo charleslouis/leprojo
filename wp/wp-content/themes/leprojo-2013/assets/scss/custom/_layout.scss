@@ -16,6 +16,7 @@
 }
 
 .inside-wrapper{
+	@extend .clearfix;
 	width: 100%;
 	max-width: $large-screen;
 	margin: 0 auto;

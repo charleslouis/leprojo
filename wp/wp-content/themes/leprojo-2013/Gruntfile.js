@@ -52,7 +52,7 @@ module.exports = function(grunt) {
           beautify: true,          
         },   
         files: {'assets/js/scripts.min.js' : [
-          // 'assets/js/foundation/*.js',
+          'assets/js/foundation/foundation.interchange.js',
           'assets/js/custom/*.js'
           ]
         }
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
           report: 'gzip',
         },        
         files: {'assets/js/scripts.min.js' : [
-          'assets/js/foundation/*.js',
+          'assets/js/foundation/foundation.interchange.js',
           'assets/js/custom/*.js'
           ]
         }
