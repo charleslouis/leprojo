@@ -80,7 +80,7 @@
 
 
 /* Effect 13: three circles */
-@mixin threePointSonHover($linkColor: $grayLight, $backgroundColor: transparent, $backgroundColorHover: transparent, $backgroundColorActive: transparent, $linkActiveColor: $white, $textShadowDistance: 10px, $timing: 0.3s, $top: 50%){
+@mixin threePointSonHover($linkColor: $grayLight, $backgroundColor: transparent, $backgroundColorHover: transparent, $backgroundColorActive: transparent, $linkActiveColor: $white, $textShadowDistance: 0.7em, $pointSize: 1.2em, $timing: 0.3s, $top: 50%){
 
 	a {
 		-webkit-transition: color $timing;
@@ -88,6 +88,8 @@
 		transition: color $timing;
 		color: $linkColor;
 		background-color: $backgroundColor;
+		position: relative;
+		text-decoration: none;
 	}
 
 	&.active a::before,
@@ -98,7 +100,7 @@
 		color: transparent;
 		content: '\2022';
 		text-shadow: 0 0 transparent;
-		font-size: 1.2em;
+		font-size: $pointSize;
 		-webkit-transition: text-shadow $timing, color $timing;
 		-moz-transition: text-shadow $timing, color $timing;
 		transition: text-shadow $timing, color $timing;
