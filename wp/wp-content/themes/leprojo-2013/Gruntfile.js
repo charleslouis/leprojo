@@ -119,6 +119,7 @@ module.exports = function(grunt) {
           'templates/intro/*.php',
           'templates/content/*.php',
           'templates/loops/*.php',
+          'templates/nav/*.php',
           '*.html'
         ],
         options: {
