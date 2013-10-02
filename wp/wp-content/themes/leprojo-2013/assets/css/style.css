@@ -737,7 +737,7 @@ select {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003146}}
-  .small-10 {
+  .small-10, .cite-itw {
     width: 83.33333%;
   }
 
@@ -862,7 +862,7 @@ select {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003163}}
-  .medium-6 {
+  .medium-6, .cite-itw {
     width: 50%;
   }
 
@@ -872,7 +872,7 @@ select {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/foundation\/components\/_grid-5\.scss}line{font-family:\00003163}}
-  .medium-8, .intro-itw, .block-itw-first, .block-itw, .block-itw-last, .cite-itw {
+  .medium-8, .intro-itw, .block-itw-first, .block-itw, .block-itw-last {
     width: 66.66667%;
   }
 
@@ -7523,54 +7523,54 @@ but it's slower:
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000387}}
 .img-itw {
   margin: 2em 0;
 }
 
 /*-----  End of INTERVIEW LAYOUT  ------*/
 @media screen and (min-width: 600px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\0000398}}
   .nav-entry {
     position: fixed;
     top: 45%;
     width: 100%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003102}}
   .nav-entry a {
     position: absolute;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003104}}
   .nav-entry a:nth-child(2) {
     right: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003109}}
   .entry-title {
     font-size: 3em;
     bottom: 5%;
   }
 }
 @media only screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003117}}
   .entry-title {
     font-size: 4em;
   }
 }
 @media only screen and (min-width: 58.75em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003122}}
   .entry-title {
     font-size: 6em;
   }
 }
 @media only screen and (min-width: 1280px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003127}}
   .entry-title {
     font-size: 8em;
   }
 }
 @media only screen and (min-width: 1440px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_interview\.scss}line{font-family:\00003132}}
   .entry-title {
     font-size: 10em;
   }
