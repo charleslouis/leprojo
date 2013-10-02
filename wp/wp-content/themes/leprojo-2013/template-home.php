@@ -20,6 +20,6 @@ get_header(); ?>
 			'suppress_filters' => true ); ?>
 		<?php $myposts = get_posts( $args ); ?>
 		<?php  foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-        <?php include(locate_template('templates/loops/loop-single.php')); ?>
+        <?php include(locate_template('templates/loops/loop-interview.php')); ?>
 		<?php endforeach; ?>
 <?php get_footer(); ?>

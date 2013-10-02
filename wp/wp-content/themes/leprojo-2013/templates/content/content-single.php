@@ -1,25 +1,21 @@
-    <div class="main" role="main">
+  <section id="content" class="content content-itw">
       <article <?php post_class(); ?>>
-      
-        <?php include(locate_template('templates/banners/banner-single.php')); ?>
+        <section class="intro-itw">
+          <h3 class="itw-t"><?php the_title(); ?></h3>
+        </section>
         <!--  Row for main content area -->
         <div class="main-content-wrapper">
           <section class="main-content">
             <div class="entry-content">
               <?php the_content(); ?>
-              <?php include(locate_template('templates/content/faux-content.php')); ?>
-              <?php include(locate_template('templates/content/faux-content.php')); ?>
-
             </div>
             <footer>
-              <!-- meta/credits/ -->
+              <?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
+              <p><?php the_tags(); ?></p>
             </footer>
+            <?php comments_template(); ?>
           </section>          
         </div>
 
       </article>
-
-      <div id="nav-entry" class="nav-entry">
-        <a href="/untel" class="prev-next-link older">Machin Truc</a>
-        <a href="/untelOh" class="prev-next-link newer">Bidule muche</a>
-      </div>
+  </section>

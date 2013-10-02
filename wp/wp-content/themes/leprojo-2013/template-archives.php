@@ -19,7 +19,6 @@ get_header(); ?>
 			'post_status'      => 'publish',
 			'suppress_filters' => true ); ?>
 		<?php $myposts = get_posts( $args ); ?>
-		<div class="main" role="main">
-      <?php include(locate_template('templates/loops/loop-archives.php')); ?>
+    <?php include(locate_template('templates/loops/loop-archives.php')); ?>
 
 <?php get_footer(); ?>
