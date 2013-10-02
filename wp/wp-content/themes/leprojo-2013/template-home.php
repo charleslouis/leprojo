@@ -22,5 +22,4 @@ get_header(); ?>
 		<?php  foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
         <?php include(locate_template('templates/loops/loop-single.php')); ?>
 		<?php endforeach; ?>
-		<?php include(locate_template('templates/nav/navigation-prev-next.php')); ?>
 <?php get_footer(); ?>
