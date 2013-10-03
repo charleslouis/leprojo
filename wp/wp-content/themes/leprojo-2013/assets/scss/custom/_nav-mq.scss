@@ -60,7 +60,23 @@
 			font-size: 1em;
 		}
 	}
+		
+	.nav-entry{
+		position: fixed;
+		top: 45%;
+		width: 100%;
+	}
+	.prev-next-link{
+		width: auto;
+		position: absolute;
+	}
+	.newer{
+		right: 0;			
+	}
+
 }
+
+
 
 .oldie,
 .ie9,
@@ -82,7 +98,7 @@
 		a:focus{
 			border-bottom: solid 1px $white ;
 		}
-	}	
+	}
 }
 
 /*==========  fire large Mq  ==========*/

@@ -1,3 +1,6 @@
+// Navigation styles
+
+/*==========  main menu  ==========*/
 /**
 *
 * Style the menu in the footer (default) as seen on Luke W blog : http://lukew.com/
@@ -95,4 +98,20 @@
 	}
 }
 
+
+/*==========  previous and next links / pagination  ==========*/
+.prev-next-link {
+	@extend .button;
+	@include transition(all 0.3s ease-in-out);
+	width:100%;
+	margin-bottom: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border: none;
+	font-family: $sansFontFamilyLight;
+	opacity: 0.5;
+	&:hover{
+		opacity: 1;
+	}
+}
 

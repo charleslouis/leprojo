@@ -89,20 +89,6 @@
 }
 
 
-.prev-next-link {
-	@extend .button;
-	@include transition(all 0.3s ease-in-out);
-	border: none;
-	font-family: $sansFontFamilyLight;
-	opacity: 0.5;
-	margin-bottom: 0;
-	&:hover{
-		opacity: 1;
-	}
-}
-
-
-
 @media screen and (min-width: 600px){
 	.entry-title{
 		font-size: 3em;

@@ -7,14 +7,6 @@
 	@extend .row;
 }
 
-.main-home{
-	// padding: 0;
-}
-
-.li-block-header{
-	padding-top: 2em;
-}
-
 .inside-wrapper{
 	@extend .clearfix;
 	width: 100%;
@@ -36,32 +28,15 @@ aside.side-info {
 	padding-top: 2em;
 }	
 
-
 .small-4{
 	&:nth-child(3n+1){
 		clear: left;
 	}
 }
 
-._1-4-columns{
-	@extend .columns;
-	width: 100%;
-	margin-bottom: 2em;
-}
 
-.prev-next-link{
-	width:100%;
-}
 
 @media screen and (min-width: 600px){
-	._1-4-columns{
-		width: 50%;
-		position: relative;
-	
-		&:nth-child(odd){
-			clear: left;
-		}
-	}
 	.prev-next-link{
 		width: 49.5%;		
 	}
@@ -95,20 +70,6 @@ aside.side-info {
 			clear: none;
 		}
 	}
-
-	.nav-entry{
-		position: fixed;
-		top: 45%;
-		width: 100%;
-	}
-	.prev-next-link{
-		width: auto;
-		position: absolute;
-	}
-	.newer{
-		right: 0;			
-	}	
-
 	.portrait{
 		margin-top: -($medium-topbar-height);
 	}
