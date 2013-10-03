@@ -5,7 +5,7 @@
 			  <header class="header-archives columns large-8">
 			  	<h1>Archives</h1>
 					<h5>Pour être certain de ne rater aucune interview, le mieux est de nous suivre sur <a href="http://twitter.com/leprojo" target="_blank"><span>Twitter : @LeProjo</span></a>.</h5>
-					<h5>Vous pouvez également liker notre <a href="http://twitter.com/leprojo" target="_blank"><span>page facebook</span></a>.</h5>  	
+					<h5>Vous pouvez également liker notre <a href="https://www.facebook.com/pages/Le-Projo/212047378972611#" target="_blank"><span>page facebook</span></a>.</h5>  	
 			  </header>
 
 			  <ul class="archive-list column large-12">
