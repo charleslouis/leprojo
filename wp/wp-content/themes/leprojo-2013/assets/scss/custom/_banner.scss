@@ -18,10 +18,11 @@
 		width: 100%;
 	}
 	figcaption{
+		padding: 0 0.5em;
 		text-align: right;
 		@extend h6;
+		font-size: 0.7em;
 		text-transform: uppercase;
-		padding: 0 0.5em;
 	}
 }
 
@@ -36,6 +37,9 @@
 	.main .banner{
 		margin-top: -($large-topbar-height);
 		margin-top: -($medium-topbar-height);
+	}
+	.portrait figcaption{
+		font-size: 1em;
 	}
 }
 

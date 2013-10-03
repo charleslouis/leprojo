@@ -27,7 +27,7 @@
 	    <ul class="contact-us-list contact-list-footer">
 	      <li class="contact-us-info micon-mail" aria-hidden="true"><a href="mailto:info@leprojo.com" class="email">contact@leprojo.com</a></li>
 	      <li class="contact-us-contact micon-twitter" aria-hidden="true"><a rel="me" href="http://twitter.com/leprojo">@leprojo</a></li>
-	      <li class="contact-us-info micon-facebook" aria-hidden="true"><a rel="me" href="http://facebook.com/leprojo">@leprojo</a></li>
+	      <li class="contact-us-info micon-facebook" aria-hidden="true"><a rel="me" href="https://www.facebook.com/pages/Le-Projo/212047378972611#">Le Projo sur Facebook</a></li>
 	    </ul>
 	  </section>	  
 	</div>
