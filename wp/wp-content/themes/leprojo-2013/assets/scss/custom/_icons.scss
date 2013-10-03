@@ -27,26 +27,26 @@
 Instead of a list of all class selectors,
 you can use the generic selector below,
 but it's slower:
-[class*="icon-"] {
+[class*="micon-"] {
 */
-.icon-adapt,
-.icon-recherche,
-.icon-lamp,
-.icon-ordi-tab-phone,
-.icon-busy,
-.icon-viadeo,
-.icon-map,
-.icon-smiley,
-.icon-github,
-.icon-twitter,
-.icon-facebook,
-.icon-soundcloud,
-.icon-linkedin,
-.icon-phone,
-.icon-skype,
-.icon-mail,
-.icon-heart-fill,
-.icon-king-content {
+.micon-adapt,
+.micon-recherche,
+.micon-lamp,
+.micon-ordi-tab-phone,
+.micon-busy,
+.micon-viadeo,
+.micon-map,
+.micon-smiley,
+.micon-github,
+.micon-twitter,
+.micon-facebook,
+.micon-soundcloud,
+.micon-linkedin,
+.micon-phone,
+.micon-skype,
+.micon-mail,
+.micon-heart-fill,
+.micon-king-content {
 	&:before{
 		font-family: 'icons';
 		font-size: 1em;
@@ -60,62 +60,62 @@ but it's slower:
 		-moz-osx-font-smoothing: grayscale;
 	}
 }
-.icon-adapt:before {
+.micon-adapt:before {
 	content: "\e002";
 }
-.icon-recherche:before {
+.micon-recherche:before {
 	content: "\e003";
 }
-.icon-lamp:before {
+.micon-lamp:before {
 	content: "\e004";
 }
-.icon-ordi-tab-phone:before {
+.micon-ordi-tab-phone:before {
 	content: "\e005";
 }
-.icon-busy:before {
+.micon-busy:before {
 	content: "\e006";
 }
-.icon-viadeo:before {
+.micon-viadeo:before {
 	content: "\e007";
 }
-.icon-map:before {
+.micon-map:before {
 	content: "\e008";
 }
-.icon-smiley:before {
+.micon-smiley:before {
 	content: "\e009";
 }
-.icon-github:before {
+.micon-github:before {
 	content: "\e00a";
 }
-.icon-twitter:before {
+.micon-twitter:before {
 	content: "\e00b";
 	margin-right: 0.4em;
 }
-.icon-facebook:before {
+.micon-facebook:before {
 	content: "\e00c";
 	margin-right: 0.3em;
 }
-.icon-soundcloud:before {
+.micon-soundcloud:before {
 	content: "\e00d";
 }
-.icon-linkedin:before {
+.micon-linkedin:before {
 	content: "\e00e";
 }
-.icon-phone:before {
+.micon-phone:before {
 	content: "\e00f";
 }
-.icon-skype:before {
+.micon-skype:before {
 	content: "\e010";
 }
-.icon-mail:before {
+.micon-mail:before {
 	content: "\e000";
 }
-.icon-heart-fill:before {
+.micon-heart-fill:before {
 	content: "\e011";
 }
-.icon-grin:before {
+.micon-grin:before {
 	content: "\e001";
 }
-.icon-king-content:before {
+.micon-king-content:before {
 	content: "\e012";
 }
