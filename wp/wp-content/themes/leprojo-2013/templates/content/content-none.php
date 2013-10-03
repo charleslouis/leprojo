@@ -15,7 +15,7 @@
 		<p><?php _e( 'Apologies, but no results were found. Perhaps searching will help find a related post.', 'reverie' ); ?></p>
 	</div>
 	<hr />
-	<div class="large-4 small-12 right">		
+	<div class="small-12">		
 		<?php include(locate_template('searchform.php')); ?>
 	</div>
 </article>
