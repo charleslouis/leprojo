@@ -162,9 +162,7 @@ module.exports = function(grunt) {
     'jshint',
     'sass:dist',
     'uglify:dist',
-    'removelogging',
-    'svgmin',
-    'smushit'
+    'removelogging'
   ]);
   grunt.registerTask('img', [
     'svgmin',
