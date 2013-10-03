@@ -32,17 +32,13 @@
 	@extend .clearfix;
 }	
 
-@media #{$small}{
-	
-}
 @media #{$topbar-media-query} {
 	.main .banner{
 		margin-top: -($large-topbar-height);
 		margin-top: -($medium-topbar-height);
 	}
 }
-@media #{$medium}{
-}
+
 @media #{$large}{	
 	.main .banner{
 		margin-top: -($large-topbar-height);
