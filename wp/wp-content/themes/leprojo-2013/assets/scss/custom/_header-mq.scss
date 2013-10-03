@@ -13,6 +13,13 @@
 	.menu-access{ //lets hide the menu access in the header since main-menu sits in the top for oldie browsers
 		display: none;
 	}
+	.contain-to-grid {
+	  // border-bottom: none;
+	}
+	.top-bar,
+	.main-menu-column{
+		height: $medium-topbar-height;
+	}
 }
 
 /*==========  Media Queries   ==========*/

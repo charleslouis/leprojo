@@ -19,7 +19,8 @@
     opacity: 1;    
   }
 }
-.no-svg {
+.no-svg,
+.oldie {
   .brand{
     background: $logo-fallback no-repeat;
   }

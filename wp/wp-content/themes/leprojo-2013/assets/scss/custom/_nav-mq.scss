@@ -10,7 +10,7 @@
 
 /*==========  create a mixin to avoid repetition btw Media Queries and Old browsers   ==========*/
 
-@mixin push_menu_to_top(){
+@mixin push_menu_to_top($oldie: false){
 	.main-menu{		
 		position: fixed;
 		top: ($medium-topbar-height/3.5);
@@ -43,7 +43,10 @@
 			font-size: (($medium-topbar-height/3)/2);
 			font-weight: normal;
 		}
-		@include threePointSonHover();
+
+		@if $oldie == false {
+			@include threePointSonHover();		
+		}
 	}
 }
 
@@ -78,19 +81,20 @@
 
 
 
-.oldie,
-.ie9,
-.ie8,
-.ie7{
-	@include push_menu_to_top();
+.oldie {
+	@include push_menu_to_top($oldie: true);
 	.main-menu{
 		top: -8px;
 	}
 	.menu-item-main-menu {
+		float: left;
 		a{
 			line-height: 1em;
+			font-size: 1.5em;
+			padding-top: 0.5em;
+			display: block;
 			&::before{
-				content: '\2022' !important;				
+				// content: '\2022' !important;				
 			}
 		}
 		&.active a,
