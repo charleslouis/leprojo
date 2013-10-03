@@ -18,6 +18,14 @@
 	@extend .clearfix;
 }
 
+.hentry{
+	@extend .clearfix;
+}
+
+.main-page-legal{
+	padding-bottom: 40%;
+}
+
 @media #{$small} {
 	.page-intro{
 		padding-top: 1.5em;
