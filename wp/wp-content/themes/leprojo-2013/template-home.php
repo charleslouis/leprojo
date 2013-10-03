@@ -21,5 +21,6 @@ get_header(); ?>
 		<?php $myposts = get_posts( $args ); ?>
 		<?php  foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
         <?php include(locate_template('templates/loops/loop-interview.php')); ?>
+        <?php include(locate_template('templates/nav/navigation-prev-next.php')); ?>
 		<?php endforeach; ?>
 <?php get_footer(); ?>
