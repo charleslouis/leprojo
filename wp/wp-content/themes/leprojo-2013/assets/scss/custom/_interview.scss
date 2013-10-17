@@ -24,6 +24,7 @@
 	}
 	figcaption{
 		@extend h6;
+		font-size: 0.85em;
 		font-family: $sansFontFamilyLight;
 		margin: 1em 0;
 	}
@@ -39,12 +40,7 @@
 	@extend .large-3;
 }
 
-.intro-itw{
-	@extend .columns;
-	@extend .medium-8;
-	@extend .large-9;
-}
-
+.intro-itw,
 .block-itw-first{
 	@extend .columns;
 	@extend .medium-8;

@@ -20,7 +20,7 @@
       <!-- introduction -->
       <?php if( get_field('introduction') ): ?>
         <section class="intro-itw">
-          <h3 class="itw-t">Introduction</h3>
+          <h3 class="itw-t"><?php the_field('titre_intro'); ?></h3>          
           <p><?php the_field('introduction'); ?></p>
         </section>
       <?php endif; ?>
