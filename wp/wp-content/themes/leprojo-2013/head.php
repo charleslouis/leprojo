@@ -11,9 +11,7 @@
 	<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
 	<meta name="viewport" content="width=device-width" />
+	<?php wp_head(); ?>
+	<?php reverie_head(); ?>
 	<?php require_once locate_template('lib/images-load-icons.php'); ?>
-
-<?php wp_head(); ?>
-<?php reverie_head(); ?>
-
 </head>
