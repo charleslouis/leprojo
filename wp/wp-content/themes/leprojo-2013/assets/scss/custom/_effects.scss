@@ -1,0 +1,11 @@
+.image-block-hover-and-touch{
+  @include borderOnHover($touch: true, $displayBefore: false, $top: 7.5%, $left: 92.5%, $beforeWidth: 15%, $radius: 0, $beforeBdWidth: 1px, $afterBdWidth: 1px, $afterBgImage: $plusCross, $afterBgSize: 50%, $beforeBgOpacity: 0, $afterBgOpacity: 1);
+}
+.no-touch .image-block-hover-and-touch{
+  @include borderOnHover($touch: false, $displayBefore: true, $afterTiming: 1s, $top: 50%, $left: 50%, $beforeWidth: 100%, $radius: 0, $beforeBdWidth: 0, $afterBdWidth: 0, $afterBgImage: $plusCross, $afterBgSize: 25% 25%);
+}
+.no-svg {
+  .image-block-hover-and-touch{
+    border: 2px solid $gray;
+  }
+}

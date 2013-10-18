@@ -1,0 +1,117 @@
+// Navigation styles
+
+/*==========  main menu  ==========*/
+/**
+*
+* Style the menu in the footer (default) as seen on Luke W blog : http://lukew.com/
+* For menu in header, as in larger media queries and oldie browsers see main-menu-mq
+*
+**/
+
+.main-menu {
+	.main-menu-column{
+		padding: 0;
+	}
+	ul{
+		margin: 0;
+	}
+}
+
+.menu-item-main-menu {
+	border-top: solid 1px $grayLight;
+	&:last-child{
+		border-bottom: solid 1px $grayLight;
+		a{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.menu-item-main-menu  a,
+.navtoplink{
+	display: block;
+	padding: 1em 0.8em;
+	border-left: solid 0.5em $gray;
+	color: $gray;
+	font-family: $sansFontFamilyLight;
+	text-transform: uppercase;
+}
+
+.navtoplink{
+	&:before{
+	  display: block; 
+	  content: " "; 
+	  margin-top: 0; 
+	  height: $topbar-height; 
+	  visibility: hidden; 		
+	}
+}
+
+.menu-item-main-menu {
+	a {
+		&:hover,
+		&:focus{
+			background-color: $menu-highlight-bg-Color;
+			color: $white;
+			border-left-color: $menu-highlight-bg-Color;
+		}		
+	}
+	&.active a{
+		color: $menu-highlight-bg-Color;
+		border-left-color: $menu-highlight-bg-Color;
+		&:hover,
+		&:focus{
+			background-color: rgba($menu-highlight-bg-Color, 0.3);
+			color: $white;
+		}
+	}
+}
+
+.navtop {
+	border: none;
+}
+
+.navtoplink {
+	@include clearfix;
+	position: relative;
+	border: none;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 1.2em;
+
+	span{
+		padding-right: emCalc(4);
+	}
+
+	span:after{
+		@include css-triangle(emCalc(12), $gray, bottom);
+		@include transition(all 0.3s ease-in-out);
+		float: right;
+		margin-top: emCalc(-4);
+	}
+	&:hover {
+		color: $menu-highlight-bg-Color;
+		span:after {
+			@include css-triangle(emCalc(12), $menu-highlight-bg-Color, bottom);
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+}
+
+
+/*==========  previous and next links / pagination  ==========*/
+.prev-next-link {
+	@extend .button;
+	@include transition(all 0.3s ease-in-out);
+	width:100%;
+	margin-bottom: 0;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border: none;
+	font-family: $sansFontFamilyLight;
+	opacity: 0.5;
+	&:hover{
+		opacity: 1;
+	}
+}
+

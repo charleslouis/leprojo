@@ -1,0 +1,39 @@
+.contain-to-grid{
+	position: fixed;
+	z-index: 980;
+  border-bottom: solid 1px $grayLighter;
+}
+.brand{
+	@extend .hide-text;
+  border: none;
+  display: block;
+  top: 0.25em;
+  left: 0.2em;
+  height: $logo-topbar-height;
+  width: $logo-topbar-width;
+  background-image: $logo;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.8;
+  &:hover{
+    opacity: 1;    
+  }
+}
+.no-svg,
+.oldie {
+  .brand{
+    background: $logo-fallback no-repeat;
+  }
+}
+
+.menu-access{
+  @extend .toggle-topbar;
+  opacity:0.7;
+  &:hover{
+    opacity:1;
+  }
+  a,
+  a:hover{
+    border: none;    
+  }
+}

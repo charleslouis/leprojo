@@ -1,0 +1,51 @@
+.banner{
+	@extend .row;
+	width: 100%;
+	padding-bottom: 5%;
+	position: relative;
+	display: block;
+	background: $banner-background-color;
+}
+
+.main .banner{
+	margin: -($topbar-height) 0 0 0;	
+}
+
+.portrait{
+	width: 100%;
+	margin: 0;
+	img{
+		width: 100%;
+	}
+	figcaption{
+		padding: 0 0.5em;
+		text-align: right;
+		@extend h6;
+		font-size: 0.7em;
+		text-transform: uppercase;
+	}
+}
+
+.banner-content{
+	width: 100%;
+	position: relative;
+	text-align: center;
+	@extend .clearfix;
+}	
+
+@media #{$topbar-media-query} {
+	.main .banner{
+		margin-top: -($large-topbar-height);
+		margin-top: -($medium-topbar-height);
+	}
+	.portrait figcaption{
+		font-size: 1em;
+	}
+}
+
+@media #{$large}{	
+	.main .banner{
+		margin-top: -($large-topbar-height);
+	}
+}
+

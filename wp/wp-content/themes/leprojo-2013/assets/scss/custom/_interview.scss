@@ -1,0 +1,111 @@
+.entry-title{
+	position: absolute;
+	font-size: 2em;
+	text-transform: uppercase;
+	bottom: 10%;
+	width: 100%;
+	padding: 0 1em;
+	font-family: $sansFontFamilyLight;
+	color: $banner-font-color;
+	position: absolute;
+}
+
+.entry-content{
+	@extend .columns;
+	@extend .small-12;
+	@extend .large-12;
+}
+
+.img-itw{
+	@extend .column;
+	@extend .small-12;
+	img{
+		width: 100%;
+	}
+	figcaption{
+		@extend h6;
+		font-size: 0.85em;
+		font-family: $sansFontFamilyLight;
+		margin: 1em 0;
+	}
+}
+
+
+/*========================================
+=            INTERVIEW LAYOUT            =
+========================================*/
+.about-itw{
+	@extend .columns;
+	@extend .medium-4;
+	@extend .large-3;
+}
+
+.intro-itw,
+.block-itw-first{
+	@extend .columns;
+	@extend .medium-8;
+	@extend .large-6;
+}
+
+.block-itw{
+	@extend .block-itw-first;
+	@extend .medium-offset-4;
+	@extend .large-offset-3;
+}
+
+.block-itw-last{
+	@extend .block-itw;
+	float: left;
+}
+
+.cite-itw{
+	@extend .columns;
+	@extend .small-10;
+	@extend .medium-6;
+	@extend .large-3;
+}
+
+.img-itw{
+	@extend .columns;
+	@extend .large-12;
+	margin: 2em 0;
+}
+
+/*-----  End of INTERVIEW LAYOUT  ------*/
+
+.engage-w-us{
+	@extend .clearfix;
+	margin-bottom: 0;
+	background-color: $grayLighter;
+	padding: 1.25em;
+}
+
+
+@media screen and (min-width: 600px){
+	.entry-title{
+		font-size: 3em;
+		bottom: 5%;
+	}
+}
+
+
+@media #{$small}{
+	.entry-title{
+		font-size: 4em;
+	}
+}
+@media #{$topbar-media-query} {
+	.entry-title{
+		font-size: 6em;
+	}
+}
+@media #{$medium}{
+	.entry-title{
+		font-size: 8em;
+	}
+}
+@media #{$large}{
+	.entry-title{
+		font-size: 10em;
+	}
+}
