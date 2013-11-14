@@ -21,6 +21,9 @@
             if( get_sub_field('font_size') ):
               $custom_style .= 'font-size: ' . get_sub_field('font_size') . '; ';
             endif;
+            if( get_sub_field('text_align') ):
+              $custom_style .= 'text-align: ' . get_sub_field('text_align') . '; ';
+            endif;
             if( get_sub_field('v_alignment') ):
               if( get_sub_field('v_alignment') == 'middle'):
               $custom_style .= 'top: 0; padding-top: 25%; ';
