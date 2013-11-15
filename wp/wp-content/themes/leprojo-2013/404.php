@@ -6,9 +6,9 @@
     <header class="banner">
         <figure class="portrait">
         	<?php $upload_dir = wp_upload_dir(); ?>					
-          <img src="<?php echo $upload_dir['baseurl']; ?>/404-error/404-1600x1056.gif" alt="<?php echo $photo[alt]; ?>">
+          <img src="<?php echo $upload_dir['baseurl']; ?>/404-error/404.gif" alt="<?php echo $photo[alt]; ?>">
         </figure>
-        <h1 class="entry-title"><?php _e('File Not Found', 'reverie'); ?></h1>
+        <h1 id="headline" class="entry-title"><?php _e('File Not Found', 'reverie'); ?></h1>
     </header><!-- banner -->
 
 			<div class="entry-content">		
