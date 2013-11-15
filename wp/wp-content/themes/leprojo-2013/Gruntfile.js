@@ -9,7 +9,6 @@ module.exports = function(grunt) {
       },
       all: [
         'Gruntfile.js',
-        'assets/js/custom/*.js',
         '!assets/js/scripts.min.js']
     },
     sass: {                              // Task
@@ -54,6 +53,7 @@ module.exports = function(grunt) {
         files: {'assets/js/scripts.min.js' : [
           'assets/js/foundation/foundation.js',
           'assets/js/foundation/foundation.interchange.js',
+          'assets/js/custom/helpers.js',
           'assets/js/custom/*.js'
           ]
         }
@@ -65,6 +65,7 @@ module.exports = function(grunt) {
         files: {'assets/js/scripts.min.js' : [
           'assets/js/foundation/foundation.js',
           'assets/js/foundation/foundation.interchange.js',
+          'assets/js/custom/helpers.js',
           'assets/js/custom/*.js'
           ]
         }
