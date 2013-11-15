@@ -54,7 +54,8 @@ module.exports = function(grunt) {
           'assets/js/foundation/foundation.js',
           'assets/js/foundation/foundation.interchange.js',
           'assets/js/custom/helpers.js',
-          'assets/js/custom/*.js'
+          'assets/js/custom/basement.fittext.js',
+          'assets/js/custom/custom.js'
           ]
         }
       },
@@ -66,7 +67,8 @@ module.exports = function(grunt) {
           'assets/js/foundation/foundation.js',
           'assets/js/foundation/foundation.interchange.js',
           'assets/js/custom/helpers.js',
-          'assets/js/custom/*.js'
+          'assets/js/custom/basement.fittext.js',
+          'assets/js/custom/custom.js'
           ]
         }
       },
@@ -162,8 +164,8 @@ module.exports = function(grunt) {
   grunt.registerTask('dist', [
     'jshint',
     'sass:dist',
-    'uglify:dist',
-    'removelogging'
+    'uglify:dist'
+    // 'removelogging'
   ]);
   grunt.registerTask('img', [
     'svgmin',
