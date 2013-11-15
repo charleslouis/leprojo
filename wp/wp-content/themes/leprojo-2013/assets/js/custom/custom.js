@@ -2,6 +2,6 @@
 	$('document').ready(function(){
 		removePhoneHref('.phone-link');
 		removePhoneHref('.skype-link');
-		basementFitText('headline');
+		basementFitText('headline', 1, '28px');
 	});
 }(jQuery));
