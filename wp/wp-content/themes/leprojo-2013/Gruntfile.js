@@ -55,6 +55,7 @@ module.exports = function(grunt) {
           'assets/js/foundation/foundation.interchange.js',
           'assets/js/custom/helpers.js',
           'assets/js/custom/basement.fittext.js',
+          'assets/js/custom/social-sharer.js',
           'assets/js/custom/custom.js'
           ]
         }
@@ -68,6 +69,7 @@ module.exports = function(grunt) {
           'assets/js/foundation/foundation.interchange.js',
           'assets/js/custom/helpers.js',
           'assets/js/custom/basement.fittext.js',
+          'assets/js/custom/social-sharer.js',
           'assets/js/custom/custom.js'
           ]
         }

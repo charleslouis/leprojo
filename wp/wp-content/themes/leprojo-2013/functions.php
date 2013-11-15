@@ -44,7 +44,9 @@ require_once('lib/nav.php'); // filter default wordpress menu classes and clean 
 5. lib/presstrends.php
     - add PressTrends, tracks how many people are using Reverie
 */
-require_once('lib/presstrends.php'); // load PressTrends to track the usage of Reverie across the web, comment this line if you don't want to be tracked
+// require_once('lib/presstrends.php'); // load PressTrends to track the usage of Reverie across the web, comment this line if you don't want to be tracked
+
+require_once('lib/social-sharer.php'); // load PressTrends to track the usage of Reverie across the web, comment this line if you don't want to be tracked
 
 /**********************
 Add theme supports
