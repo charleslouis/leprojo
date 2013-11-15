@@ -29,7 +29,7 @@
       <?php if( get_field('block_interview') ): ?>
       
         <header class="block-itw-first">
-          <h3 class="itw-t">Interview</h3>
+          <h3 class="itw-t">L'entrevue</h3>
         </header>        
         <?php $i = 1; ?>
         <?php  while( has_sub_field('block_interview') ) : ?>
