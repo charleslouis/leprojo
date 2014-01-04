@@ -35,7 +35,6 @@
 
 @media #{$topbar-media-query} {
 	.main .banner{
-		margin-top: -($large-topbar-height);
 		margin-top: -($medium-topbar-height);
 	}
 	.portrait figcaption{
