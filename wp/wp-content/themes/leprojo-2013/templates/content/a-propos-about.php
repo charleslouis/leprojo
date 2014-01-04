@@ -11,4 +11,5 @@
           <?php endwhile; ?>
         </ul>
         <?php endif; ?>
+        <?php include(locate_template('templates/content/portraits-profil-about.php')); ?>
       </section>
