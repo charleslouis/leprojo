@@ -1,0 +1,12 @@
+.team{
+	@extend .unstyled;
+	margin-top: 1em;
+}
+
+.team-member{
+	margin-bottom: 2em;
+	line-height: 1.25em;
+	figure{
+		margin-bottom: 0.5em;
+	}
+}
