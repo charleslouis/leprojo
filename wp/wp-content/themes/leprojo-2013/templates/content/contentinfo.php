@@ -5,7 +5,7 @@
 	      
 	      
 	      <span class="copy">&copy;<?php echo date("Y"); ?>
-	      	<span class="organisation"><strong> Le Projo - Arthur Allizard </strong></span>
+	      	<span class="organisation"><strong> Le Projo - Arthur et Charles-Louis Allizard </strong></span>
 	      Tous droits réservés.
 	    	</span>
 	      <span class="legal"><a href="<?php echo home_url(); ?>/mentions-legales/">Mentions légales</a></span>
