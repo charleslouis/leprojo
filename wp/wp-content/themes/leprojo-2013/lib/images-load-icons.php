@@ -1,4 +1,4 @@
-	<base href="http://leprojo.com/" />
+	<!-- <base href="<?php echo home_url(); ?>/" /> -->
 	<!-- icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo IMAGES; ?>/branding/apple-touch-icon-144x144-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo IMAGES; ?>/branding/apple-touch-icon-114x114-precomposed.png">
