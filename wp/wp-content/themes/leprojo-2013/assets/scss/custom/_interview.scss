@@ -28,6 +28,15 @@
 	}
 }
 
+.block-itw {
+	ul{
+		@extend .unstyled;
+		margin-left: 0.8em;
+	}
+}
+p.no-margin-bottom {
+ 	margin-bottom: 0;
+}
 
 /*========================================
 =            INTERVIEW LAYOUT            =
@@ -73,37 +82,8 @@
 
 .engage-w-us{
 	@extend .clearfix;
+	margin-top: 2em;
 	margin-bottom: 0;
 	background-color: $grayLighter;
 	padding: 1.25em;
-}
-
-
-@media screen and (min-width: 600px){
-	.entry-title{
-		// font-size: 3em;
-		// bottom: 5%;
-	}
-}
-
-
-@media #{$small}{
-	.entry-title{
-		// font-size: 4em;
-	}
-}
-@media #{$topbar-media-query} {
-	.entry-title{
-		// font-size: 6em;
-	}
-}
-@media #{$medium}{
-	.entry-title{
-		// font-size: 8em;
-	}
-}
-@media #{$large}{
-	.entry-title{
-		// font-size: 10em;
-	}
 }

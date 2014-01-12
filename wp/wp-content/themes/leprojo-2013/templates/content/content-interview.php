@@ -1,21 +1,4 @@
-  <section id="content" class="content content-itw">
 
-      <section class="about-itw">
-        <h3 class="about-t">A propos de <br/><?php the_field('titre_about'); ?></h3>
-        <p class="about-p"><?php the_field('paragraphe_about'); ?></p>
- 
-        <?php if( get_field('contacts') ): ?>
-        <ul class="about-links-ul">
-          <?php while( has_sub_field('contacts') ) : ?>
-            <li class="<?php the_sub_field('info_type_contact'); ?>">
-              <a href="<?php the_sub_field('contact_link'); ?>" target="_blank"><?php the_sub_field('texte_lien_de_contact'); ?></a>
-            </li>
-          <?php endwhile; ?>
-        </ul>
-        <?php endif; ?>
-
-        <p class="date">Date de l'interview : <span class="date-info"><?php  echo locale_date('date_itw'); ?></span></p>
-      </section>
 
       <!-- introduction -->
       <?php if( get_field('introduction') ): ?>
@@ -29,7 +12,7 @@
       <?php if( get_field('block_interview') ): ?>
       
         <header class="block-itw-first">
-          <h3 class="itw-t">Interview</h3>
+          <h3 class="itw-t">L'entrevue</h3>
         </header>        
         <?php $i = 1; ?>
         <?php  while( has_sub_field('block_interview') ) : ?>
@@ -52,11 +35,20 @@
           <?php        
           if( get_sub_field('reponse_pg') ):
             while( has_sub_field('reponse_pg') ) :
+              $answer = get_sub_field('texte_paragraphe_reponse');
               if(get_sub_field('answerer')):
-                $answerer = '<p class="answer"><span>[ ' . get_sub_field('answerer') . ' ] </span>';
-                $answer = str_replace('<p>', $answerer, get_sub_field('texte_paragraphe_reponse') ); 
+
+                if (strpos($answer,'<ul>') !== false) :
+                  $answerer = '<p class="answer no-margin-bottom"><span>[ ' . get_sub_field('answerer') . ' ] </span><ul>';
+                  $answer = str_replace('<ul>', $answerer, $answer );
+                  $answer = str_replace('</ul>', '</ul></p>', $answer );
+
+                else :
+                  $answerer = '<p class="answer"><span>[ ' . get_sub_field('answerer') . ' ] </span>';
+                  $answer = str_replace('<p>', $answerer, $answer );
+                endif;
               else :
-                $answer = str_replace('<p>', '<p class="answer">', get_sub_field('texte_paragraphe_reponse') ); 
+                $answer = str_replace('<p>', '<p class="answer">', $answer ); 
               endif;            
                 echo $answer;
           ?>
@@ -93,4 +85,3 @@
 
       <?php endif; ?>
       
-  </section>

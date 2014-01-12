@@ -1,0 +1,35 @@
+.team{
+	@extend .unstyled;
+	margin-top: 1em;
+}
+
+.team-member{
+	margin-bottom: 2em;
+	line-height: 1.25em;
+	figure{
+		margin-bottom: 0.5em;
+	}
+	img{
+		max-width: 215px;
+	}
+}
+
+
+// overload layout for q-and-a and block-itw in ABOUT
+//we want to have to distinct areas : one sidebar on the left and one content floating
+//whereas the default layout simply drops block-itw on top of each other, altenating with full-width pictures and quotes
+
+.q-and-a-about{
+	@extend .column;
+	@extend .small-12;
+	@extend .medium-8;
+	@extend .large-6;
+	margin-bottom: 2em;
+
+	.block-itw,
+	.block-itw-first,
+	.block-itw:last-child{
+		margin-left: 0;
+		width: 100%;
+	}
+}
