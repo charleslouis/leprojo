@@ -4821,8 +4821,15 @@ p.no-margin-bottom {
   max-width: 215px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_about\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_about\.scss}line{font-family:\0000322}}
+.q-and-a-about {
+  margin-bottom: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_about\.scss}line{font-family:\0000329}}
 .q-and-a-about .block-itw, .q-and-a-about .block-itw-last,
+.q-and-a-about .block-itw-first,
+.q-and-a-about .block-itw,
+.q-and-a-about .block-itw-last,
 .q-and-a-about .block-itw:last-child,
 .q-and-a-about .block-itw-last:last-child {
   margin-left: 0;
