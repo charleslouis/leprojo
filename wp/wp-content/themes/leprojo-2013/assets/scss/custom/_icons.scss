@@ -9,48 +9,32 @@
 	font-style: normal;
 }
 
-// /* Use the following CSS code if you want to use data attributes for inserting your icons */
-// [data-icon]:before {
-// 	font-family: 'icons';
-// 	content: attr(data-icon);
-// 	speak: none;
-// 	font-weight: normal;
-// 	font-variant: normal;
-// 	text-transform: none;
-// 	line-height: 1;
-// 	-webkit-font-smoothing: antialiased;
-// 	-moz-osx-font-smoothing: grayscale;
-// }
-
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below,
-but it's slower:
-[class*="micon-"] {
-*/
-.micon-adapt,
+.micon-linkedin,
+.micon-pinterest,
+.micon-flickr,
+.micon-vimeo,
+.micon-github,
+.micon-dropbox,
+.micon-star,
+.micon-music,
+.micon-share,
+.micon-chat,
+.micon-googleplus,
 .micon-recherche,
-.micon-lamp,
-.micon-ordi-tab-phone,
-.micon-busy,
 .micon-viadeo,
 .micon-map,
 .micon-smiley,
-.micon-github,
 .micon-twitter,
 .micon-facebook,
-.micon-pinterest,
 .micon-soundcloud,
-.micon-linkedin,
 .micon-phone,
 .micon-skype,
 .micon-mail,
 .micon-heart-fill,
-.micon-king-content {
+.micon-tongue {
 	&:before{
-		font-family: 'icons';
 		font-size: 1em;
+		font-family: 'icons';
 		speak: none;
 		font-style: normal;
 		font-weight: normal;
@@ -61,20 +45,41 @@ but it's slower:
 		-moz-osx-font-smoothing: grayscale;
 	}
 }
-.micon-adapt:before {
-	content: "\e002";
+.micon-linkedin:before {
+	content: "\e600";
+}
+.micon-pinterest:before {
+	content: "\e601";
+}
+.micon-flickr:before {
+	content: "\e602";
+}
+.micon-vimeo:before {
+	content: "\e603";
+}
+.micon-github:before {
+	content: "\e604";
+}
+.micon-dropbox:before {
+	content: "\e605";
+}
+.micon-star:before {
+	content: "\e606";
+}
+.micon-music:before {
+	content: "\e607";
+}
+.micon-share:before {
+	content: "\e608";
+}
+.micon-chat:before {
+	content: "\e609";
+}
+.micon-googleplus:before {
+	content: "\e60a";
 }
 .micon-recherche:before {
 	content: "\e003";
-}
-.micon-lamp:before {
-	content: "\e004";
-}
-.micon-ordi-tab-phone:before {
-	content: "\e005";
-}
-.micon-busy:before {
-	content: "\e006";
 }
 .micon-viadeo:before {
 	content: "\e007";
@@ -85,22 +90,14 @@ but it's slower:
 .micon-smiley:before {
 	content: "\e009";
 }
-.micon-github:before {
-	content: "\e00a";
-}
 .micon-twitter:before {
 	content: "\e00b";
-	// margin-right: 0.4em;
 }
 .micon-facebook:before {
 	content: "\e00c";
-	// margin-right: 0.3em;
 }
 .micon-soundcloud:before {
 	content: "\e00d";
-}
-.micon-linkedin:before {
-	content: "\e00e";
 }
 .micon-phone:before {
 	content: "\e00f";
@@ -114,13 +111,6 @@ but it's slower:
 .micon-heart-fill:before {
 	content: "\e011";
 }
-.micon-grin:before {
-	content: "\e001";
-}
-.micon-king-content:before {
-	content: "\e012";
-}
-
-.micon-pinterest:before {
-	content: "\e012";
+.micon-tongue:before {
+	content: "\e60b";
 }
