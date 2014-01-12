@@ -79,33 +79,32 @@ function pinterest_this($post_id){
 
   $image      = get_field( "photo", $post_id );
   
-  $contenu    = get_field( "titre_about", $post_id );
-  $contenu    .= " ";
-  $contenu    .= get_field( "paragraphe_about", $post_id );
+  $description    = get_field( "titre_about", $post_id );
+  $description    .= " - ";
+  $description    .= get_field( "paragraphe_about", $post_id );
+  $my_share_desc    = urlencode((strlen($description) > $max_char) ? substr($description,0,$max_char-3).'...' : $description);
 
   if ( $image ) {
-    $media = $image;
+    $media = $image[sizes]['portrait-large'];
+    $media = urlencode($media);
   }
   else {
     return $disabled_output;
   }
 
-  if ( $contenu ) {
-    $description = $contenu;
+  if ( $description ) {
+    $description = strip_tags( $description );
   }
   else {
     return $disabled_output;
   }
 
-  $my_share_url     .= urlencode(get_permalink($post_id));
-  $my_share_url     .= urlencode('http://leprojo.com/wp/');
-  $my_share_url     .= '&media=';
-  $my_share_url     .= urlencode(get_post( $media )->guid);
-  $my_share_url     .= '&description=';
-  $my_share_desc    .=  ' Sur LeProjo.com : '.  $description;
-  $my_share_desc    = urlencode((strlen($my_share_desc) > $max_char) ? substr($my_share_desc,0,$max_char-3).'...' : $my_share_desc);
-  $my_share_url     .= $my_share_desc;
-  $my_share_url           = 'href="http://www.pinterest.com/shareArticle?mini=true&url='. $my_share_url .'"';
+  $my_share_url      = 'href="http://www.pinterest.com/shareArticle?mini=true&url=';
+  $my_share_url     .= urlencode( get_permalink($post_id) );
+  $my_share_url     .= '&media=' . $media;
+  $my_share_url     .= '&description=' . $my_share_desc;
+  $my_share_url     .= '"';
+
   $output = $url_before . $my_share_url .  $url_after;
   return $output;
 }
