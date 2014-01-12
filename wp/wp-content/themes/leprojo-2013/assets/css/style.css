@@ -4802,8 +4802,12 @@ but it's slower:
 .team-member figure {
   margin-bottom: 0.5em;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_about\.scss}line{font-family:\0000312}}
+.team-member img {
+  max-width: 215px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_about\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_about\.scss}line{font-family:\0000320}}
 .page-template-template-about-php .block-itw, .page-template-template-about-php .block-itw-last,
 .page-template-template-about-php .block-itw:last-child,
 .page-template-template-about-php .block-itw-last:last-child {
