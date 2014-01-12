@@ -6,7 +6,7 @@
 **/
 
 	function socialSharer() {
-		return;
+		// return;
 		if (document.getElementById('sharer-inner-wrapper')){
 			$('#sharer-inner-wrapper').hide();
 			$('#sharer-block-container').toggleClass('active unactive');

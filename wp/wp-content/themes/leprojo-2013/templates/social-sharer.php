@@ -11,8 +11,14 @@ $post_id = $post->ID;
 
             <ul class="social-list">
                 <li>
-                    <a class="social-link" rel="nofollow" href="<?php echo tweet_this($post_id); ?>" target="_blank" title="Share this article with your Twitter followers">
+                    <a class="social-link" rel="nofollow" href="<?php echo tweet_this($post_id); ?>" target="_blank" title="Twitter l'article">
                         <i aria-hidden="true" class="micon-twitter"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="social-link" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com" target="_blank" title="Partager sur facebook">
+                        <i aria-hidden="true" class="micon-facebook"></i>
                     </a>
                 </li>
 

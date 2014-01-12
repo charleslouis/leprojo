@@ -5,12 +5,10 @@
 	position: fixed;
 	top: $topbar-height;
 	left: 0;
-	opacity: 0.8;
 }
 .sharer-block-container.active{
 	padding-bottom: 0.5em;
 	background: $white;
-	opacity: 1;
 }
 
 .icon-display-sharer-wrapper {	
@@ -20,17 +18,14 @@
 	background: $anchor-font-color;
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
-	opacity: 0.7;
-
+	@extend .micon-share;
+	
 	&:before {
 		display: block;
+		width: $topbar-height - 5px;
+		height: $topbar-height;
 		position: absolute;
 		top: 0;
-		font-family: 'icons';
-		content: "\e00f";
-		font-style: normal;
-    font-weight: normal;
-    -webkit-font-smoothing: antialiased;    		
 		font-size: 1.7em;
 		line-height: $topbar-height;
 		text-align: center;
@@ -40,7 +35,6 @@
 
 	&:hover{
 		background: $anchor-font-color-hover;
-		opacity: 0.7;
 	}
 }
 
@@ -62,6 +56,11 @@
 	background-color: $gray;
 	border-radius: 200px;
 	overflow: hidden;
+
+	&.disabled{
+		background-color: $grayLight;
+		color: $grayLighter !important;
+	}
 
 	i:before{
 		display: block;
