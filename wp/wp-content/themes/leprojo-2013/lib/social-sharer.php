@@ -54,11 +54,16 @@ function linkedin_this($post_id){
   $max_char            = 100;
 
   $my_share_url    .= urlencode(get_permalink($post_id));
-  $my_share_url    .= '&title=';
+  
   $my_share_title  .=  ' A lire sur leprojo.com : '. get_the_title($post_id);
   $my_share_title   = urlencode((strlen($my_share_title) > $max_char) ? substr($my_share_title,0,$max_char-3).'...' : $my_share_title);
-  $my_share         =  $my_share_url . $my_share_title;
-  $output           = 'http://www.linkedin.com/shareArticle?mini=true&url='. $my_share;
+
+  $my_share_summary =  urlencode(social_excerpt($post_id));
+  // $my_share_summary   = urlencode((strlen($my_share_summary) > $max_char) ? substr($my_share_summary,0,$max_char-3).'...' : $my_share_summary);
+
+  $my_share_source  =  urlencode('LeProjo - http://leprojo.com');
+  
+  $output           = 'http://www.linkedin.com/shareArticle?mini=true&url='. $my_share_url . '&title='. $my_share_title . '&summary=' . $my_share_summary . '&source=' . $my_share_source;
 
   return $output;
 }
