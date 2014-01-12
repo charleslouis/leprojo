@@ -5,10 +5,21 @@
 	position: fixed;
 	top: $topbar-height;
 	left: 0;
+
+	@media #{$topbar-media-query} {
+		top: $medium-topbar-height;
+	}
+
+	@media #{$medium} {
+		top: $large-topbar-height;
+	}
 }
 .sharer-block-container.active{
 	padding-bottom: 0.5em;
 	background: $white;
+	@media #{$topbar-media-query} {
+		background: transparent;		
+	}
 }
 
 .icon-display-sharer-wrapper {	
@@ -47,7 +58,6 @@
 	width: $topbar-height;
 	height: $topbar-height;
 	margin-top: 0.5em;
-	border: 1px solid $white;
 	text-decoration: none;
 	text-align: center;
 	font-size: 1.25em;

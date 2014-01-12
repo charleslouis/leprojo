@@ -14,4 +14,5 @@ get_header(); ?>
 			    </div>
 	    	</section>
       </section>
+      <?php include(locate_template('templates/social-sharer.php')); ?>
 <?php get_footer(); ?>

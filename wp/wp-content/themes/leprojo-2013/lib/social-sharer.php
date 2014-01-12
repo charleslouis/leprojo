@@ -59,7 +59,6 @@ function linkedin_this($post_id){
   $my_share_title   = urlencode((strlen($my_share_title) > $max_char) ? substr($my_share_title,0,$max_char-3).'...' : $my_share_title);
 
   $my_share_summary =  urlencode(social_excerpt($post_id));
-  // $my_share_summary   = urlencode((strlen($my_share_summary) > $max_char) ? substr($my_share_summary,0,$max_char-3).'...' : $my_share_summary);
 
   $my_share_source  =  urlencode('LeProjo - http://leprojo.com');
   

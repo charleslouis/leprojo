@@ -4835,14 +4835,32 @@ p.no-margin-bottom {
 .sharer-block-container:after {
   clear: both;
 }
+@media only screen and (min-width: 58.75em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\000033}}
+  .sharer-block-container {
+    top: 80px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\000033}}
+  .sharer-block-container {
+    top: 100px;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000317}}
 .sharer-block-container.active {
   padding-bottom: 0.5em;
   background: white;
 }
+@media only screen and (min-width: 58.75em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000317}}
+  .sharer-block-container.active {
+    background: transparent;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000325}}
 .icon-display-sharer-wrapper {
   display: block;
   width: 40px;
@@ -4851,7 +4869,7 @@ p.no-margin-bottom {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000334}}
 .icon-display-sharer-wrapper:before {
   display: block;
   width: 35px;
@@ -4864,23 +4882,22 @@ p.no-margin-bottom {
   speak: none;
   color: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000347}}
 .icon-display-sharer-wrapper:hover {
   background: #b31d14;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000352}}
 .social-list {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000356}}
 .social-link {
   display: block;
   width: 40px;
   height: 40px;
   margin-top: 0.5em;
-  border: 1px solid white;
   text-decoration: none;
   text-align: center;
   font-size: 1.25em;
@@ -4890,12 +4907,12 @@ p.no-margin-bottom {
   border-radius: 200px;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000370}}
 .social-link.disabled {
   background-color: #bababa;
   color: #d7d7d7 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000375}}
 .social-link i:before {
   display: block;
   width: 40px;

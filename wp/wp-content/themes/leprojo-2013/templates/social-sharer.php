@@ -17,7 +17,7 @@ $post_id = $post->ID;
                 </li>
 
                 <li>
-                    <a class="social-link" rel="nofollow" href="https://www.facebook.com/sharer.php?u=<?php echo get_permalink($post_id); ?>" target="_blank" title="Partager sur facebook">
+                    <a class="social-link disabled" rel="nofollow" href="https://www.facebook.com/sharer.php?u=<?php echo get_permalink($post_id); ?>" target="_blank" title="Partager sur facebook">
                         <i aria-hidden="true" class="micon-facebook"></i>
                     </a>
                 </li>
@@ -34,11 +34,11 @@ $post_id = $post->ID;
                     </a>
                 </li>
 
-                <li>
+<!--                 <li>
                     <a <?php echo pinterest_this($post_id); ?> >
                         <i aria-hidden="true" class="micon-pinterest"></i>
                     </a>
-                </li>
+                </li> -->
             </ul><!-- !.social-list  -->
 
         </div><!-- sharer-inner-wrapper -->
