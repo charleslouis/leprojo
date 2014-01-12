@@ -6,37 +6,24 @@
 **/
 
 	function socialSharer() {
-		if (document.getElementById('sharer-wrapper')){
-			$('#sharer-wrapper').hide();
+		return;
+		if (document.getElementById('sharer-inner-wrapper')){
+			$('#sharer-inner-wrapper').hide();
+			$('#sharer-block-container').toggleClass('active unactive');
 
 			$('#dislay-sharer-wrapper').click(
-		    	function (){
-		    		$('#dislay-sharer-wrapper').height(
-		    			  $('#dislay-sharer-wrapper').height() 
-		    			+ $('#dislay-sharer-wrapper').height() 
-		    			+ $('#sharer-outer-wrapper').height() 
-		    			- 3 );
-		    	},
-			   	function(){
-			        $('#sharer-wrapper').slideToggle();
-			    }    
+					function (){
+						$('#dislay-sharer-wrapper').height(
+								$('#dislay-sharer-wrapper').height() 
+							+ $('#dislay-sharer-wrapper').height() 
+							+ $('#sharer-outer-wrapper').height() 
+							- 3 );
+							$('#sharer-block-container').toggleClass('active unactive');
+					},
+					function(){
+							$('#sharer-inner-wrapper').slideToggle();
+							$('#sharer-block-container').toggleClass('active unactive');
+					}
 			);
-
-			function copyToClipboard (text) {
-			  window.prompt ("Copier le lien dans le presse-papier : Ctrl+C, Enter", text);
-			}
-
-			$('#copy_link_to_clipboard').click(function(){
-				var linkToShare = $(this).attr('href');
-				copyToClipboard(linkToShare);
-		    });
-			
-			$("#sharer-link").click(function() {
-			    $("#direct-link").select();
-			});
-
-			$("#sharer-shortlink").click(function() {
-			    $("#direct-shortlink").select();
-			});
 		}
 	}

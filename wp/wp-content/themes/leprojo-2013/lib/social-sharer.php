@@ -63,21 +63,13 @@ function linkedin_this($post_id){
   return $output;
 }
 
-function googleplus_this($post_id){
-  $output = "";
-  $my_share_url         .= urlencode(get_permalink($post_id)) . '&hl=fr';
-  $output                = 'https://plus.google.com/share?url='. $my_share_url;
-  return $output;
-}
-
-
 function pinterest_this($post_id){
   // mind that you can only pin stuffs with an image bigger than 80 x 80px and that you need a minimum of text content (up to 500chars)
   $output = "";
-  $url_before = 'class="social-sharing btn" rel="nofollow"';
+  $url_before = 'class="social-link" rel="nofollow"';
   $url_after = 'target="_blank" title="Partager sur Google +"';
   //if not pineable : disable the button and provide no href attribute
-  $disbled_output = 'class="social-sharing btn disabled" rel="nofollow" title="Vous ne pouvez pas"';
+  $disbled_output = 'class="social-link disabled" rel="nofollow" title="Vous ne pouvez pas poster ceci sur pinterest"';
 
   $max_char            = 500;
 

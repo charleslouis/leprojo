@@ -3912,7 +3912,7 @@ you can use the generic selector below,
 but it's slower:
 [class*="micon-"] {
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000351}}
 .micon-adapt:before,
 .micon-recherche:before,
 .micon-lamp:before,
@@ -3924,6 +3924,7 @@ but it's slower:
 .micon-github:before,
 .micon-twitter:before,
 .micon-facebook:before,
+.micon-pinterest:before,
 .micon-soundcloud:before,
 .micon-linkedin:before,
 .micon-phone:before,
@@ -3943,100 +3944,103 @@ but it's slower:
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000364}}
 .micon-adapt:before {
   content: "\e002";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000367}}
 .micon-recherche:before {
   content: "\e003";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000370}}
 .micon-lamp:before {
   content: "\e004";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000373}}
 .micon-ordi-tab-phone:before {
   content: "\e005";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000376}}
 .micon-busy:before {
   content: "\e006";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000379}}
 .micon-viadeo:before {
   content: "\e007";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000382}}
 .micon-map:before {
   content: "\e008";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000385}}
 .micon-smiley:before {
   content: "\e009";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000388}}
 .micon-github:before {
   content: "\e00a";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000391}}
 .micon-twitter:before {
   content: "\e00b";
-  margin-right: 0.4em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000395}}
 .micon-facebook:before {
   content: "\e00c";
-  margin-right: 0.3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\0000399}}
 .micon-soundcloud:before {
   content: "\e00d";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003102}}
 .micon-linkedin:before {
   content: "\e00e";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003105}}
 .micon-phone:before {
   content: "\e00f";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003108}}
 .micon-skype:before {
   content: "\e010";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003111}}
 .micon-mail:before {
   content: "\e000";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003114}}
 .micon-heart-fill:before {
   content: "\e011";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003117}}
 .micon-grin:before {
   content: "\e001";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003120}}
 .micon-king-content:before {
+  content: "\e012";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_icons\.scss}line{font-family:\00003124}}
+.micon-pinterest:before {
   content: "\e012";
 }
 
@@ -4805,7 +4809,10 @@ p.no-margin-bottom {
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\000033}}
 .sharer-block-container {
   *zoom: 1;
-  width: 100%;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  opacity: 0.8;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/bourbon\/addons\/_clearfix\.scss}line{font-family:\0000317}}
 .sharer-block-container:before, .sharer-block-container:after {
@@ -4817,119 +4824,72 @@ p.no-margin-bottom {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\000038}}
-.icon-display-sharer-wrapper {
-  width: 11.6%;
-  min-width: 67px;
-  float: right;
-  display: block;
-  border-bottom: none;
-  background: #2d2d2d;
-  cursor: pointer;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000317}}
-.icon-display-sharer-wrapper:before {
-  font-style: normal;
-  font-weight: normal;
-  font-family: 'icons';
-  width: 1.5em;
-  speak: none;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  content: "\e00f";
-  color: white;
-  display: block;
-  font-size: 3em;
-  line-height: 1.5em;
-  text-align: center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000333}}
-.dislay-sharer-wrapper .sharer-wrapper-label {
-  width: 88.5%;
-  margin: 0;
-  padding: 1.6em;
-  text-align: right;
-  cursor: pointer;
-  color: #2d2d2d;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000341}}
-.sharer-outer-wrapper {
-  border: 1px solid #2d2d2d;
-  border-right: none;
-  border-top: none;
-  margin-top: -1px;
-  box-shadow: 0px 3px 5px #bababa;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000348}}
-.sharer-inner-wrapper {
-  width: 88.5%;
-  padding: 2em;
-  border-top: 1px solid #2d2d2d;
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000310}}
+.sharer-block-container.active {
+  padding-bottom: 0.5em;
   background: white;
+  opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000356}}
-.sharer-wrapper-link-label,
-.sharer-shareable-link {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000316}}
+.icon-display-sharer-wrapper {
   display: block;
+  width: 40px;
+  height: 40px;
+  background: #ef7871;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  opacity: 0.7;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000361}}
-.sharer-wrapper-link-label {
-  margin-bottom: 0.5em;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000365}}
-.sharer-inner-wrapper .btn {
-  color: #a0a0a0;
-  margin-top: 1em;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000371}}
-.direct-link {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000325}}
+.icon-display-sharer-wrapper:before {
   display: block;
-  color: #a0a0a0;
-  width: 85%;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000377}}
-.social-sharing {
-  float: left;
-  width: 20%;
-  min-width: 100px;
-  min-height: 100px;
-  padding: 1em;
-  text-align: center;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000386}}
-.sharer-direct-link-icon {
+  position: absolute;
+  top: 0;
+  font-family: 'icons';
+  content: "\e00f";
   font-style: normal;
-  display: block;
-  float: left;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000390}}
-.sharer-direct-link-icon:before {
-  width: 1em;
-  speak: none;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
-  font-family: 'icons';
-  content: '\e011';
-  padding: 0 1em;
+  font-size: 1.7em;
+  line-height: 40px;
+  text-align: center;
+  speak: none;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000341}}
+.icon-display-sharer-wrapper:hover {
+  background: #b31d14;
+  opacity: 0.7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\00003102}}
-.social-icon:before {
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000347}}
+.social-list {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000351}}
+.social-link {
   display: block;
-  font-style: normal;
-  font-family: 'icons';
-  font-size: 2em;
-  padding: 0.25em 0;
+  width: 40px;
+  height: 40px;
+  margin-top: 0.5em;
+  border: 1px solid white;
+  text-decoration: none;
   text-align: center;
+  font-size: 1.25em;
+  line-height: 40px;
+  color: white;
+  background-color: #a0a0a0;
+  border-radius: 200px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_social-sharer\.scss}line{font-family:\0000366}}
+.social-link i:before {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0.35em 0 0;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/F\:\/Dropbox\/Web\/WAMP\/www\/leprojo\/wp\/wp-content\/themes\/leprojo-2013\/assets\/scss\/custom\/_about\.scss}line{font-family:\000031}}

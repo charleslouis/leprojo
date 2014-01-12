@@ -40,6 +40,7 @@ but it's slower:
 .micon-github,
 .micon-twitter,
 .micon-facebook,
+.micon-pinterest,
 .micon-soundcloud,
 .micon-linkedin,
 .micon-phone,
@@ -89,11 +90,11 @@ but it's slower:
 }
 .micon-twitter:before {
 	content: "\e00b";
-	margin-right: 0.4em;
+	// margin-right: 0.4em;
 }
 .micon-facebook:before {
 	content: "\e00c";
-	margin-right: 0.3em;
+	// margin-right: 0.3em;
 }
 .micon-soundcloud:before {
 	content: "\e00d";
@@ -117,5 +118,9 @@ but it's slower:
 	content: "\e001";
 }
 .micon-king-content:before {
+	content: "\e012";
+}
+
+.micon-pinterest:before {
 	content: "\e012";
 }
