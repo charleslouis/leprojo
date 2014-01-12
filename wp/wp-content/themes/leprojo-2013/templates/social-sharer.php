@@ -17,7 +17,7 @@ $post_id = $post->ID;
                 </li>
 
                 <li>
-                    <a class="social-link" rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fparse.com" target="_blank" title="Partager sur facebook">
+                    <a class="social-link" rel="nofollow" href="https://www.facebook.com/sharer.php?u=<?php echo get_permalink($post_id); ?>" target="_blank" title="Partager sur facebook">
                         <i aria-hidden="true" class="micon-facebook"></i>
                     </a>
                 </li>
