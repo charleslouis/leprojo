@@ -35,11 +35,20 @@
           <?php        
           if( get_sub_field('reponse_pg') ):
             while( has_sub_field('reponse_pg') ) :
+              $answer = get_sub_field('texte_paragraphe_reponse');
               if(get_sub_field('answerer')):
-                $answerer = '<p class="answer"><span>[ ' . get_sub_field('answerer') . ' ] </span>';
-                $answer = str_replace('<p>', $answerer, get_sub_field('texte_paragraphe_reponse') ); 
+
+                if (strpos($answer,'<ul>') !== false) :
+                  $answerer = '<p class="answer no-margin-bottom"><span>[ ' . get_sub_field('answerer') . ' ] </span><ul>';
+                  $answer = str_replace('<ul>', $answerer, $answer );
+                  $answer = str_replace('</ul>', '</ul></p>', $answer );
+
+                else :
+                  $answerer = '<p class="answer"><span>[ ' . get_sub_field('answerer') . ' ] </span>';
+                  $answer = str_replace('<p>', $answerer, $answer );
+                endif;
               else :
-                $answer = str_replace('<p>', '<p class="answer">', get_sub_field('texte_paragraphe_reponse') ); 
+                $answer = str_replace('<p>', '<p class="answer">', $answer ); 
               endif;            
                 echo $answer;
           ?>

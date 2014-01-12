@@ -28,9 +28,16 @@
 	}
 }
 
-.block-itw ul{
-	@extend .unstyled;
+.block-itw {
+	ul{
+		@extend .unstyled;
+		margin-left: 0.8em;
+	}
 }
+p.no-margin-bottom {
+ 	margin-bottom: 0;
+}
+
 /*========================================
 =            INTERVIEW LAYOUT            =
 ========================================*/
