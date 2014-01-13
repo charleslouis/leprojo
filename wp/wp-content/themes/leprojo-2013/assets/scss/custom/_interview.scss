@@ -34,10 +34,15 @@
 		margin-left: 0.8em;
 	}
 }
+// Sometimes there is no need for a margin-bottom
 p.no-margin-bottom {
  	margin-bottom: 0;
 }
 
+//let's hifde the title as we don't need it 
+.page-template-template-about-php .entry-title{
+	display: none;
+}
 /*========================================
 =            INTERVIEW LAYOUT            =
 ========================================*/
