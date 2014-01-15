@@ -69,6 +69,10 @@
 
 .navtop {
 	border: none;
+
+	@media print {
+		display: none;
+	}
 }
 
 .navtoplink {

@@ -13,6 +13,10 @@
 	@media #{$medium} {
 		top: $large-topbar-height;
 	}
+
+	@media print {
+		display: none;
+	}
 }
 .sharer-block-container.active{
 	padding-bottom: 0.5em;

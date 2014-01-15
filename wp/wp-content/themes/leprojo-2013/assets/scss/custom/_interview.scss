@@ -6,6 +6,12 @@
 	text-transform: uppercase;
 	font-family: $sansFontFamilyLight;
 	color: $banner-font-color;
+
+	 @media print {
+	 	position: relative;
+	 	margin: 1em 0 0 !important;
+	 	padding: 0 !important;
+	 }
 }
 
 .entry-content{

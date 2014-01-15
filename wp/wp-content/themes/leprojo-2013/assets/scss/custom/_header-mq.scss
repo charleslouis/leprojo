@@ -58,3 +58,20 @@
     width: $logo-large-width;
   }
 }
+
+
+@media print {
+	.contain-to-grid,
+	.contain-to-grid .top-bar {
+		border: none;
+    height: auto !important;
+    background-color: $black !important;
+
+		display: none;
+
+	}
+  .brand{
+    background-image: $logo !important;
+    background-size: 100% !important;
+  }
+}

@@ -14,6 +14,9 @@
 .portrait{
 	width: 100%;
 	margin: 0;
+	@media print {
+		padding: 0 0.9375em !important;
+	}
 	img{
 		width: 100%;
 	}
