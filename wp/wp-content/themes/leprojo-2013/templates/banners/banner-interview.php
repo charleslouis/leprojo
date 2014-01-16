@@ -51,3 +51,5 @@
         </figure>
         <h1 id="headline" data-proportion="<?php echo $data_proportion; ?>" class="entry-title" style="<?php echo $custom_style; ?>;"><?php the_title(); ?></h1>
     </header><!-- banner -->
+
+    <a data-proportion="66%" class="scrolldown" href="#banner-bottom"><span></span></a>

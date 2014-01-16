@@ -119,3 +119,12 @@
 	}
 }
 
+/*==========  Arrow down to scroll down the page  ==========*/
+.scrolldown {
+	@include css-triangle(3em, $anchor-font-color, top);
+	position: absolute;
+	width: 10%;
+	top: 2.75%;
+	right: 6%;
+}
+
