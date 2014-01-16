@@ -3,9 +3,8 @@
 <form action="http://leprojo.us4.list-manage.com/subscribe/post?u=c46fbc0a24d1781028088caeb&amp;id=f4715f1edc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 <h5>Inscrivez-vous à notre newsletter</h5>
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Addresse mail<span class="asterisk">*</span>
 </label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+	<input type="email" value="" name="EMAIL" class="required email" placeholder="on_ne_spam_pas@ton-mail.com" id="mce-EMAIL">
 </div>
 	<div id="mce-responses" class="clear">
 		<div class="response" id="mce-error-response" style="display:none"></div>
