@@ -1,5 +1,4 @@
     <?php $photo = get_field('photo'); ?>
-    
     <?php if( get_field('reglage_du_titre') ): ?>
       <?php while( has_sub_field('reglage_du_titre') ) :
        
