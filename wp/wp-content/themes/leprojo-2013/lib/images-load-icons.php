@@ -15,4 +15,4 @@
 	<link rel="apple-touch-startup-image" href="<?php echo IMAGES; ?>/devices/basement-load.png" media="screen and (max-device-width: 320px)" />
 	<!-- For Facebook and co. -->
 	<link rel="image_src" href="<?php echo IMAGES; ?>/branding/logo-FB.png" />
-	<meta property="og:image" content="<?php echo IMAGES; ?>/branding/icone-FB-300x300.png"/>
+<!-- 	<meta property="og:image" content="<?php echo IMAGES; ?>/branding/icone-FB-300x300.png"/> -->
