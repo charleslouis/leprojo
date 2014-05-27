@@ -15,6 +15,7 @@ function basement_scripts() {
         wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, null, false);
         add_filter('script_loader_src', 'reverie_jquery_local_fallback', 10, 2);
     }
+    
     // modernizr (without media query polyfill)
     wp_register_script( 'basement-modernizr', get_template_directory_uri() . '/assets/js/vendor/custom.modernizr.js', array(), '2.6.2', false );
 

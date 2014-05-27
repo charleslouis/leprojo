@@ -4,7 +4,7 @@ Template Name: Archives
 */
 get_header(); ?>
 		<?php $args = array(
-			'posts_per_page'   => '',
+			'posts_per_page'   => 200,
 			'offset'           => 0,
 			'category'         => '',
 			'orderby'          => 'post_date',
