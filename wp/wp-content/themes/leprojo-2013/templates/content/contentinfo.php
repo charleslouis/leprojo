@@ -17,7 +17,7 @@
 	      	</span>
 	      par 
 	      	<span class="organisation">
-	      		<strong><a href="http://lasourisetlepino.com" target="_blank">La souris et le piano</a></strong>
+	      		<strong><a href="http://lasourisetlepiano.com" target="_blank">La souris et le piano</a></strong>
 	      	</span>
 	      </span>
 	      
